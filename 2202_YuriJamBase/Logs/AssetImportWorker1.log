@@ -1,0 +1,1773 @@
+Unity Editor version:    2021.3.9f1 (ad3870b89536)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.5.1 (Build 21G83)
+Darwin version:          21.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/dominiqueparker/Documents/GitHub/2022YuriJam/2202_YuriJamBase
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+52279
+Successfully changed project path to: /Users/dominiqueparker/Documents/GitHub/2022YuriJam/2202_YuriJamBase
+/Users/dominiqueparker/Documents/GitHub/2022YuriJam/2202_YuriJamBase
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 66.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.9f1 (ad3870b89536)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/dominiqueparker/Documents/GitHub/2022YuriJam/2202_YuriJamBase/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 Pro (high power)
+Metal devices available: 1
+0: Apple M1 Pro (high power)
+Using device Apple M1 Pro (high power)
+Initializing Metal device caps: Apple M1 Pro
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56217
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000445 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 70.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.377 seconds
+Domain Reload Profiling:
+	ReloadAssembly (377ms)
+		BeginReloadAssembly (25ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (290ms)
+			LoadAssemblies (24ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (64ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (182ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (83ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001500 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/dominiqueparker/Documents/GitHub/2022YuriJam/2202_YuriJamBase/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/dominiqueparker/Documents/GitHub/2022YuriJam/2202_YuriJamBase/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.593 seconds
+Domain Reload Profiling:
+	ReloadAssembly (594ms)
+		BeginReloadAssembly (49ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (11ms)
+		EndReloadAssembly (478ms)
+			LoadAssemblies (31ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (164ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (220ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (144ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3424 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (94.5 KB). Loaded Objects now: 3882.
+Memory consumption went from 234.4 MB to 234.4 MB.
+Total: 2.249041 ms (FindLiveObjects: 0.100750 ms CreateObjectMapping: 0.039125 ms MarkObjects: 2.039458 ms  DeleteObjects: 0.069375 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8081.950828 seconds.
+  path: Assets/My Scripts/P1MoveRestrict.cs
+  artifactKey: Guid(b59fa1774b8e315469d99d045e6ebf0a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/P1MoveRestrict.cs using Guid(b59fa1774b8e315469d99d045e6ebf0a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7cc6f1c5ede70afef2aec64c15da86df') in 0.791545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Backgrounds/Materials/BG2.mat
+  artifactKey: Guid(92c24bb862b83de4782cae30f08bc199) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/Materials/BG2.mat using Guid(92c24bb862b83de4782cae30f08bc199) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2e3cdd20bd7b12e8fc2447fac6e108e3') in 0.359801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/My Scripts/CPUSelect.cs
+  artifactKey: Guid(19b29b569cb0caf4d85a75dd1b4d0405) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/CPUSelect.cs using Guid(19b29b569cb0caf4d85a75dd1b4d0405) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e2d60305a5e01d33f9b696e02d8bd18b') in 0.002253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UI icons/RightHealthBar.png
+  artifactKey: Guid(f2eb4385caa0fa947b06d9f133941f9d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/RightHealthBar.png using Guid(f2eb4385caa0fa947b06d9f133941f9d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1d52e2202c15573707833673edeb612c') in 0.068491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Backgrounds/Materials/BG5.mat
+  artifactKey: Guid(829f259474faefa4282d5691e1864dfc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/Materials/BG5.mat using Guid(829f259474faefa4282d5691e1864dfc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '878a02e8c8fb0d8a4eadcad882bca50f') in 0.005205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Backgrounds/BG7.png
+  artifactKey: Guid(2b9e15f17e85fa64197207b7eabf5d5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/BG7.png using Guid(2b9e15f17e85fa64197207b7eabf5d5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7441c4ca8d75dd0ecbe947371ffff55f') in 0.008835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Backgrounds/BG5.png
+  artifactKey: Guid(f213639c7b26dd04186f8bc06ad433e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/BG5.png using Guid(f213639c7b26dd04186f8bc06ad433e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1649010b143729c2dcca1deea3896e27') in 0.008074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Free Game Music Collection/MusicMixer.mixer
+  artifactKey: Guid(252e0e7c607a0c240a308c94c857bb0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Free Game Music Collection/MusicMixer.mixer using Guid(252e0e7c607a0c240a308c94c857bb0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '40ff8bf769d1c7ad5b8ea1f5dc2af46f') in 0.027496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/My Scripts/Player2MoveAI.cs
+  artifactKey: Guid(ed42744a204f475469a34215796d189c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/Player2MoveAI.cs using Guid(ed42744a204f475469a34215796d189c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '029d4c22631d6d85c59befa91084f11e') in 0.002038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/My assets/Audio clips/Round 3 Audio.wav
+  artifactKey: Guid(307a7d36ee06d5e48a8da62ccbc1b1e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Audio clips/Round 3 Audio.wav using Guid(307a7d36ee06d5e48a8da62ccbc1b1e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '84ba06a1d86f0ec32dd0ffdd04ca1f09') in 0.070126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/UI icons/Character icons/VanguardIcon.png
+  artifactKey: Guid(9120f49f4009cfb4c946f8cc6c396854) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/Character icons/VanguardIcon.png using Guid(9120f49f4009cfb4c946f8cc6c396854) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1fcd841d26427705560c8da457019e7f') in 0.010490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Character prefabs/VanguardP1.prefab
+  artifactKey: Guid(c7a3e6bd8a4d9d24bb8f61380e5ee5b2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Character prefabs/VanguardP1.prefab using Guid(c7a3e6bd8a4d9d24bb8f61380e5ee5b2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd320d4fbb9fad08eca2f632cf2bd3175') in 0.042759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/My Scripts/OptionsScript.cs
+  artifactKey: Guid(5ba5bef40123b17499a377441748daf5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/OptionsScript.cs using Guid(5ba5bef40123b17499a377441748daf5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a6448487b5441e2de01fe409bfd2348b') in 0.001827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/My Scripts/P2MoveRestrict.cs
+  artifactKey: Guid(8505e20a0b8da94469e40c259fd27980) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/P2MoveRestrict.cs using Guid(8505e20a0b8da94469e40c259fd27980) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3f55f687ab03b805ba153499450f1f1d') in 0.001785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/My assets/Sounds/hit33-punchAndReact.wav
+  artifactKey: Guid(2c8a4310927501c4ea4f0b3d25ce24d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Sounds/hit33-punchAndReact.wav using Guid(2c8a4310927501c4ea4f0b3d25ce24d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2bb6588172d0a31be58b2857ea8d1fe7') in 0.038345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/My Scripts/LoseWin.cs
+  artifactKey: Guid(23952ecf65d092a4290f912c5ea32c8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/LoseWin.cs using Guid(23952ecf65d092a4290f912c5ea32c8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f7cee756ba632fa8bd3d0ca643e4dbc5') in 0.001661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/My Scripts/Player2MoveAITest.cs
+  artifactKey: Guid(5b61e348a86d9054e8b11ef45efa72d8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/Player2MoveAITest.cs using Guid(5b61e348a86d9054e8b11ef45efa72d8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b4f9bdf8751ad7fd015cd76329a0ac46') in 0.002322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Scenes/LevelSelect.unity
+  artifactKey: Guid(7eb2eafd7eb515041aa1127adfa78b85) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/LevelSelect.unity using Guid(7eb2eafd7eb515041aa1127adfa78b85) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '94ca559d90e06a638c855cfc535d2d68') in 0.001432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/My Scripts/Player2Actions.cs
+  artifactKey: Guid(f8842ee1e98b6c945814cbdd5ee283f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/Player2Actions.cs using Guid(f8842ee1e98b6c945814cbdd5ee283f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0e11e61bed36a6eee7b3640fce7edb1e') in 0.001735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Character prefabs/VanguardAI.prefab
+  artifactKey: Guid(6c8f1f4b1d3b3ad4a9137dad7e4bb4a9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Character prefabs/VanguardAI.prefab using Guid(6c8f1f4b1d3b3ad4a9137dad7e4bb4a9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '905e2cf4a39122b3c158ee59ebc34bf2') in 0.011656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Backgrounds/BG3 1.png
+  artifactKey: Guid(8b604e19a02248f41a3aaacec8fcd6f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/BG3 1.png using Guid(8b604e19a02248f41a3aaacec8fcd6f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c6ef083f3ce1624d6b8d83bb06d87921') in 0.009091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/My assets/Audio clips/RoundAnnounce.mixer
+  artifactKey: Guid(2f6e1d3683562ce41aa219a995394dbc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Audio clips/RoundAnnounce.mixer using Guid(2f6e1d3683562ce41aa219a995394dbc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8b708348c0cb6a20fbf402e1fe5864f9') in 0.004110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3e05ff92bb68b4b57eaead096ae1daee') in 0.001266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/UI icons/Character icons/ElyIcon.png
+  artifactKey: Guid(93cee61ab6fe20841b23de33bd5060cf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/Character icons/ElyIcon.png using Guid(93cee61ab6fe20841b23de33bd5060cf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e3565cd7dc6099c81651d6c465c0e8a7') in 0.009118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Backgrounds/BG8.png
+  artifactKey: Guid(451fba41676ceab4fb74fffa5d5a2230) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/BG8.png using Guid(451fba41676ceab4fb74fffa5d5a2230) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3afc893e4c7933b6f6fabc7571bfd92b') in 0.008830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/My assets/Audio clips/Round 2 Audio.wav
+  artifactKey: Guid(735ec1a33990e6541890c67c575e1673) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Audio clips/Round 2 Audio.wav using Guid(735ec1a33990e6541890c67c575e1673) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ee6615c5d7ed4f878fd5cee2ba66f4cd') in 0.037910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/UI icons/WinCounter.png
+  artifactKey: Guid(5eff976094afa4b4e938f16eec8e093c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/WinCounter.png using Guid(5eff976094afa4b4e938f16eec8e093c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e7670300daf39f61e38499c17b0d1344') in 0.009345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/My assets/FadeIn.controller
+  artifactKey: Guid(2162612a23b229d489df5c59b17ed9b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/FadeIn.controller using Guid(2162612a23b229d489df5c59b17ed9b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '423f852d5bfed8f92e732149f57c5e7c') in 0.025612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Free Game Music Collection/Action Music/Free Action Track 2 (Loop).wav
+  artifactKey: Guid(b5bc10f4d9bd65243b56e20218638cf8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Free Game Music Collection/Action Music/Free Action Track 2 (Loop).wav using Guid(b5bc10f4d9bd65243b56e20218638cf8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4303f64a17c08c66c3aa4d661754a248') in 0.038370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Scenes/Level 1_Profiles/Main Camera Profile.asset
+  artifactKey: Guid(5bded4b593be34b40a7cebfd3a58cc82) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/Level 1_Profiles/Main Camera Profile.asset using Guid(5bded4b593be34b40a7cebfd3a58cc82) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c879c1575a441957dc5ed3d3410f3066') in 0.020775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/My Scripts/LevelSelect.cs
+  artifactKey: Guid(4098840ca15eb014c83d221453fd948f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/LevelSelect.cs using Guid(4098840ca15eb014c83d221453fd948f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8aaac42d86f3de233a104d3e4e02511f') in 0.001780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Backgrounds/BG1.png
+  artifactKey: Guid(630c501a7c3fb1b488a62ee30a7c7b92) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/BG1.png using Guid(630c501a7c3fb1b488a62ee30a7c7b92) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '199d52a795961f948ef48bafdd1634b0') in 0.008486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Backgrounds/Materials/BG7.mat
+  artifactKey: Guid(2d3a360428ab8e04caa263655a5ea669) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/Materials/BG7.mat using Guid(2d3a360428ab8e04caa263655a5ea669) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '93ba60cba09c60bd7a005ddc6027086e') in 0.003489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/My Scripts/SaveScript.cs
+  artifactKey: Guid(bc0bce976b3942b44bfba64760862f1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/SaveScript.cs using Guid(bc0bce976b3942b44bfba64760862f1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1264c8e8c5bde23894d9b0c203508a26') in 0.001627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/My assets/Fonts/Knorke.ttf
+  artifactKey: Guid(6ba6bf51f6411404fa87460f6a5e4382) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Fonts/Knorke.ttf using Guid(6ba6bf51f6411404fa87460f6a5e4382) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6e37e0ce7d47bcbe34e2e68d7e24ad5b') in 1.305470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/My assets/Characters/Eve back attack/Punching(1).anim
+  artifactKey: Guid(338c2e27b0b53db40aa616700e4c4998) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve back attack/Punching(1).anim using Guid(338c2e27b0b53db40aa616700e4c4998) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0822ac5adf72a2d9db9d9b91c7429577') in 0.035805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/UI icons/Main Menu/CloseOn.png
+  artifactKey: Guid(4f6d8784bb236e24793b86994479d751) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/Main Menu/CloseOn.png using Guid(4f6d8784bb236e24793b86994479d751) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '651c744e0482377911bc73692ec96ddc') in 0.008299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/My assets/Characters/Eve back attack/Hook Punch(1).anim
+  artifactKey: Guid(fe208d67e8b42a443bdb73442cc1b57c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve back attack/Hook Punch(1).anim using Guid(fe208d67e8b42a443bdb73442cc1b57c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8c52040ef71c02cbda423c391f971399') in 0.016635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/UI icons/Level Select Background/LevelSelectBG.jpg
+  artifactKey: Guid(2a97d0e15e9124241a25917e3c5fb32e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/Level Select Background/LevelSelectBG.jpg using Guid(2a97d0e15e9124241a25917e3c5fb32e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b0d2406f34732b60a54664de17fbd73a') in 0.035344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/My assets/Characters/Eve back attack/Running Forward Flip(1).anim
+  artifactKey: Guid(07e681cd71c3b7f45b6642a59b9b55be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve back attack/Running Forward Flip(1).anim using Guid(07e681cd71c3b7f45b6642a59b9b55be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '738d193b3f0ce7f6b2dd74188ef8620d') in 0.024283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/My assets/Characters/Eve back attack/Leg Sweep(1).anim
+  artifactKey: Guid(c3857bfec95259948872cd9e807d076a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve back attack/Leg Sweep(1).anim using Guid(c3857bfec95259948872cd9e807d076a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ead78b28d4211b23d937d7ba8fe8273a') in 0.029093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/My assets/Characters/Eve back attack/eve_j_gonzales@Hurricane Kick(1).fbx
+  artifactKey: Guid(1be678797fab8a744bceb97801f97df8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve back attack/eve_j_gonzales@Hurricane Kick(1).fbx using Guid(1be678797fab8a744bceb97801f97df8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b5ef8d439eaa0ca191b6b7ddbfce1da0') in 0.039194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/UI icons/Main Menu/ExitOff.png
+  artifactKey: Guid(15c3ae53fc2f5ef479aea14e4525c32e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/Main Menu/ExitOff.png using Guid(15c3ae53fc2f5ef479aea14e4525c32e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '171f386193ee3165d1512e9918f51390') in 0.008619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/UI icons/VictoryImages/MorakVictory.jpg
+  artifactKey: Guid(fb29a795dbc7fc74abd9bf9938c4e5e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/VictoryImages/MorakVictory.jpg using Guid(fb29a795dbc7fc74abd9bf9938c4e5e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '28edd195ff24a75ad6b20652cbc6a966') in 0.010765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/My assets/Characters/Eve back attack/Mma Kick(1).anim
+  artifactKey: Guid(450a9ce5d3686764183b201f734f014a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve back attack/Mma Kick(1).anim using Guid(450a9ce5d3686764183b201f734f014a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '90f977c67a9ab04ff452bbdd0124cc4e') in 0.022982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI icons/Main Menu/Logo.png
+  artifactKey: Guid(21d99fe32bfef44478164c151ce15ad3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/Main Menu/Logo.png using Guid(21d99fe32bfef44478164c151ce15ad3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b8b86644f9d4fec7c97feed09189b66f') in 0.009776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/My assets/Characters/Eve Back/Jumping(1).anim
+  artifactKey: Guid(e903cbd0ff002e84fb866b734b8a6bf7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve Back/Jumping(1).anim using Guid(e903cbd0ff002e84fb866b734b8a6bf7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7f5e1900c9509cd648c13a8d7432294b') in 0.024579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/My assets/Characters/Eve forward/Fighting Idle.anim
+  artifactKey: Guid(bfbe51c889efe5046abd2ccaa61b3c00) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward/Fighting Idle.anim using Guid(bfbe51c889efe5046abd2ccaa61b3c00) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd017c18cd1f6613a1a2c0332a1576f86') in 0.019208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Textures/CFX3_T_RayStraight.png
+  artifactKey: Guid(25fe726fd84d1154790a6f91bccc02c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Textures/CFX3_T_RayStraight.png using Guid(25fe726fd84d1154790a6f91bccc02c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a02a04e2d2be19e5c5a9690f027f02d8') in 0.007277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Textures/CFX_T_Text_HitRandom.tga
+  artifactKey: Guid(e4c04f362fa1cc84dbf21d831431e501) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Textures/CFX_T_Text_HitRandom.tga using Guid(e4c04f362fa1cc84dbf21d831431e501) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f9eacbd3c274ca0319981f88179d1760') in 0.459991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/UI icons/Main Menu/1PlayerOn.png
+  artifactKey: Guid(1f11e87befcceb6458c8c349811b2d07) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/Main Menu/1PlayerOn.png using Guid(1f11e87befcceb6458c8c349811b2d07) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9acac56f87afdd096c02593d04a172df') in 0.009867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Backgrounds/Materials/BG3.mat
+  artifactKey: Guid(3f10a6c8ba297d445b4a0f2464e9d3e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/Materials/BG3.mat using Guid(3f10a6c8ba297d445b4a0f2464e9d3e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c34528fad0517a7015b654eee363a3c7') in 0.003549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(9e754b60fbeb4864098a61194e134bea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/MainMenu.unity using Guid(9e754b60fbeb4864098a61194e134bea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b9cc49ac650a53cc9fc899564f891a43') in 0.001323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/My assets/FadeInGraphic.anim
+  artifactKey: Guid(22fa482cbdbc9fb4a98a9c71455b4943) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/FadeInGraphic.anim using Guid(22fa482cbdbc9fb4a98a9c71455b4943) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e1c2b0bf35c6801ff67e757b6a1bcd53') in 0.002778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Character prefabs/VanguardP2.prefab
+  artifactKey: Guid(725508d6620c56544b56c8de9021f33e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Character prefabs/VanguardP2.prefab using Guid(725508d6620c56544b56c8de9021f33e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '901ad253eecf2a0d4ba05ff39996171c') in 0.011002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Character prefabs/EveAI.prefab
+  artifactKey: Guid(570c9b426bbd1d0449c972ef35b30935) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Character prefabs/EveAI.prefab using Guid(570c9b426bbd1d0449c972ef35b30935) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3c3a65055d5a67e602f366f99bfce987') in 0.011191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/My assets/Characters/Eve back attack/Mma Kick(3).anim
+  artifactKey: Guid(3d23e70890b03d24593e251e2e69a9ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve back attack/Mma Kick(3).anim using Guid(3d23e70890b03d24593e251e2e69a9ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '519c4b228fb0243c849b146bdf2d1976') in 0.023475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Free Game Music Collection/Adventure Music/Free Adventure Track 2 (Loop).wav
+  artifactKey: Guid(92c32bab51f7a704688f209cd556ed8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Free Game Music Collection/Adventure Music/Free Adventure Track 2 (Loop).wav using Guid(92c32bab51f7a704688f209cd556ed8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '949e441e686db33abd6624f32d728f24') in 0.038162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/My Scripts/P2Select.cs
+  artifactKey: Guid(7837bd06016c4ed448d8119014818972) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/P2Select.cs using Guid(7837bd06016c4ed448d8119014818972) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2749017d15676b1bd43f940a068e923b') in 0.001545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Mma Kick(2).fbx
+  artifactKey: Guid(48ed3b078882463428cce548921a8f7a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Mma Kick(2).fbx using Guid(48ed3b078882463428cce548921a8f7a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c07a8929cf25ffc29c166447342ac7f3') in 0.010949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/My Scripts/RoundFight.cs
+  artifactKey: Guid(53326213738b73b44a0d20370bc28fc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/RoundFight.cs using Guid(53326213738b73b44a0d20370bc28fc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e402fee73351b8035c207a9b9706bf2e') in 0.001568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Free Game Music Collection/Sci-Fi Music/Free Sci-Fi Track 1 (Loop).wav
+  artifactKey: Guid(9460a26f83a88474eba3e8ace366521a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Free Game Music Collection/Sci-Fi Music/Free Sci-Fi Track 1 (Loop).wav using Guid(9460a26f83a88474eba3e8ace366521a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2d5be2714d2c0f129d4adfff963b58a0') in 0.037083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/My assets/Audio clips/Player 2 wins Audio.wav
+  artifactKey: Guid(c9102f7a4fee9a242ba2f18674b19e5f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Audio clips/Player 2 wins Audio.wav using Guid(c9102f7a4fee9a242ba2f18674b19e5f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ba86ef283adeaa9d2e904e46d7642564') in 0.038676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Scenes/Options.unity
+  artifactKey: Guid(121b68a762a065e459556f3d1ea405a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/Options.unity using Guid(121b68a762a065e459556f3d1ea405a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6baf72b60a22427ec9720f5a3e88b839') in 0.001746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs
+  artifactKey: Guid(c2255468ea97f384a9ebbb13e497e050) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs using Guid(c2255468ea97f384a9ebbb13e497e050) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b514ff4c33f8e7d29ba27d3ac8d6ade8') in 0.001540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Character prefabs/EveP1.prefab
+  artifactKey: Guid(97d7baa2974a1044cb1f46b744e6c94d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Character prefabs/EveP1.prefab using Guid(97d7baa2974a1044cb1f46b744e6c94d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a48ec974ce191d05b4dffedea65e536b') in 0.010596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Backgrounds/BG4.png
+  artifactKey: Guid(051c2339d619628479757e074d4233c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/BG4.png using Guid(051c2339d619628479757e074d4233c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '364154bab7300602f4d628bef5d478a3') in 0.007684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Center Block.fbx
+  artifactKey: Guid(b85bba2d2d932614f8d4bf80331ced7c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Center Block.fbx using Guid(b85bba2d2d932614f8d4bf80331ced7c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '64a9aa669a42906e7cfd90cba62e2427') in 0.010275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/UI icons/Main Menu/2PlayerOff.png
+  artifactKey: Guid(8b2758899058360419ae2e30336b7e7f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/Main Menu/2PlayerOff.png using Guid(8b2758899058360419ae2e30336b7e7f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8df1b6289cd35250024d2f9384567938') in 0.008622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/My assets/Characters/NewPrefabs/SynthAI.prefab
+  artifactKey: Guid(ff009f50a490a034992a11cf8350c634) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/NewPrefabs/SynthAI.prefab using Guid(ff009f50a490a034992a11cf8350c634) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '840017914e8b7e30d2a50ed4f2d7570a') in 0.011488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/My assets/Characters/NewPrefabs/MorakAI.prefab
+  artifactKey: Guid(5a5b9d92d42835d4b85538d692776ad7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/NewPrefabs/MorakAI.prefab using Guid(5a5b9d92d42835d4b85538d692776ad7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8f0752f1c6c29800ea1e4528bcbf5f85') in 0.011747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/Idle(1).anim
+  artifactKey: Guid(5e57856c829ebdc428046c8c4ec12555) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/Idle(1).anim using Guid(5e57856c829ebdc428046c8c4ec12555) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ba73264d7afd2e39bf64968a7dd4b4d2') in 0.015651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/Light Hit To Head(1).anim
+  artifactKey: Guid(28c8a4d4196f15e4b9e524e7e759f977) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/Light Hit To Head(1).anim using Guid(28c8a4d4196f15e4b9e524e7e759f977) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ac90549e34ad354381b58f4cdf0ca856') in 0.012149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/My assets/Characters/NewPrefabs/MariaP2.prefab
+  artifactKey: Guid(2a13ce3874a7e6244b9d66084490d033) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/NewPrefabs/MariaP2.prefab using Guid(2a13ce3874a7e6244b9d66084490d033) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '57246a4cff4987af2fd8f124f5830819') in 0.011720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/My assets/Characters/NewPrefabs/MorakP2.prefab
+  artifactKey: Guid(99474db06fc8eec4fbf441a9484a6416) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/NewPrefabs/MorakP2.prefab using Guid(99474db06fc8eec4fbf441a9484a6416) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ed2c0cedc1822c5cbf87082803093a06') in 0.010289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/My assets/Characters/NewPrefabs/ElyP2.prefab
+  artifactKey: Guid(c5d55c4fca5deeb4e8e4392b3b6ef9f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/NewPrefabs/ElyP2.prefab using Guid(c5d55c4fca5deeb4e8e4392b3b6ef9f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd1f7f8ffe854c9e04af2563b72bbdecc') in 0.010685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/My assets/Characters/NewPrefabs/MorakP1.prefab
+  artifactKey: Guid(f3edf7c6ac50a8d46a2e3822b50b9daf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/NewPrefabs/MorakP1.prefab using Guid(f3edf7c6ac50a8d46a2e3822b50b9daf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2e87ada1aca55529863fe700a5dca4a9') in 0.009552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/My assets/Characters/EveReactions Forward/eve_j_gonzales@Kip Up.fbx
+  artifactKey: Guid(8512a61fe6ce101458701b335a9aa637) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/EveReactions Forward/eve_j_gonzales@Kip Up.fbx using Guid(8512a61fe6ce101458701b335a9aa637) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'db1f1f64d64f71f571772d08926e8906') in 0.010418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Punching.fbx
+  artifactKey: Guid(032b40ded3000bf469a39201cf6e9bde) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Punching.fbx using Guid(032b40ded3000bf469a39201cf6e9bde) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fe57a7496eab7af548eb226bf6fe4d9f') in 0.011158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/Kicking(1).anim
+  artifactKey: Guid(9ddd60813eaa18540affb84a05f80fa7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/Kicking(1).anim using Guid(9ddd60813eaa18540affb84a05f80fa7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1f68103196d5c9a714e80889fd513454') in 0.013299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/My assets/Characters/NewPrefabs/SynthP2.prefab
+  artifactKey: Guid(fc3534d291189804aaaf761eae388109) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/NewPrefabs/SynthP2.prefab using Guid(fc3534d291189804aaaf761eae388109) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1f25f4727536cba2e810cdf9089550ea') in 0.010554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/My assets/Characters/EveReactions Back/eve_j_gonzales@Kip Up(1).fbx
+  artifactKey: Guid(a1a9f2784e28910438875a02e113822e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/EveReactions Back/eve_j_gonzales@Kip Up(1).fbx using Guid(a1a9f2784e28910438875a02e113822e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5226c0c55a586e15cb83b106d95917f9') in 0.010467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/Cross Punch(1).anim
+  artifactKey: Guid(4591ab82c58e5df479a04bf77ebdbfee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/Cross Punch(1).anim using Guid(4591ab82c58e5df479a04bf77ebdbfee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a13aab302a769853494a1ed1f5fff325') in 0.014881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/My assets/Characters/EveReactions Forward/eve_j_gonzales@Medium Hit To Head.fbx
+  artifactKey: Guid(1b091c0fe30c16242b3dbadc0645d84e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/EveReactions Forward/eve_j_gonzales@Medium Hit To Head.fbx using Guid(1b091c0fe30c16242b3dbadc0645d84e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '98c279b448596fa2bebdd0e29d7d6928') in 0.009681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/Right Hook(1).anim
+  artifactKey: Guid(81cf160fdd6c51147a8766f086ed5b45) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/Right Hook(1).anim using Guid(81cf160fdd6c51147a8766f086ed5b45) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '03e567f57226bf4613034c56e222e22c') in 0.022632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UI icons/VictoryImages/ElyVictory.jpg
+  artifactKey: Guid(fd6f32e612820f84eb0914e8df0e539c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/VictoryImages/ElyVictory.jpg using Guid(fd6f32e612820f84eb0914e8df0e539c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '50daf8cc998712ace7528f0a5f75774c') in 0.012414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Textures/CFX3_T_FireBulk.png
+  artifactKey: Guid(e6d1dbabd3135d546b6c48db6a6879f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Textures/CFX3_T_FireBulk.png using Guid(e6d1dbabd3135d546b6c48db6a6879f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '61b33c43a44b729b095f9bcf271dcae5') in 0.007718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/My Scripts/LevelSpawn.cs
+  artifactKey: Guid(4ef6031337043134299adc22557c62ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/LevelSpawn.cs using Guid(4ef6031337043134299adc22557c62ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bbd5232a281eea4615b9ef6f38bc1202') in 0.001662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Backgrounds/BG1 1.png
+  artifactKey: Guid(8ab10fce06a844c409a512fa3e79b999) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/BG1 1.png using Guid(8ab10fce06a844c409a512fa3e79b999) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8df17669483fe44ffe6d3472b23745bd') in 0.009936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
+  artifactKey: Guid(3997e2241185407d80309a82f9148466) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc using Guid(3997e2241185407d80309a82f9148466) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '414bdf1b20d0e5fa03db0bb5c7c326cf') in 0.023451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+  artifactKey: Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF.shader using Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '05628a9fee54f27e23aea659f1af2e2f') in 0.031932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/My Scripts/Player1Trigger.cs
+  artifactKey: Guid(6c6061d133c022b47874309ed87593ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/Player1Trigger.cs using Guid(6c6061d133c022b47874309ed87593ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '94b262de3a2f8cccc0a6f54c42526338') in 0.001794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/My Scripts/SwitchOnP2.cs
+  artifactKey: Guid(f12194cda1edd534d87e454f8b5474d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/SwitchOnP2.cs using Guid(f12194cda1edd534d87e454f8b5474d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c49d230a1e095d69949ff99378e595ac') in 0.001727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/My assets/Characters/NewPrefabs/MariaAI.prefab
+  artifactKey: Guid(02102d352b358e541b0eacf497ec32de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/NewPrefabs/MariaAI.prefab using Guid(02102d352b358e541b0eacf497ec32de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0a5e9b6041db065e80bffb9f7ddd4454') in 0.010035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/My assets/Characters/Eve back attack/Hurricane Kick(1).anim
+  artifactKey: Guid(28fb1d5d6747ca243b411b8bacfb2dae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve back attack/Hurricane Kick(1).anim using Guid(28fb1d5d6747ca243b411b8bacfb2dae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '453bd71c5618d83ecc70c1ade55d9dd1') in 0.006698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/My assets/Characters/NewPrefabs/SynthP1.prefab
+  artifactKey: Guid(66a18b3d4005f6148a72343881106a01) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/NewPrefabs/SynthP1.prefab using Guid(66a18b3d4005f6148a72343881106a01) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b1288d6b37b33e246464b9d58bc4d80f') in 0.009837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/My assets/Characters/EveReactions Back/eve_j_gonzales@Medium Hit To Head(1).fbx
+  artifactKey: Guid(ad09ebf6d23ba9545a056c0c8b8df026) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/EveReactions Back/eve_j_gonzales@Medium Hit To Head(1).fbx using Guid(ad09ebf6d23ba9545a056c0c8b8df026) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e3b2c085787014ef06af35d1b469f514') in 0.010340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/Mutant Walking(1).anim
+  artifactKey: Guid(71833ac50daa0074d9f03491fb779d22) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/Mutant Walking(1).anim using Guid(71833ac50daa0074d9f03491fb779d22) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0faf43849d947b3d51ad716d42d64cf8') in 0.015667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Hurricane Kick.fbx
+  artifactKey: Guid(e7b8d12760a221e4cb425d6b4c0d6641) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Hurricane Kick.fbx using Guid(e7b8d12760a221e4cb425d6b4c0d6641) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f16c819b81f1fd6f82c287665901932c') in 0.011738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/My assets/Characters/NewPrefabs/MariaP1.prefab
+  artifactKey: Guid(a18b5c7ce286b8d4c81b2d530d72f76d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/NewPrefabs/MariaP1.prefab using Guid(a18b5c7ce286b8d4c81b2d530d72f76d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ba27ae3b6607d67c9c1bbee31d7300dc') in 0.009779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/My assets/Characters/Eve forward/Eve AI.controller
+  artifactKey: Guid(c32cbef81c3f505438052a6aa4939a7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward/Eve AI.controller using Guid(c32cbef81c3f505438052a6aa4939a7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '67d82a610d72f5ab67cd2befb6eeb340') in 0.343722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/Leg Sweep.anim
+  artifactKey: Guid(f7569483983418947b35f3a3026310ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/Leg Sweep.anim using Guid(f7569483983418947b35f3a3026310ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '41e2b487aa4b02d9f915eb248cf48935') in 0.031471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs
+  artifactKey: Guid(f71e90e62dfae594490eb4d9b611f930) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs using Guid(f71e90e62dfae594490eb4d9b611f930) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a310ef452e7c68800c03cd2db2ef7bd4') in 0.001663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Materials/Animated/CFX_Anim_Poof_AddSoft.mat
+  artifactKey: Guid(74a6f6cd13c058a43858627e5383715e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Materials/Animated/CFX_Anim_Poof_AddSoft.mat using Guid(74a6f6cd13c058a43858627e5383715e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1ac5814525641e88de13cb78bf7e113d') in 0.003210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/Kicking.anim
+  artifactKey: Guid(6630af4603f24f74eade1b6ef271be78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/Kicking.anim using Guid(6630af4603f24f74eade1b6ef271be78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9001f680dea0f317775012b0b37ee6db') in 0.013790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/vanguard_t_choonyung@Standing Block React Large.fbx
+  artifactKey: Guid(07c3b7b599d5b904bb6a5a0a2048c1f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/vanguard_t_choonyung@Standing Block React Large.fbx using Guid(07c3b7b599d5b904bb6a5a0a2048c1f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c9b44fd28e82063d6697dbf97d8d7ea0') in 0.009710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/Right Hook.anim
+  artifactKey: Guid(362fb17042be6c1448cd69276e418494) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/Right Hook.anim using Guid(362fb17042be6c1448cd69276e418494) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'cac416329e77173c88edaba93837693c') in 0.022905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/Mutant Jump Attack back.anim
+  artifactKey: Guid(6b0ed2cd18ec38844b04e025fe016634) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/Mutant Jump Attack back.anim using Guid(6b0ed2cd18ec38844b04e025fe016634) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '528dd49554ba4a60697c10bafcb5d5e4') in 0.031836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Materials/Fire/CFX3_FireBulk ADD.mat
+  artifactKey: Guid(67c3db2f0d5b4aa4eaa1d7aec0699d15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Materials/Fire/CFX3_FireBulk ADD.mat using Guid(67c3db2f0d5b4aa4eaa1d7aec0699d15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'feacb4ebd1a394460cfd2ad1a9c1cfc8') in 0.002756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Materials/Animated/CFX_Anim_Bubble_Add.mat
+  artifactKey: Guid(503ba37627ac18c4ebe9bbe73d6ea9ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Materials/Animated/CFX_Anim_Bubble_Add.mat using Guid(503ba37627ac18c4ebe9bbe73d6ea9ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fcaefc153860da7353e19d71db25d5bb') in 0.004190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/vanguard_t_choonyung@Male Crouch Pose(1).fbx
+  artifactKey: Guid(57a0cb01587e5f24a9aaa8483cd65ce6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/vanguard_t_choonyung@Male Crouch Pose(1).fbx using Guid(57a0cb01587e5f24a9aaa8483cd65ce6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a0b82bbaa633fb749b7d233a75024d6e') in 0.009917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Materials/Stretched/CFX_RayRounded.mat
+  artifactKey: Guid(7cd73ef8e5a31a244a672ae32c0f6ddb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Materials/Stretched/CFX_RayRounded.mat using Guid(7cd73ef8e5a31a244a672ae32c0f6ddb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '46cce89e28d98c1116aab3c8b8aa68c5') in 0.002801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/Stunned.anim
+  artifactKey: Guid(38eab9b24c3c0f54093d49bcf82aeff6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/Stunned.anim using Guid(38eab9b24c3c0f54093d49bcf82aeff6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e246b5a2a9386d780fa9a8f8fee4f90e') in 0.021308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/Vanguard AI.controller
+  artifactKey: Guid(a77591a67d87f224d88d2229bac8782f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/Vanguard AI.controller using Guid(a77591a67d87f224d88d2229bac8782f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7d201f6e73a187afc4b33393ba2693ec') in 0.387112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/My assets/Characters/Ely/Back/Running Back Flip(1).anim
+  artifactKey: Guid(33a8d911862e1fd43873940ad7870703) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Back/Running Back Flip(1).anim using Guid(33a8d911862e1fd43873940ad7870703) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bdc5789ab102420bceceae42d79c459f') in 0.023205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/Running Forward Flip.anim
+  artifactKey: Guid(0d7b0285e16d3aa44946bd9f6c83813a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/Running Forward Flip.anim using Guid(0d7b0285e16d3aa44946bd9f6c83813a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b9a504cb3e51db44ad85da6b91243d5d') in 0.024471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/Kidney Hit.anim
+  artifactKey: Guid(e8031b1dfd3cbb34aaa6c93a65419dc5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/Kidney Hit.anim using Guid(e8031b1dfd3cbb34aaa6c93a65419dc5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ee0b33631a8610cedb8c480072327155') in 0.005226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/Mutant Flexing Muscles.anim
+  artifactKey: Guid(c4e4418dae467a742ad534ecb674dd4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/Mutant Flexing Muscles.anim using Guid(c4e4418dae467a742ad534ecb674dd4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '92ce4a070d4eb0e535609c2b18d2bf3a') in 0.011975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/Illegal Knee.anim
+  artifactKey: Guid(71b6230ce9a2c6f4794677491e2b32c1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/Illegal Knee.anim using Guid(71b6230ce9a2c6f4794677491e2b32c1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2b1bc7bedb763f6c2d30ad3effa549ac') in 0.016893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/Center Block.anim
+  artifactKey: Guid(7aacf14581502344c81e098fa5ea0bf2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/Center Block.anim using Guid(7aacf14581502344c81e098fa5ea0bf2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8d349ef30099b4bf825e2befcfebafb8') in 0.008980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/Leg Sweep.anim
+  artifactKey: Guid(600719da1a7da4b43b02506f46d5d27c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/Leg Sweep.anim using Guid(600719da1a7da4b43b02506f46d5d27c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'cddde6de61bfb3d25c9d658735761625') in 0.038221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/My assets/Characters/Eve forward/eve_j_gonzales@Fighting Idle.fbm/SpacePirate_diffuse.png
+  artifactKey: Guid(7691ecea29393db45bbc18665d1b4ba0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward/eve_j_gonzales@Fighting Idle.fbm/SpacePirate_diffuse.png using Guid(7691ecea29393db45bbc18665d1b4ba0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e75f5076a822315c92a4daa4230ced24') in 0.008340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/My assets/Characters/Maria/Back/Blocking(1).anim
+  artifactKey: Guid(78338a1f338825847a65b8286d79fd10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Back/Blocking(1).anim using Guid(78338a1f338825847a65b8286d79fd10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1d443483931181a6f4b47c138f56ec9a') in 0.008184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/My assets/Characters/Maria/Back/Slipping(1).anim
+  artifactKey: Guid(c6ba462a84ad16e47bfee5baa1ed7623) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Back/Slipping(1).anim using Guid(c6ba462a84ad16e47bfee5baa1ed7623) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b1d26df486d842456c3edc45575ec374') in 0.037020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/My assets/Characters/Maria/Back/Sword And Shield Jump Back(1).anim
+  artifactKey: Guid(49b290e67aaaa5e4c8312f7c8548873d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Back/Sword And Shield Jump Back(1).anim using Guid(49b290e67aaaa5e4c8312f7c8548873d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e4e5f8ffb6ace13b92859e36550e56e4') in 0.015249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/My assets/Characters/Maria/Back/Kicking(1).anim
+  artifactKey: Guid(206d8a75d66d6574184aaeceb46eebc4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Back/Kicking(1).anim using Guid(206d8a75d66d6574184aaeceb46eebc4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b672e4d75981e05af8f7a8a0c1826530') in 0.014159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/My assets/Characters/Maria/Back/Big Hit To Head(1).anim
+  artifactKey: Guid(bbcd072639e200e4786d909d1c75c205) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Back/Big Hit To Head(1).anim using Guid(bbcd072639e200e4786d909d1c75c205) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '83beae0bf58042df904df3fc7654570f') in 0.005840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/My assets/Characters/Eve forward/Materials/SpacePirate_diffuse.mat
+  artifactKey: Guid(5f0bd515e3e821e458d2c1c1d2b4e26d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward/Materials/SpacePirate_diffuse.mat using Guid(5f0bd515e3e821e458d2c1c1d2b4e26d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd8227fd7bcfb8abe90d0f1b2627c7539') in 0.013809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/Ely AI.controller
+  artifactKey: Guid(f5b3dabdadb1a164f9f8b03c0c6080e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/Ely AI.controller using Guid(f5b3dabdadb1a164f9f8b03c0c6080e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c3006460c5c9430f15943449fc51a834') in 0.432515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Leg Sweep.anim
+  artifactKey: Guid(4eb065f742b5d864e86d9a94cc21e04c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Leg Sweep.anim using Guid(4eb065f742b5d864e86d9a94cc21e04c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ba4d694ce5e2de86115268270faeec3a') in 0.034375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/My assets/Characters/Ely/Back/Mutant Flexing Muscles(1).anim
+  artifactKey: Guid(fb1a2dfd2df8795469328d68f2a71e11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Back/Mutant Flexing Muscles(1).anim using Guid(fb1a2dfd2df8795469328d68f2a71e11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c52b1bfbeda92f760f0c90fcffc83fdf') in 0.010102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/Stunned(1).anim
+  artifactKey: Guid(c27d56c6dc6f94d48bd3cc391c0894db) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/Stunned(1).anim using Guid(c27d56c6dc6f94d48bd3cc391c0894db) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'da414b9833c102c052a949f680c55be3') in 0.018828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/My assets/Characters/Maria/Back/Victory(1).anim
+  artifactKey: Guid(efc8eeb74987aed449473eeba07a9d8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Back/Victory(1).anim using Guid(efc8eeb74987aed449473eeba07a9d8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e6b98a206c41c5efa6010e556aa2d2e9') in 0.007752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/My assets/Characters/Ely/Back/Unarmed Jump(1).anim
+  artifactKey: Guid(a9ea3ab9c3b1a21419c33f1e88f1657d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Back/Unarmed Jump(1).anim using Guid(a9ea3ab9c3b1a21419c33f1e88f1657d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '68064b88aff6a22b973243a02294b138') in 0.026938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/vanguard_t_choonyung@Knocked Out(1).fbx
+  artifactKey: Guid(3b1f016b782d23f4ab015b9aee54a54e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/vanguard_t_choonyung@Knocked Out(1).fbx using Guid(3b1f016b782d23f4ab015b9aee54a54e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7f0d94c7873635fba133f5bcd76ae025') in 0.010528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/My assets/Characters/Ely/Back/Kidney Hit(1).anim
+  artifactKey: Guid(8ecd5a50fad58c04ba5794c8e2a07d52) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Back/Kidney Hit(1).anim using Guid(8ecd5a50fad58c04ba5794c8e2a07d52) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2c190668086acfa5dc773ebdc8431a8d') in 0.004841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Materials/Light/CFX3_CircleSoft ADDSOFT.mat
+  artifactKey: Guid(c26f3dc2706e5764eb5100c273a349d7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Materials/Light/CFX3_CircleSoft ADDSOFT.mat using Guid(c26f3dc2706e5764eb5100c273a349d7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '445eaa582b65f534c60735341cf98beb') in 0.003322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/My assets/Characters/Ely/Back/Running Forward Flip(1).anim
+  artifactKey: Guid(d309d839fdecfca43a7885deec6156ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Back/Running Forward Flip(1).anim using Guid(d309d839fdecfca43a7885deec6156ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4c5103691365f9095634d6d7764f05e9') in 0.021664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/My assets/Characters/Maria/Back/Unarmed Jump(1).anim
+  artifactKey: Guid(114cc055a492d5c42bf1bea4f330a164) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Back/Unarmed Jump(1).anim using Guid(114cc055a492d5c42bf1bea4f330a164) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a2399203510133795095f35b0b9c3e43') in 0.010549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Maria AI.controller
+  artifactKey: Guid(6f82cc02da1242f46900c2f957270cf5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Maria AI.controller using Guid(6f82cc02da1242f46900c2f957270cf5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e877184a93652b9ae379a969b97bfbc6') in 0.359172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/My assets/Characters/Morak/Back/Hit to head 1.anim
+  artifactKey: Guid(6bc32fbcbdd70d344909f474bdaef976) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Back/Hit to head 1.anim using Guid(6bc32fbcbdd70d344909f474bdaef976) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'cabdf1fd57b102509c9ccc5193aa9c5e') in 0.007797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001818 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/maria_j_j_ong@Fighting Idle.fbx
+  artifactKey: Guid(bf0aafb0335680e4f8959017e15c5f4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/maria_j_j_ong@Fighting Idle.fbx using Guid(bf0aafb0335680e4f8959017e15c5f4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b5a6431c825bae4594a0d9f2c674e48b') in 0.015741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Quad Punch.anim
+  artifactKey: Guid(408cc5919220b8f43b0ee82f34c13eb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Quad Punch.anim using Guid(408cc5919220b8f43b0ee82f34c13eb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5e5a5ee701975fb8e75e357c02fa3d1b') in 0.017353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Sword And Shield Jump.anim
+  artifactKey: Guid(0371020b05a37b34b84788ba46d5549e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Sword And Shield Jump.anim using Guid(0371020b05a37b34b84788ba46d5549e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6b16508ce8302925ec7ba753c4cd6a9a') in 0.014552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/My assets/Characters/Morak/Back/Fall back 1.anim
+  artifactKey: Guid(db857032a4716774280777037128faee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Back/Fall back 1.anim using Guid(db857032a4716774280777037128faee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6d4559efeca7bff2a59e22b81b81c113') in 0.028911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Standing Death Backward 01.anim
+  artifactKey: Guid(4b2c5b3943f7ee240a11c530670c871c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Standing Death Backward 01.anim using Guid(4b2c5b3943f7ee240a11c530670c871c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8354e292f940c9583599fbcb5e9121d0') in 0.010646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/My assets/Characters/Morak/Back/Backflip forward 1.anim
+  artifactKey: Guid(288fded2a05624c408ee054650843002) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Back/Backflip forward 1.anim using Guid(288fded2a05624c408ee054650843002) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9a41541f55964a8941990099a740a256') in 0.041382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Lead Jab.anim
+  artifactKey: Guid(5016ba5be6c909d469d0dfdee39eb6dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Lead Jab.anim using Guid(5016ba5be6c909d469d0dfdee39eb6dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '091ede0b1c0aac2588e9602c89c1f961') in 0.010530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/Punching Bag.anim
+  artifactKey: Guid(a4cf67650642ee94c93bee16d53b91c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/Punching Bag.anim using Guid(a4cf67650642ee94c93bee16d53b91c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '47d67ad4c9092e2d8a0bc9780c8627a0') in 0.021519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/My assets/Characters/Ely/Back/Fight Idle(1).anim
+  artifactKey: Guid(9e8cffd2d1487e6489f808f7e053ec49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Back/Fight Idle(1).anim using Guid(9e8cffd2d1487e6489f808f7e053ec49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fd518433928785c6bbe675e09dec6baf') in 0.011114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/Male Crouch Pose.anim
+  artifactKey: Guid(72171a3863690d448a44a35315a698f0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/Male Crouch Pose.anim using Guid(72171a3863690d448a44a35315a698f0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3183ef82778b74b90602ac52fff2b713') in 0.003738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/My assets/Characters/EveReactions Forward/eve_j_gonzales@Knocked Out.fbx
+  artifactKey: Guid(1c9afa60727629742926a69f8d766024) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/EveReactions Forward/eve_j_gonzales@Knocked Out.fbx using Guid(1c9afa60727629742926a69f8d766024) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bf0c55a16b09860a870eba0d0d3a54b1') in 0.010636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI icons/Main Menu/OptionsOff.png
+  artifactKey: Guid(aadcefe99ef861646a0ae5bc582366f9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/Main Menu/OptionsOff.png using Guid(aadcefe99ef861646a0ae5bc582366f9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6cff63860506e607f62b9ade741f7eea') in 0.008515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/My assets/Characters/Eve Back/Male Crouch Pose(1).anim
+  artifactKey: Guid(baa42d0e544aa074db0c8dee58c4ac07) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve Back/Male Crouch Pose(1).anim using Guid(baa42d0e544aa074db0c8dee58c4ac07) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ebaa0321fda0dd2b9f900c4276e713a9') in 0.003497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/My assets/Characters/Eve forward/eve_j_gonzales@Fighting Idle.fbm/SpacePirate_specular.png
+  artifactKey: Guid(71f2d58929d546e49bcc37c2aa836f2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward/eve_j_gonzales@Fighting Idle.fbm/SpacePirate_specular.png using Guid(71f2d58929d546e49bcc37c2aa836f2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'df391ad6b37145a9dfd6bfa3caeb08d9') in 0.008054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/My Scripts/MenuButtons.cs
+  artifactKey: Guid(5bbf288b7959eb7448e526a81e8a3947) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/MenuButtons.cs using Guid(5bbf288b7959eb7448e526a81e8a3947) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4bf68c5bb58d091074ae0b9ae981b61f') in 0.001613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/My Scripts/Player2Move.cs
+  artifactKey: Guid(9770bdf67cce11b4bb135ca01e1b0190) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/Player2Move.cs using Guid(9770bdf67cce11b4bb135ca01e1b0190) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'adf2beb99198c3881e775dcab321d8b7') in 0.002172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/UI icons/Character icons/SynthIcon.png
+  artifactKey: Guid(e416bb534a41b154689818609ed5f293) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/Character icons/SynthIcon.png using Guid(e416bb534a41b154689818609ed5f293) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e2712bca52a6fafeb3acf12ba4a9bcff') in 0.008798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Materials/Texts/CFX_Text_Hit_Random.mat
+  artifactKey: Guid(fb611baba0c0bec45b460e1cc30fddf3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Materials/Texts/CFX_Text_Hit_Random.mat using Guid(fb611baba0c0bec45b460e1cc30fddf3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '988104768eb2147809e2102093e503e9') in 0.003076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/My assets/Characters/Eve forward attack/Running Forward Flip.anim
+  artifactKey: Guid(9f3481f77f8e84d4ba759535505c7306) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward attack/Running Forward Flip.anim using Guid(9f3481f77f8e84d4ba759535505c7306) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9c52a746d1ca7b3e7826434fa2a02e2c') in 0.020523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/My assets/Sounds/hit20-Punch sound.wav
+  artifactKey: Guid(dd1679100ebdfdb4aa678cc51bbc21e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Sounds/hit20-Punch sound.wav using Guid(dd1679100ebdfdb4aa678cc51bbc21e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd7d76079613fd362d5a6a8dc590461c0') in 0.038448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_Translate.cs
+  artifactKey: Guid(1e42ac40a6fba2e4d94a0070ef45cea1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_Translate.cs using Guid(1e42ac40a6fba2e4d94a0070ef45cea1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f345ab67b2232b81a548b8b57dee0b75') in 0.004955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Backgrounds/BG2 1.png
+  artifactKey: Guid(d69e571514fa353438d2b3aaaa48f65d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/BG2 1.png using Guid(d69e571514fa353438d2b3aaaa48f65d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7a8af6b1fe76f4a8796f1835419dbe3f') in 0.057344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Backflip(1).anim
+  artifactKey: Guid(9a5d0ef48b23af749805db1ae046039d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Backflip(1).anim using Guid(9a5d0ef48b23af749805db1ae046039d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '892d27e4cbcde2aa7d7d96b80de4bb0c') in 0.056772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/My assets/Characters/Morak/Back/Leg sweep 1.anim
+  artifactKey: Guid(b3dc460f719fd044e8e962e7602ba6a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Back/Leg sweep 1.anim using Guid(b3dc460f719fd044e8e962e7602ba6a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'edda682e9cb4e544f2109787dad6b744') in 0.032291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Illegal knee.anim
+  artifactKey: Guid(ef4e4d511ecb42345a3fca4182977e6a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Illegal knee.anim using Guid(ef4e4d511ecb42345a3fca4182977e6a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '10eb049ddc72c570144f9cadd1b05fac') in 0.019283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/My assets/Characters/Morak/Back/Knocked out 1.anim
+  artifactKey: Guid(3afcb56d994e1f444af9b7caf52e301b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Back/Knocked out 1.anim using Guid(3afcb56d994e1f444af9b7caf52e301b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8dcc592c19501cf67f0672fa72b4dae6') in 0.013321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Leg Sweep(1).anim
+  artifactKey: Guid(a4d98f99ae3d8244ab0e2ddf615a45c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Leg Sweep(1).anim using Guid(a4d98f99ae3d8244ab0e2ddf615a45c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '079ae8334eda1099d5507693307310c9') in 0.040593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Light kick.anim
+  artifactKey: Guid(c81429d15ea0f154a8df3337c26c84ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Light kick.anim using Guid(c81429d15ea0f154a8df3337c26c84ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bb540af13d8571c5934ac7e1ec4384a2') in 0.031092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Falling Back Death(1).anim
+  artifactKey: Guid(1695efb1e4b7f2b41aabce090389f992) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Falling Back Death(1).anim using Guid(1695efb1e4b7f2b41aabce090389f992) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '04d8eeb0a638c9b4df41ab819f646037') in 0.028232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Block.anim
+  artifactKey: Guid(1229a8e8df4adec4c95191aa508df8ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Block.anim using Guid(1229a8e8df4adec4c95191aa508df8ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '896403945222af0cf0d16386f1c31bbf') in 0.011237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Backflip.anim
+  artifactKey: Guid(ca5b749e4febd4941be41f3d29a82829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Backflip.anim using Guid(ca5b749e4febd4941be41f3d29a82829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4d595b08c230b426a77da9db4ece61c8') in 0.035727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Drop kick.anim
+  artifactKey: Guid(b8e029a341342334d99383fb341d1847) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Drop kick.anim using Guid(b8e029a341342334d99383fb341d1847) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0a21272a52a8e873644f85cfbab4431d') in 0.046328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Jump.anim
+  artifactKey: Guid(986037fb75f962143b695bb594c01eda) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Jump.anim using Guid(986037fb75f962143b695bb594c01eda) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6324c654d97f555ef769ef73746c600c') in 0.029950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Morak AI.controller
+  artifactKey: Guid(aeff1c4e362c7414a9c485a820291c46) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Morak AI.controller using Guid(aeff1c4e362c7414a9c485a820291c46) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b48795135b44949c749fa2d535915c21') in 0.597574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Taunt battlecry.anim
+  artifactKey: Guid(a91a23559d9004f41b8226e6579bb5db) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Taunt battlecry.anim using Guid(a91a23559d9004f41b8226e6579bb5db) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '75f68d5a40623f4fbdde69d538e076af') in 0.009628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Standing React Death Backward.anim
+  artifactKey: Guid(d42b4b0de54587843aefe95389638a74) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Standing React Death Backward.anim using Guid(d42b4b0de54587843aefe95389638a74) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '87c81aaee43c6574edebf78acaf36dfc') in 0.012960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Unarmed Jump.anim
+  artifactKey: Guid(3d4cf842c2a99d54c8d94312ca98c601) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Unarmed Jump.anim using Guid(3d4cf842c2a99d54c8d94312ca98c601) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a00c9609502d7b58e4a5123f143f1bc1') in 0.033547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Mma Kick.anim
+  artifactKey: Guid(8cb1c738d322b1544a5e24936cd9244c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Mma Kick.anim using Guid(8cb1c738d322b1544a5e24936cd9244c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '341f4edb5d4fc507d29b1c2f7f612c6a') in 0.034439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Jab Cross.anim
+  artifactKey: Guid(34643e8c3ee93f44b80f2bc60529a534) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Jab Cross.anim using Guid(34643e8c3ee93f44b80f2bc60529a534) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0e925b7e9f588348620c87c4f6955c90') in 0.019211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Fist Pump(1).anim
+  artifactKey: Guid(fcf61d7d9af8e7b4cbcb90cb7fb8ea17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Fist Pump(1).anim using Guid(fcf61d7d9af8e7b4cbcb90cb7fb8ea17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b3083ec231c2421e2ee541a1c044c9bd') in 0.008378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Medium Hit To Head(1).anim
+  artifactKey: Guid(421fadc467059724bbcbc9d7945da701) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Medium Hit To Head(1).anim using Guid(421fadc467059724bbcbc9d7945da701) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8d32c6ab0b503809323d4f4734818091') in 0.006252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/My assets/Characters/Morak/Back/idle 1.anim
+  artifactKey: Guid(43d3c42fcd1bf2542ad650e22f898b07) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Back/idle 1.anim using Guid(43d3c42fcd1bf2542ad650e22f898b07) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4d5f62fea30d97e1c3b5239630546ab0') in 0.017484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Falling back.anim
+  artifactKey: Guid(e816693c302dddb4e805e2fe702c3c62) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Falling back.anim using Guid(e816693c302dddb4e805e2fe702c3c62) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '34ea32acc6b974414f6b5c364da340b5') in 0.026013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Leg sweep.anim
+  artifactKey: Guid(48bd964f100f1e04ca6e3f2ac72febd6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Leg sweep.anim using Guid(48bd964f100f1e04ca6e3f2ac72febd6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ad1bdde0743f54e28c8c60ca37c7fb96') in 0.029443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/Materials/vanguard_diffuse.mat
+  artifactKey: Guid(2b7cbe6ec903e7d478f212d0ec26f741) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/Materials/vanguard_diffuse.mat using Guid(2b7cbe6ec903e7d478f212d0ec26f741) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '03dd990bc7a7d627c817ecaaafdd30fa') in 0.006453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Mma Idle(1).anim
+  artifactKey: Guid(2cf00ee6df1c67246816b88a40607115) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Mma Idle(1).anim using Guid(2cf00ee6df1c67246816b88a40607115) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bf28612552aa9680ec5e661ffce22e0b') in 0.020187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbx
+  artifactKey: Guid(942430c7998e8aa448999c52d33dc689) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbx using Guid(942430c7998e8aa448999c52d33dc689) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6cb85f90c3ed46ab64db437e38370445') in 0.013477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Unarmed Jump(1).anim
+  artifactKey: Guid(b869b35225d37a148bde1eb2fe208869) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Unarmed Jump(1).anim using Guid(b869b35225d37a148bde1eb2fe208869) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '419e28f43b1862a572858903afd69555') in 0.011181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/vanguard_t_choonyung@Idle.fbm/vanguard_normal.png
+  artifactKey: Guid(63712d90c9200bb4e8b63aa45e82bac8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/vanguard_t_choonyung@Idle.fbm/vanguard_normal.png using Guid(63712d90c9200bb4e8b63aa45e82bac8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '22211c46aef21272a52682acb66a7f6e') in 0.007400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Kip Up.anim
+  artifactKey: Guid(a0d02518025ed2049a38f8904248290a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Kip Up.anim using Guid(a0d02518025ed2049a38f8904248290a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9652facbd33401d9390671a1d2460bec') in 0.011858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Crouch.anim
+  artifactKey: Guid(ae252f59798f0df4bb49a10e926d1441) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Crouch.anim using Guid(ae252f59798f0df4bb49a10e926d1441) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9dfc1e5287d052f4b594f60cb2ad1133') in 0.005720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Standing Block Idle.anim
+  artifactKey: Guid(54cead46022a2d3449b307b499c6431a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Standing Block Idle.anim using Guid(54cead46022a2d3449b307b499c6431a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fcc768a693ab5b24ca2ca12851951db9') in 0.008355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Flying Kick(1).anim
+  artifactKey: Guid(dc9070035cf8c1e46a4e79e0c3cb3499) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Flying Kick(1).anim using Guid(dc9070035cf8c1e46a4e79e0c3cb3499) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c1e613ce7cd3f116b6bb4d45e9023b5b') in 0.031151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Scenes/Level 1.unity
+  artifactKey: Guid(1702ec7b47e98eb499e9033e62177da1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/Level 1.unity using Guid(1702ec7b47e98eb499e9033e62177da1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '719218a4976f874b370a7466ec57fb1f') in 0.001181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Male Crouch Pose.anim
+  artifactKey: Guid(6b2e035f1c14d434f9e61ea8a959609e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Male Crouch Pose.anim using Guid(6b2e035f1c14d434f9e61ea8a959609e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '98523f1bf9da0c9ef6df8201638bc52e') in 0.003304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Standing React Death Backward(1).anim
+  artifactKey: Guid(c532bb67a4cf0d54ab158880d111b0ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Standing React Death Backward(1).anim using Guid(c532bb67a4cf0d54ab158880d111b0ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4c0f2b7566747b4a121e942d1ee15911') in 0.012890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/My assets/Characters/Morak/Back/Walk 1.anim
+  artifactKey: Guid(851a26e63832a214baa82cfbc20117c0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Back/Walk 1.anim using Guid(851a26e63832a214baa82cfbc20117c0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2a0573375b22e2408f2c8bf75283e11a') in 0.013185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/My assets/Characters/Morak/Back/Block 1.anim
+  artifactKey: Guid(f707534d2dc0785438316d90c8f49908) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Back/Block 1.anim using Guid(f707534d2dc0785438316d90c8f49908) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '386ae11b43c38a3b7444498a21023573') in 0.010278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Male Crouch Pose(1).anim
+  artifactKey: Guid(a1ec9a749c7fe574ea0d79ca0fc3e510) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Male Crouch Pose(1).anim using Guid(a1ec9a749c7fe574ea0d79ca0fc3e510) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f659cc132b2c59cdb0d64f13982bb013') in 0.005515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Falling Back Death.anim
+  artifactKey: Guid(3fce61e25333e664daff048797620de7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Falling Back Death.anim using Guid(3fce61e25333e664daff048797620de7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5772ac470239e5891265be4ddcf3f82e') in 0.038211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/My assets/Characters/Morak/Back/Taunt battlecry 1.anim
+  artifactKey: Guid(3693d4c9ff366f5489f7210b56ffc2dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Back/Taunt battlecry 1.anim using Guid(3693d4c9ff366f5489f7210b56ffc2dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '17fe6e8bb2c86a489d9cfe0830bed0e7') in 0.009794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Medium Hit To Head.anim
+  artifactKey: Guid(b80cc3f8f08c1a4428900b8dddd50845) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Medium Hit To Head.anim using Guid(b80cc3f8f08c1a4428900b8dddd50845) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7d842c4d38be42eabbe4cd098ed4f58d') in 0.006869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UI icons/VictoryImages/MariaVictory.jpg
+  artifactKey: Guid(be7f4f9219acec24187abb0b649d1f36) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI icons/VictoryImages/MariaVictory.jpg using Guid(be7f4f9219acec24187abb0b649d1f36) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e07fc013c276290662308bb36493c561') in 0.009878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/My Scripts/Player2Trigger.cs
+  artifactKey: Guid(c8473f8494daaf045befb3fb4234b777) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/Player2Trigger.cs using Guid(c8473f8494daaf045befb3fb4234b777) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f7b4e8727190c11deff8ac1105f306e9') in 0.001591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Big Hit To Head.anim
+  artifactKey: Guid(ce437bbc372e81e47b019b0ffea3d152) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Big Hit To Head.anim using Guid(ce437bbc372e81e47b019b0ffea3d152) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '742fa9c6abbc9051b247583916c029b0') in 0.004582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/My assets/Sounds/Woosh-Mark_DiAngelo-4778593.wav
+  artifactKey: Guid(04d28f85425c83e4794fe97680fd0aa9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Sounds/Woosh-Mark_DiAngelo-4778593.wav using Guid(04d28f85425c83e4794fe97680fd0aa9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b3a7d9b7ec2dc69c8fc4df5a9c20835e') in 0.037597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1002_Diffuse.png
+  artifactKey: Guid(c1371e34f95e8004e9189b0d872f4752) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1002_Diffuse.png using Guid(c1371e34f95e8004e9189b0d872f4752) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0e7f07138eb5acc502401a6b44f50056') in 0.008390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/maria_j_j_ong@Fighting Idle.fbm/maria_specular.png
+  artifactKey: Guid(fb8d194d203a4bc4ba760160bb07fa5a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/maria_j_j_ong@Fighting Idle.fbm/maria_specular.png using Guid(fb8d194d203a4bc4ba760160bb07fa5a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'db9ccd1a030636e028c72ac8b5cb014d') in 0.009337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/maria_j_j_ong@Fighting Idle.fbm/maria_diffuse.png
+  artifactKey: Guid(62cae5f588d88f3498a829afa99fbc82) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/maria_j_j_ong@Fighting Idle.fbm/maria_diffuse.png using Guid(62cae5f588d88f3498a829afa99fbc82) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '175b2783793964265a3fc954e7c9d891') in 0.008277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1001_Diffuse.png
+  artifactKey: Guid(4cce7b0767592fa4486d0520b890288a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1001_Diffuse.png using Guid(4cce7b0767592fa4486d0520b890288a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6621039b9d84ebf4e0797aff6d2e5e2b') in 0.008475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/vanguard_t_choonyung@Idle.fbm/vanguard_specular.png
+  artifactKey: Guid(4036a762c98b0dd49b1014a3ca433fa6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/vanguard_t_choonyung@Idle.fbm/vanguard_specular.png using Guid(4036a762c98b0dd49b1014a3ca433fa6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2c3f3f91aa828ab712c475c7ec0f29d6') in 0.007239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1003_Diffuse.png
+  artifactKey: Guid(0de34ca67029cfe45bf821e6fb91add4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1003_Diffuse.png using Guid(0de34ca67029cfe45bf821e6fb91add4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'eb82b18bd4e0d72e4a09e95a08b8cd3d') in 0.008448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Materials/maria_diffuse.mat
+  artifactKey: Guid(99e277dc319ef144e9e7c79d8571a0d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Materials/maria_diffuse.mat using Guid(99e277dc319ef144e9e7c79d8571a0d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e678c7ce05c7b2cfe78b1870199e7b4c') in 0.007303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1003_Specular.png
+  artifactKey: Guid(21c8efd93aa4448459092f0b5728fed6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1003_Specular.png using Guid(21c8efd93aa4448459092f0b5728fed6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1bdc8fa129903c3f924d2dd09bd33c96') in 0.008395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Materials/Ch05_1002_Diffuse.mat
+  artifactKey: Guid(6799736235093684f81280ca37ef9a70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Materials/Ch05_1002_Diffuse.mat using Guid(6799736235093684f81280ca37ef9a70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '34134aea3863d08943a3debfd89f4a9d') in 0.008985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/Materials/ely-vanguardsoldier-kerwinatienza_diffuse.mat
+  artifactKey: Guid(c4e47ca394f1d1946b61abf6b9ecf203) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/Materials/ely-vanguardsoldier-kerwinatienza_diffuse.mat using Guid(c4e47ca394f1d1946b61abf6b9ecf203) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '688e11f9d36b19d2e09922f322652c64') in 0.005115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1002_Glossiness.png
+  artifactKey: Guid(b0f9c2a7cf44ebd47aeeb8de06db3f97) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1002_Glossiness.png using Guid(b0f9c2a7cf44ebd47aeeb8de06db3f97) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ab5db0cdd64be7894eef791b88daaced') in 0.007750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1001_Glossiness.png
+  artifactKey: Guid(7c62c317f014558499f2da12c7f8741b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1001_Glossiness.png using Guid(7c62c317f014558499f2da12c7f8741b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'cac4e5ffb0124c18284e9e9335b04b9d') in 0.008539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1003_Glossiness.png
+  artifactKey: Guid(d921685b4c9df9f41bf7ec0db7809d89) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1003_Glossiness.png using Guid(d921685b4c9df9f41bf7ec0db7809d89) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f190e9125659efa696d4ec632b99b5dc') in 0.008862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1002_Diffuse.png
+  artifactKey: Guid(277217bf359ba8743825b96aa77e0278) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1002_Diffuse.png using Guid(277217bf359ba8743825b96aa77e0278) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '74472d6d8f776f3c431c43cc8f255056') in 0.008938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/maria_j_j_ong@Fighting Idle.fbm/maria_normal.png
+  artifactKey: Guid(ac8106ad2f5680b49b73e9bd2591118a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/maria_j_j_ong@Fighting Idle.fbm/maria_normal.png using Guid(ac8106ad2f5680b49b73e9bd2591118a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '718a24463331eaa36f7f5cf92a9e05fb') in 0.008349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1002_Emissive.png
+  artifactKey: Guid(d4c6e65259f1e49dcae6fa9330bc1352) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1002_Emissive.png using Guid(d4c6e65259f1e49dcae6fa9330bc1352) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fb29eb5fac397748a2fe734229133d43') in 0.008401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1001_Normal.png
+  artifactKey: Guid(c5550893bb90a314eb6ee767fb08346d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1001_Normal.png using Guid(c5550893bb90a314eb6ee767fb08346d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ed8562e3d3b656399202d6e22d7cccb8') in 0.009073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1001_Emissive.png
+  artifactKey: Guid(c0fd70d85215a4197b488d66a2ce5bcf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1001_Emissive.png using Guid(c0fd70d85215a4197b488d66a2ce5bcf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f1502c498c847acb8288999f55f3d2bb') in 0.008141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1002_Specular.png
+  artifactKey: Guid(4727e6f683f2248c49f80a37e9c8d34f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1002_Specular.png using Guid(4727e6f683f2248c49f80a37e9c8d34f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '68380c50b603b45147eb30fa5e33fbaf') in 0.008483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/ely_k_atienza@Fight Idle.fbm/ely-vanguardsoldier-kerwinatienza_diffuse.png
+  artifactKey: Guid(82b5b37297c348d45a71bdfd587917cf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/ely_k_atienza@Fight Idle.fbm/ely-vanguardsoldier-kerwinatienza_diffuse.png using Guid(82b5b37297c348d45a71bdfd587917cf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f178e847891153b240eb98bcbabe7b2a') in 0.007311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/My assets/Characters/Ely/Forward/ely_k_atienza@Fight Idle.fbm/ely-vanguardsoldier-kerwinatienza_normal.png
+  artifactKey: Guid(7e81925e6d9fbe64aa09271ad859a860) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Forward/ely_k_atienza@Fight Idle.fbm/ely-vanguardsoldier-kerwinatienza_normal.png using Guid(7e81925e6d9fbe64aa09271ad859a860) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c9d8d9472fd3e7e1a86e7446ccf62163') in 0.008973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1002_Normal.png
+  artifactKey: Guid(ec05f4f496dee61428e1d6cf1149a647) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1002_Normal.png using Guid(ec05f4f496dee61428e1d6cf1149a647) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '089974e0274599796c67ab5276fe5eee') in 0.007565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1003_Normal.png
+  artifactKey: Guid(9ded0b826b29c3948bd457f2b9e696e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1003_Normal.png using Guid(9ded0b826b29c3948bd457f2b9e696e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '333e29965128a7bd34e4a0a5ceb53ce5') in 0.010172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1001_Specular.png
+  artifactKey: Guid(e1b81cb457cf4446a8c472ef26bcc0f8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1001_Specular.png using Guid(e1b81cb457cf4446a8c472ef26bcc0f8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd0771ffc03f37657553bea861e3559eb') in 0.009027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Materials/Ch44_1001_Diffuse.mat
+  artifactKey: Guid(bc456ec9fef8a98468b524ca157c7e15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Materials/Ch44_1001_Diffuse.mat using Guid(bc456ec9fef8a98468b524ca157c7e15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '83bcb4549ee11b1200bb64f4e602be14') in 0.007712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1001_Glossiness.png
+  artifactKey: Guid(84c0a2fe81e39e34d86d0c9ed8b0118b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1001_Glossiness.png using Guid(84c0a2fe81e39e34d86d0c9ed8b0118b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a02e17085011dce6b0c2a3e4a29d4c1e') in 0.008593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Sword And Shield Jump Back.anim
+  artifactKey: Guid(2658429a2a9f25746931117f616fb877) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Sword And Shield Jump Back.anim using Guid(2658429a2a9f25746931117f616fb877) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '789346216e65c305923bf589bfc99a57') in 0.013787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Materials/Misc/CFX_WhiteCircle.mat
+  artifactKey: Guid(1fdeac39b28b45742b821b6c8acff998) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Materials/Misc/CFX_WhiteCircle.mat using Guid(1fdeac39b28b45742b821b6c8acff998) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '12e9fd5ea1ebf4b389a9be7e8a4de53d') in 0.003347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Leg Sweep.fbx
+  artifactKey: Guid(40e5058283970504d88ea45d09aaff56) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Leg Sweep.fbx using Guid(40e5058283970504d88ea45d09aaff56) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c9072ffbaa01e18b67d853f699bdc1d4') in 0.010931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/Leg Sweep(1).anim
+  artifactKey: Guid(9a71cffcfac3bab49adfea1a12424724) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/Leg Sweep(1).anim using Guid(9a71cffcfac3bab49adfea1a12424724) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'dfd5f3e51eb95d22f57ce98472933661') in 0.028176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Textures/CFX3_T_Skull.png
+  artifactKey: Guid(6c1c207199cd6d044858440b08f67726) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Textures/CFX3_T_Skull.png using Guid(6c1c207199cd6d044858440b08f67726) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e85720ee85c14b9025ae3d2d7a7259d6') in 0.007227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Hook Punch.fbx
+  artifactKey: Guid(7caade5a6836e834889377db35b4d832) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward attack/eve_j_gonzales@Hook Punch.fbx using Guid(7caade5a6836e834889377db35b4d832) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7feab537c401f265a4faf2265e49ade5') in 0.009399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/My assets/Characters/Vanguard forward/Cross Punch.anim
+  artifactKey: Guid(b871eb6ae0b643440ab16ef1660fe486) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard forward/Cross Punch.anim using Guid(b871eb6ae0b643440ab16ef1660fe486) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '00f71bde1f256bc8701dc407f05654e6') in 0.013994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/My assets/Characters/Eve forward attack/Mma Kick.anim
+  artifactKey: Guid(6e3273e3f982822438f0f8c5decd8fea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward attack/Mma Kick.anim using Guid(6e3273e3f982822438f0f8c5decd8fea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1d77681b0f4bd20b1905262b8028b3a9') in 0.020605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/My assets/Characters/Maria/Back/Male Crouch Pose(1).anim
+  artifactKey: Guid(36a861501cad13941b2d338765fafa3c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Back/Male Crouch Pose(1).anim using Guid(36a861501cad13941b2d338765fafa3c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0a0d16aa2d73d737cb69561cb8273a12') in 0.003349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/My Scripts/P1JumpScript.cs
+  artifactKey: Guid(d2ab6ad4e9792b24fab9728b72a1b28a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/P1JumpScript.cs using Guid(d2ab6ad4e9792b24fab9728b72a1b28a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4a621c870e57aa6330e374ffac75187a') in 0.001673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Mma Kick(2).anim
+  artifactKey: Guid(f357045896941eb41ac3d227ff2a534b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Mma Kick(2).anim using Guid(f357045896941eb41ac3d227ff2a534b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '78299e3e534e494348ae2d825c830920') in 0.021743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Knocked out.anim
+  artifactKey: Guid(6948fb9d5dbd5ec4f869b4fc103152be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Knocked out.anim using Guid(6948fb9d5dbd5ec4f869b4fc103152be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ef466c2d716af41bc36c2d01a2e0a8a7') in 0.012043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/My assets/Characters/EveReactions Back/Falling Back Death(1).anim
+  artifactKey: Guid(a4eaef7cdf78e6944b45d8c9a6e69c2f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/EveReactions Back/Falling Back Death(1).anim using Guid(a4eaef7cdf78e6944b45d8c9a6e69c2f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c070b6e4a9084f97c8ba01c5708985c7') in 0.023967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/My assets/Characters/Ely/Back/Elbow Punching(1).anim
+  artifactKey: Guid(08ac5daa2244d3f45b784ad9d0cbb047) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Back/Elbow Punching(1).anim using Guid(08ac5daa2244d3f45b784ad9d0cbb047) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4d87378f24b86ed9bf5b259e2ad33a61') in 0.011302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Free Game Music Collection/Sci-Fi Music/Free Sci-Fi Track 3 (Loop).wav
+  artifactKey: Guid(f5e578b4b4d36964d928c6d0913fdeab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Free Game Music Collection/Sci-Fi Music/Free Sci-Fi Track 3 (Loop).wav using Guid(f5e578b4b4d36964d928c6d0913fdeab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd60d172d9eabb75e36df408c3c05d243') in 0.038372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs
+  artifactKey: Guid(6fd2e8874f60266498a388d7229a1bac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs using Guid(6fd2e8874f60266498a388d7229a1bac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1dfc4c7416dfebaf4b1dd172b405d43b') in 0.001892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/My assets/Characters/EveReactions Forward/Falling Back Death.anim
+  artifactKey: Guid(d852e8fb552f27b4fbb3dcd00a391ca5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/EveReactions Forward/Falling Back Death.anim using Guid(d852e8fb552f27b4fbb3dcd00a391ca5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b8c73e2f795451407272e7de545cde50') in 0.023782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightFlicker.cs
+  artifactKey: Guid(74eb290077a495b4f8489f895b2cc599) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightFlicker.cs using Guid(74eb290077a495b4f8489f895b2cc599) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8e2bc6479b96ee98261fba8111c4c92e') in 0.001654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/Illegal Headbutt(1).anim
+  artifactKey: Guid(592a3901b6ec6e74da1a9d64bc13aff0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/Illegal Headbutt(1).anim using Guid(592a3901b6ec6e74da1a9d64bc13aff0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '49d54ada46f76bc839e1d5bf213d855d') in 0.014033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/My Scripts/SwitchOnP1.cs
+  artifactKey: Guid(4012400380514714aa3489f93268fab5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My Scripts/SwitchOnP1.cs using Guid(4012400380514714aa3489f93268fab5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '348b5a782472c8dad1cb90da0f8361b7') in 0.001547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/My assets/Characters/Ely/Back/Standing Death Backward 01(1).anim
+  artifactKey: Guid(d146aaab292bb5e4a89ce50d69333608) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Ely/Back/Standing Death Backward 01(1).anim using Guid(d146aaab292bb5e4a89ce50d69333608) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6841d3cb541a9a8fcd29da758d02dd81') in 0.009343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/My assets/Characters/Synth/Back/Kip Up(1).anim
+  artifactKey: Guid(89c990015d71d9d4f8a69c7f5f9252b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Back/Kip Up(1).anim using Guid(89c990015d71d9d4f8a69c7f5f9252b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c7798068bb914fe0dbad660c7887fd3a') in 0.010699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1001_Normal.png
+  artifactKey: Guid(694549e8bd9652d4cb9d3ec620a7879c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Morak/Forward/Fighting Idle.fbm/Ch05_1001_Normal.png using Guid(694549e8bd9652d4cb9d3ec620a7879c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8c4c9ddf1445be0a897911cd2547d774') in 0.008332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/My assets/Characters/Vanguard Back/vanguard_t_choonyung@Mutant Jumping(1).fbx
+  artifactKey: Guid(ec7429e4d14b0a94bb9f6ef68ed7c6dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Vanguard Back/vanguard_t_choonyung@Mutant Jumping(1).fbx using Guid(ec7429e4d14b0a94bb9f6ef68ed7c6dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'db9709df52eefb99cd6c51f79f5b3964') in 0.009933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/My assets/Characters/Eve back attack/eve_j_gonzales@Center Block(1).fbx
+  artifactKey: Guid(b0d63225c9b8fdb439f6fe8a1966a6cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve back attack/eve_j_gonzales@Center Block(1).fbx using Guid(b0d63225c9b8fdb439f6fe8a1966a6cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f4a9c83980b409ec694b0493671ef4fe') in 0.010873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/My assets/Characters/Maria/Back/Sword And Shield Jump(1).anim
+  artifactKey: Guid(6cba140840d0e8644ba435b26a51b71b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Back/Sword And Shield Jump(1).anim using Guid(6cba140840d0e8644ba435b26a51b71b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1d306e422b9703c4d744631659034d51') in 0.013626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/My assets/Characters/Maria/Forward/Blocking.anim
+  artifactKey: Guid(c3683d827d586de4d959fda314cd2c6d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Maria/Forward/Blocking.anim using Guid(c3683d827d586de4d959fda314cd2c6d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7083148527caa4d8e6b3072a0f463f2e') in 0.005191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1001_Specular.png
+  artifactKey: Guid(80c611de4605741118aca9a0c8fa5c05) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Ch44_nonPBR@Mma Idle.fbm/Ch44_1001_Specular.png using Guid(80c611de4605741118aca9a0c8fa5c05) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bab15e4235cf662903a42c6774f404ff') in 0.008543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/My assets/Characters/Eve forward/eve_j_gonzales@Standing Taunt Battlecry.fbx
+  artifactKey: Guid(cc4dd3863373a0e458bc62222c9beebe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Eve forward/eve_j_gonzales@Standing Taunt Battlecry.fbx using Guid(cc4dd3863373a0e458bc62222c9beebe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a357a4403ecf3b028c95e06017b1b2a8') in 0.009868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/My assets/Characters/EveReactions Back/eve_j_gonzales@Knocked Out(1).fbx
+  artifactKey: Guid(f081e93a780e86f4cba5a00c5ae03a6a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/EveReactions Back/eve_j_gonzales@Knocked Out(1).fbx using Guid(f081e93a780e86f4cba5a00c5ae03a6a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3ccf1c6470205dc9051d927674343932') in 0.010304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/My assets/Characters/Synth/Forward/Synth.controller
+  artifactKey: Guid(0a4a452682aa55b46b9077fbaef4082e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/My assets/Characters/Synth/Forward/Synth.controller using Guid(0a4a452682aa55b46b9077fbaef4082e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2d74d3227d067e61d4f0f591cc111b64') in 0.487474 seconds 
+========================================================================
+Received Prepare
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 3.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (141.0 KB). Loaded Objects now: 3885.
+Memory consumption went from 234.5 MB to 234.4 MB.
+Total: 2.948833 ms (FindLiveObjects: 0.131583 ms CreateObjectMapping: 0.039542 ms MarkObjects: 2.699416 ms  DeleteObjects: 0.078041 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
