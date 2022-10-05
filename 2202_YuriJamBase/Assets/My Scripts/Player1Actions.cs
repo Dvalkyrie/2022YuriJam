@@ -8,13 +8,11 @@ public class Player1Actions : MonoBehaviour
     public GameObject Player1;
     private Animator Anim;
     private AnimatorStateInfo Player1Layer0;
+    public AkSoundEngine akSoundEngine;
     private bool HeavyMoving = false;
     private bool HeavyReact = false;
     public float PunchSlideAmt = 2f;
     public float HeavyReactAmt = 4f;
-    private AudioSource MyPlayer;
-    public AudioClip PunchWoosh;
-    public AudioClip KickWoosh;
     public static bool Hits = false;
     public static bool FlyingJumpP1 = false;
 
@@ -22,7 +20,7 @@ public class Player1Actions : MonoBehaviour
     void Start()
     {
         Anim = GetComponent<Animator>();
-        MyPlayer = GetComponent<AudioSource>();
+        akSoundEngine = GetComponent<AkSoundEngine>();
     }
 
     // Update is called once per frame
@@ -85,6 +83,7 @@ public class Player1Actions : MonoBehaviour
                     Anim.SetTrigger("HeavyKick");
                     Anim.SetTrigger("BlockOff");
                     Hits = false;
+                    
                 }
                 if (Input.GetButtonDown("Block"))
                 {
@@ -160,14 +159,14 @@ public class Player1Actions : MonoBehaviour
 
     public void KickWooshSound()
     {
-        MyPlayer.clip = KickWoosh;
-        MyPlayer.Play();
+        //MyPlayer.clip = KickWoosh;
+        //MyPlayer.Play();
     }
 
     public void PunchWooshSound()
     {
-        MyPlayer.clip = PunchWoosh;
-        MyPlayer.Play();
+        //MyPlayer.clip = PunchWoosh;
+        //MyPlayer.Play();
     }
 
     public void RandomAttack()

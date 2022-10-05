@@ -26,9 +26,9 @@
 				<Property Name="GenerateSoundBanks\ShowHierarchy" Type="bool" Value="True"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="jJLZlcyCGU2F0/wRkDxlt8QOEHafbMFBvDur/MpM9B8="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="vAo7gY1jWky6GVcug+/3IugEjIrAdAhLrlL+ElAl/VFdU8lv9U91SopkU3xMmoK/"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="vAo7gY1jWky6GVcug+/3Il1TyW/1T3VKimRTfEyagr/oBIyKwHQIS65S/hJQJf1R"/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="VJturN/zoUukHLZiYnk35gEAAAAAAAAAQAqJCAAAAABwl38IAAAAADCQZgIAAAAA4KQBAgAAAAAkkUQAAAAAAGDydwgAAAAAYEB5CAAAAAAIAAAAAAAAAMjlIQAAAAAAcP1YAAAAAACP/lgAAAAAAHD9WAAAAAAAwKQBAgAAAADApAECAAAAAPjvZwIAAAAAAQAAAJnQwcDoDU5HsQ1JdcMUeMQBAAAAAAAAAEAKiQgAAAAAcJd/CAAAAAAwkGYCAAAAAOCkAQIAAAAAJJFEAAAAAABg8ncIAAAAAGBAeQgAAAAACAAAAAAAAADI5SEAAAAAAHD9WAAAAAAAj/5YAAAAAABw/VgAAAAAAMCkAQIAAAAAwKQBAgAAAAD472cCAAAAAAEAAAA="/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="VJturN/zoUukHLZiYnk35gEAAAAAAAAAkMKXDAAAAABQK5gMAAAAADCQVgIAAAAA4KTxAQAAAAAkkUQAAAAAACAiHgwAAAAA8E+KDAAAAAAIAAAAAAAAAMjlIQAAAAAAcP1YAAAAAACP/lgAAAAAAHD9WAAAAAAAwKTxAQAAAADApPEBAAAAAPjvVwIAAAAAAQAAAJnQwcDoDU5HsQ1JdcMUeMQBAAAAAAAAAJDClwwAAAAAUCuYDAAAAAAwkFYCAAAAAOCk8QEAAAAAJJFEAAAAAAAgIh4MAAAAAPBPigwAAAAACAAAAAAAAADI5SEAAAAAAHD9WAAAAAAAj/5YAAAAAABw/VgAAAAAAMCk8QEAAAAAwKTxAQAAAAD471cCAAAAAAEAAAA="/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
