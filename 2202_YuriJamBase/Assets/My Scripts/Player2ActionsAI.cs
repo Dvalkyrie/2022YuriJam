@@ -13,12 +13,10 @@ public class Player2ActionsAI : MonoBehaviour
     private bool HeavyReact = false;
     public float PunchSlideAmt = 2f;
     public float HeavyReactAmt = 4f;
-    private AudioSource MyPlayer;
-    public AudioClip PunchWoosh;
-    public AudioClip KickWoosh;
     public static bool HitsAI = false;
     public static bool FlyingJumpAI = false;
     public static bool Dazed = false;
+    AkSoundEngine akSoundEngine; 
     private int AttackNumber = 1;
     private bool Attacking = true;
     public float AttackRate = 1.0f;
@@ -41,7 +39,7 @@ public class Player2ActionsAI : MonoBehaviour
             AttackRate = 2.0f;
         }
         Anim = GetComponent<Animator>();
-        MyPlayer = GetComponent<AudioSource>();
+        akSoundEngine = GetComponent<AkSoundEngine>();
         Dazed = false;
     }
 
@@ -179,14 +177,11 @@ public class Player2ActionsAI : MonoBehaviour
 
     public void KickWooshSound()
     {
-        MyPlayer.clip = KickWoosh;
-        MyPlayer.Play();
+
     }
 
     public void PunchWooshSound()
     {
-        MyPlayer.clip = PunchWoosh;
-        MyPlayer.Play();
     }
 
     IEnumerator PunchSlide()

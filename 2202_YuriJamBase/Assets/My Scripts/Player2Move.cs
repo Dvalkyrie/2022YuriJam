@@ -19,11 +19,6 @@ public class Player2Move : MonoBehaviour
     public static bool FacingRightP2 = true;
     public static bool WalkLeft = true;
     public static bool WalkRight = true;
-    public AudioClip LightPunch;
-    public AudioClip HeavyPunch;
-    public AudioClip LightKick;
-    public AudioClip HeavyKick;
-    private AudioSource MyPlayer;
     public GameObject Restrict;
     public Rigidbody RB;
     public Collider BoxCollider;
@@ -39,7 +34,6 @@ public class Player2Move : MonoBehaviour
         Opponent = GameObject.Find("Player1");
         Anim = GetComponentInChildren<Animator>();
         StartCoroutine(FaceRight());
-        MyPlayer = GetComponentInChildren<AudioSource>();
         MoveSpeed = WalkSpeed;
     }
 
@@ -202,26 +196,18 @@ public class Player2Move : MonoBehaviour
             if (other.gameObject.CompareTag("FistLight"))
             {
                 Anim.SetTrigger("HeadReact");
-                MyPlayer.clip = LightPunch;
-                MyPlayer.Play();
             }
             if (other.gameObject.CompareTag("FistHeavy"))
             {
                 Anim.SetTrigger("HeadReact");
-                MyPlayer.clip = HeavyPunch;
-                MyPlayer.Play();
             }
             if (other.gameObject.CompareTag("KickHeavy"))
             {
                 Anim.SetTrigger("BigReact");
-                MyPlayer.clip = HeavyKick;
-                MyPlayer.Play();
             }
             if (other.gameObject.CompareTag("KickLight"))
             {
                 Anim.SetTrigger("HeadReact");
-                MyPlayer.clip = LightKick;
-                MyPlayer.Play();
             }
         }
     }

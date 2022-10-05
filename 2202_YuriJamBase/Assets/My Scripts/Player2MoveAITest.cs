@@ -22,12 +22,6 @@ public class Player2MoveAITest : MonoBehaviour
     public static bool FacingRightAI = false;
     public static bool WalkLeftAI = true;
     public static bool WalkRightAI = true;
-    public AudioClip LightPunch;
-    public AudioClip HeavyPunch;
-    public AudioClip LightKick;
-    public AudioClip HeavyKick;
-    public AudioClip LegSweep;
-    private AudioSource MyPlayer;
     public GameObject Restrict;
     public GameObject RB;
     public Collider BoxCollider;
@@ -49,7 +43,6 @@ public class Player2MoveAITest : MonoBehaviour
         OppDistance = Vector3.Distance(Opponent.transform.position, Player1.transform.position);
         Anim = GetComponentInChildren<Animator>();
         StartCoroutine(FaceRight());
-        MyPlayer = GetComponentInChildren<AudioSource>();
         MoveSpeed = WalkSpeed;
     }
 
@@ -241,8 +234,6 @@ public class Player2MoveAITest : MonoBehaviour
         if (other.gameObject.CompareTag("FistLight"))
         {
             Anim.SetTrigger("HeadHit");
-            MyPlayer.clip = LightPunch;
-            MyPlayer.Play();
             Defend = 3;
             //Defend = Random.Range(0, 5);
             Debug.Log("Defend =" + Defend);
@@ -250,28 +241,21 @@ public class Player2MoveAITest : MonoBehaviour
         if (other.gameObject.CompareTag("FistHeavy"))
         {
             Anim.SetTrigger("HeavyHit");
-            MyPlayer.clip = HeavyPunch;
-            MyPlayer.Play();
         }
         if (other.gameObject.CompareTag("KickHeavy"))
         {
             Anim.SetTrigger("HeavyHit");
-            MyPlayer.clip = HeavyKick;
-            MyPlayer.Play();
+
         }
         if (other.gameObject.CompareTag("KickLight"))
         {
             Anim.SetTrigger("HeavyHit");
-            MyPlayer.clip = LightKick;
-            MyPlayer.Play();
             Defend = 3;
             //Defend = Random.Range(0, 5);
         }
         if (other.gameObject.CompareTag("LegSweep"))
         {
             Anim.SetTrigger("LegSweep");
-            MyPlayer.clip = LegSweep;
-            MyPlayer.Play();
             Defend = Random.Range(0, 5);
         }
     }

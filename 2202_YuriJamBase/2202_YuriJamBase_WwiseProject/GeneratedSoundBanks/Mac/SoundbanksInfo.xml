@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="144">
+	<RootPaths>
+		<ProjectRoot>../../</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="202813374" Type="User" Language="SFX" Hash="{EC64843D-D34C-670A-A819-BCA25758C2C4}">
+			<ShortName>Baker_Soundbank</ShortName>
+			<Path>Baker_Soundbank.bnk</Path>
+			<Media>
+				<File Id="325159523" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>110616__soundscalpel-com__foley-cable-whoosh-air-002.wav</ShortName>
+					<CachePath>SFX/110616__soundscalpel-com__foley-cable-whoosh-air-002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="686941249" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>110615__soundscalpel-com__foley-cable-whoosh-air-001.wav</ShortName>
+					<CachePath>SFX/110615__soundscalpel-com__foley-cable-whoosh-air-001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="696281852" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>B_Hev_Kick.wav</ShortName>
+					<CachePath>SFX/B_Hev_Kick_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2281861868" Name="B_Wooshes" DurationType="OneShot" DurationMin="0.13902083" DurationMax="0.15389584">
+					<MediaRefs>
+						<MediaRef Id="325159523"/>
+						<MediaRef Id="686941249"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2518409713" Name="Play_B_Hev_Kick" DurationType="OneShot" DurationMin="2.1666667" DurationMax="2.1666667">
+					<MediaRefs>
+						<MediaRef Id="696281852"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FEA44BA2-01F7-E3C8-BB7A-8D17D7F3BCE9}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<Sharesets>
+					<Plugin Id="701863527" Name="Inside_My_Head" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</Sharesets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<AuxBusses>
+				<AuxBus Id="3657263530" Name="Verb">
+					<PluginRefs>
+						<Sharesets>
+							<PluginRef Id="701863527"/>
+						</Sharesets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{4369D17E-F804-A7E9-0CB0-361BDD73967D}">
+			<ShortName>Main_Soundbank</ShortName>
+			<Path>Main_Soundbank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2464770639" Type="User" Language="SFX" Hash="{AC5482BF-C738-E139-1FEE-E18AF3C821FC}">
+			<ShortName>Chef_Soundbank</ShortName>
+			<Path>Chef_Soundbank.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{30B795CC-6A4F-1B5B-C5C1-20115B4D2BE8}</FileHash>
+</SoundBanksInfo>

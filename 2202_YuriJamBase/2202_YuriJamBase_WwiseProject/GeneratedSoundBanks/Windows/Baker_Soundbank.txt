@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2281861868	B_Wooshes			\Default Work Unit\B_Wooshes	
+	2518409713	Play_B_Hev_Kick			\Default Work Unit\Play_B_Hev_Kick	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	325159523	whoosh_02	Y:\Documents\GitHub\2022YuriJam\2202_YuriJamBase\2202_YuriJamBase_WwiseProject\.cache\Windows\SFX\110616__soundscalpel-com__foley-cable-whoosh-air-002_10C4C929.wem		\Actor-Mixer Hierarchy\B_SFX\B_Whoosh\whoosh_02		26788
+	686941249	whoosh_01	Y:\Documents\GitHub\2022YuriJam\2202_YuriJamBase\2202_YuriJamBase_WwiseProject\.cache\Windows\SFX\110615__soundscalpel-com__foley-cable-whoosh-air-001_10C4C929.wem		\Actor-Mixer Hierarchy\B_SFX\B_Whoosh\whoosh_01		29644
+	696281852	B_Hev_Kick	Y:\Documents\GitHub\2022YuriJam\2202_YuriJamBase\2202_YuriJamBase_WwiseProject\.cache\Windows\SFX\B_Hev_Kick_10C4C929.wem		\Actor-Mixer Hierarchy\B_SFX\B_Hev_Kick		382296
+

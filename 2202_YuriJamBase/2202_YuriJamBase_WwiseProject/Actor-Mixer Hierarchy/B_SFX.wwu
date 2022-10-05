@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CA3735AE-6505-4EF4-B745-7CE8CD05873E}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="B_SFX" ID="{CA3735AE-6505-4EF4-B745-7CE8CD05873E}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Sound Name="B_Light_Punch" ID="{CA7E7BC1-853A-42DE-A23C-8EFE28ABE163}" ShortID="459741829">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{49E5F404-584C-4A4E-B890-084127935850}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03EE7C63-67BB-4AC4-8AEF-F86D6EAD1EFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="B_Light_Punch" ID="{B1901DA9-44C3-49B6-A668-1A62C4782837}">
+							<Language>SFX</Language>
+							<AudioFile>B_Light_Punch.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="419983052"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="B_Light_Punch" ID="{B1901DA9-44C3-49B6-A668-1A62C4782837}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="B_Hev_Kick" ID="{17B6C1B9-FF05-4B9A-9552-FE7078397D24}" ShortID="313436059">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{49E5F404-584C-4A4E-B890-084127935850}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03EE7C63-67BB-4AC4-8AEF-F86D6EAD1EFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="B_Hev_Kick" ID="{8F8C97F7-A607-4EBB-812F-05484AB908F2}">
+							<Language>SFX</Language>
+							<AudioFile>B_Hev_Kick.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="696281852"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="B_Hev_Kick" ID="{8F8C97F7-A607-4EBB-812F-05484AB908F2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="B_Whoosh" ID="{77D1594A-0877-4C71-942D-E5567147A2A3}" ShortID="826108783">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{49E5F404-584C-4A4E-B890-084127935850}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03EE7C63-67BB-4AC4-8AEF-F86D6EAD1EFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="whoosh_01" ID="{BADCF905-D13C-40CE-99ED-CB8363DF3619}" ShortID="796110716">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{49E5F404-584C-4A4E-B890-084127935850}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03EE7C63-67BB-4AC4-8AEF-F86D6EAD1EFD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="110615__soundscalpel-com__foley-cable-whoosh-air-001" ID="{7B0D3C3A-E3BE-4D3B-83E5-9515335932D0}">
+									<Language>SFX</Language>
+									<AudioFile>110615__soundscalpel-com__foley-cable-whoosh-air-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="686941249"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="110615__soundscalpel-com__foley-cable-whoosh-air-001" ID="{7B0D3C3A-E3BE-4D3B-83E5-9515335932D0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="whoosh_02" ID="{0A9C7858-AF75-465F-9B1F-07016264E913}" ShortID="553166410">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{49E5F404-584C-4A4E-B890-084127935850}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03EE7C63-67BB-4AC4-8AEF-F86D6EAD1EFD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="110616__soundscalpel-com__foley-cable-whoosh-air-002" ID="{F8773A19-9D89-4B5B-9BB4-20498C6B5749}">
+									<Language>SFX</Language>
+									<AudioFile>110616__soundscalpel-com__foley-cable-whoosh-air-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="325159523"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="110616__soundscalpel-com__foley-cable-whoosh-air-002" ID="{F8773A19-9D89-4B5B-9BB4-20498C6B5749}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

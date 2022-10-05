@@ -118,6 +118,7 @@ public class Player1Actions : MonoBehaviour
                 {
                     Anim.SetTrigger("HeavyKick");
                     Hits = false;
+
                 }
             }
         }
