@@ -13,45 +13,19 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID B_WOOSHES = 2281861868U;
-        static const AkUniqueID C_WOOSHES = 2695686953U;
-        static const AkUniqueID PLAY_B_HEV_KICK = 2518409713U;
+        static const AkUniqueID B_HEAVY_KICK = 1766291490U;
     } // namespace EVENTS
-
-    namespace STATES
-    {
-        namespace BATTLE_MUSIC
-        {
-            static const AkUniqueID GROUP = 3832016031U;
-
-            namespace STATE
-            {
-                static const AkUniqueID B_WINCONDITION = 3785141713U;
-                static const AkUniqueID C_WINCONDITION = 427651874U;
-                static const AkUniqueID EVEN_WINCONDITION = 4000310717U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace BATTLE_MUSIC
-
-    } // namespace STATES
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID BAKER_SOUNDBANK = 202813374U;
-        static const AkUniqueID CHEF_SOUNDBANK = 2464770639U;
-        static const AkUniqueID MAIN_SOUNDBANK = 2228651116U;
+        static const AkUniqueID MAIN = 3161908922U;
     } // namespace BANKS
 
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
-
-    namespace AUX_BUSSES
-    {
-        static const AkUniqueID VERB = 3657263530U;
-    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
