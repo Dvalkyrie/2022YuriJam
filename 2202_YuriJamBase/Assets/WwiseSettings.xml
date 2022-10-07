@@ -11,7 +11,7 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2022.1.0.7985/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../2202_YuriJamBase_WwiseProject/2202_YuriJamBase_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../../../../Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/2022YuriJam/2202_YuriJamBase/2022_YuriJamBase/2022_YuriJamBase.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>
