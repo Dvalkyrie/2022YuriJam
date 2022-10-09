@@ -8,7 +8,7 @@ public class Player1Actions : MonoBehaviour
     public GameObject Player1;
     private Animator Anim;
     private AnimatorStateInfo Player1Layer0;
-    public AkSoundEngine akSoundEngine;
+    //public AkSoundEngine akSoundEngine;
     private bool HeavyMoving = false;
     private bool HeavyReact = false;
     public float PunchSlideAmt = 2f;
@@ -20,7 +20,7 @@ public class Player1Actions : MonoBehaviour
     void Start()
     {
         Anim = GetComponent<Animator>();
-        akSoundEngine = GetComponent<AkSoundEngine>();
+        //akSoundEngine = GetComponent<AkSoundEngine>();
     }
 
     // Update is called once per frame

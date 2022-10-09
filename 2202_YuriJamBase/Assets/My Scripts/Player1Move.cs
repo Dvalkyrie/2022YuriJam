@@ -15,7 +15,7 @@ public class Player1Move : MonoBehaviour
     private bool CanWalkRight = true;
     public GameObject Player1;
     public GameObject Opponent;
-    AkSoundEngine akSoundEngine;
+    //AkSoundEngine akSoundEngine;
     private Vector3 OppPosition;
     public static bool FacingLeft = false;
     public static bool FacingRight = true;
@@ -41,7 +41,7 @@ public class Player1Move : MonoBehaviour
         WinCondition = GameObject.Find("WinCondition");
         WinCondition.gameObject.SetActive(false);
         Anim = GetComponentInChildren<Animator>();
-        akSoundEngine = GetComponent<AkSoundEngine> ();
+        //akSoundEngine = GetComponent<AkSoundEngine> ();
         StartCoroutine(FaceRight());
         MoveSpeed = WalkSpeed;
     }

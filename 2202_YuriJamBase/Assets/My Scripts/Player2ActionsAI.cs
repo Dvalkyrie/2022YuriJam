@@ -16,7 +16,7 @@ public class Player2ActionsAI : MonoBehaviour
     public static bool HitsAI = false;
     public static bool FlyingJumpAI = false;
     public static bool Dazed = false;
-    AkSoundEngine akSoundEngine; 
+    //AkSoundEngine akSoundEngine; 
     private int AttackNumber = 1;
     private bool Attacking = true;
     public float AttackRate = 1.0f;
@@ -39,7 +39,7 @@ public class Player2ActionsAI : MonoBehaviour
             AttackRate = 2.0f;
         }
         Anim = GetComponent<Animator>();
-        akSoundEngine = GetComponent<AkSoundEngine>();
+        //akSoundEngine = GetComponent<AkSoundEngine>();
         Dazed = false;
     }
 
