@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -427,10 +427,6 @@ GameObject:
   m_Component:
   - component: {fileID: 358462896}
   - component: {fileID: 358462895}
-  - component: {fileID: 358462898}
-  - component: {fileID: 358462897}
-  - component: {fileID: 358462900}
-  - component: {fileID: 358462899}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -496,54 +492,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &358462897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358462893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a99ac8cbda74d77bfcdf6f97d9b306, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &358462898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358462893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a2d23727e3af4e1586edff8350415bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &358462899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358462893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fe7deb5979f442f79915b92cde5fc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &358462900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358462893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0d1b2a098641475891ed23769f0fd45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &623190507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -769,7 +717,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &646584548
 BoxCollider:
@@ -851,7 +799,7 @@ GameObject:
   - component: {fileID: 930614969}
   - component: {fileID: 930614968}
   - component: {fileID: 930614967}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: P1Detector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1026,8 +974,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1344349017}
   - component: {fileID: 1344349019}
-  - component: {fileID: 1344349024}
-  - component: {fileID: 1344349023}
   - component: {fileID: 1344349026}
   m_Layer: 0
   m_Name: BHeavyKick
@@ -1067,30 +1013,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1344349023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344349016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f003da137db449babe6fc8e1cc804e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1344349024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344349016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0d1b2a098641475891ed23769f0fd45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1344349026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1171,7 +1093,7 @@ GameObject:
   - component: {fileID: 1623345707}
   - component: {fileID: 1623345706}
   - component: {fileID: 1623345705}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: P1JumpActivator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1255,7 +1177,7 @@ GameObject:
   - component: {fileID: 1868203146}
   - component: {fileID: 1868203145}
   - component: {fileID: 1868203144}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BLightKick
   m_TagString: KickLight
   m_Icon: {fileID: 0}
