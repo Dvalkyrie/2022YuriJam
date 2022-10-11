@@ -15,7 +15,10 @@ public class Player1Move : MonoBehaviour
     private bool CanWalkRight = true;
     public GameObject Player1;
     public GameObject Opponent;
-    //AkSoundEngine akSoundEngine;
+    public AudioClip LightPunch;
+    public AudioClip HeavyPunch;
+    public AudioClip LightKick;
+    public AudioClip HeavyKick;
     private Vector3 OppPosition;
     public static bool FacingLeft = false;
     public static bool FacingRight = true;
@@ -41,7 +44,7 @@ public class Player1Move : MonoBehaviour
         WinCondition = GameObject.Find("WinCondition");
         WinCondition.gameObject.SetActive(false);
         Anim = GetComponentInChildren<Animator>();
-        //akSoundEngine = GetComponent<AkSoundEngine> ();
+        //MyPlayer = GetComponentInChildren<AudioSource>();
         StartCoroutine(FaceRight());
         MoveSpeed = WalkSpeed;
     }
@@ -238,19 +241,27 @@ public class Player1Move : MonoBehaviour
             if (other.gameObject.CompareTag("FistLight"))
             {
                 Anim.SetTrigger("HeadReact");
+                //MyPlayer.clip = LightPunch;
+                //MyPlayer.Play();
             }
             if (other.gameObject.CompareTag("FistHeavy"))
             {
                 Anim.SetTrigger("HeadReact");
+                //MyPlayer.clip = HeavyPunch;
+                //MyPlayer.Play();
 
             }
             if (other.gameObject.CompareTag("KickHeavy"))
             {
                 Anim.SetTrigger("BigReact");
+                //MyPlayer.clip = HeavyKick;
+                //MyPlayer.Play();
             }
             if (other.gameObject.CompareTag("KickLight"))
             {
                 Anim.SetTrigger("HeadReact");
+                //MyPlayer.clip = LightKick;
+                //MyPlayer.Play();
             }
         }
     }

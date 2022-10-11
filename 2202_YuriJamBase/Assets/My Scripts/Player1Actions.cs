@@ -8,7 +8,9 @@ public class Player1Actions : MonoBehaviour
     public GameObject Player1;
     private Animator Anim;
     private AnimatorStateInfo Player1Layer0;
-    //public AkSoundEngine akSoundEngine;
+    private AudioSource MyPlayer;
+    public AudioClip PunchWhoosh;
+    public AudioClip KickWhoosh;
     private bool HeavyMoving = false;
     private bool HeavyReact = false;
     public float PunchSlideAmt = 2f;
@@ -20,7 +22,7 @@ public class Player1Actions : MonoBehaviour
     void Start()
     {
         Anim = GetComponent<Animator>();
-        //akSoundEngine = GetComponent<AkSoundEngine>();
+        MyPlayer = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -159,14 +161,14 @@ public class Player1Actions : MonoBehaviour
 
     public void KickWooshSound()
     {
-        //MyPlayer.clip = KickWoosh;
-        //MyPlayer.Play();
+        MyPlayer.clip = KickWhoosh;
+        MyPlayer.Play();
     }
 
     public void PunchWooshSound()
     {
-        //MyPlayer.clip = PunchWoosh;
-        //MyPlayer.Play();
+        MyPlayer.clip = PunchWhoosh;
+        MyPlayer.Play();
     }
 
     public void RandomAttack()
