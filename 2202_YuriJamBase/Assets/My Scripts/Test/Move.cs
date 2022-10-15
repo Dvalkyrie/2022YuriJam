@@ -19,6 +19,9 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // check the current state of the Animator
+        Player1Layer0 = Anim.GetCurrentAnimatorStateInfo(0);
+
         if(Player1Layer0.IsTag("Motion"))
         {
             // Move forward and backward
