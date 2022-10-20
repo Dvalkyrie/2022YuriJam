@@ -62,21 +62,39 @@ public class Player1Actions : MonoBehaviour
             //Standing attacks
             if (Player1Layer0.IsTag("Motion") || Player1Layer0.IsTag("Block"))
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (Input.GetButtonDown("lightPunch"))
                 {
                     Anim.SetTrigger("LightPunch");
                     Anim.SetTrigger("BlockOff");
                     Hits = false;
                 }
-                if (Input.GetButtonDown("Fire2"))
+                if (Input.GetButtonDown("mediumPunch"))
+                {
+                    Anim.SetTrigger("MediumPunch");
+                    Anim.SetTrigger("BlockOff");
+                    Hits = false;
+                }
+                if (Input.GetButtonDown("heavyPunch"))
                 {
                     Anim.SetTrigger("HeavyPunch");
                     Anim.SetTrigger("BlockOff");
                     Hits = false;
                 }
-                if (Input.GetButtonDown("Fire3"))
+                if (Input.GetButtonDown("lightKick"))
                 {
                     Anim.SetTrigger("LightKick");
+                    Anim.SetTrigger("BlockOff");
+                    Hits = false;
+                }
+                if (Input.GetButtonDown("mediumKick"))
+                {
+                    Anim.SetTrigger("MediumKick");
+                    Anim.SetTrigger("BlockOff");
+                    Hits = false;
+                }
+                if (Input.GetButtonDown("heavyKick"))
+                {
+                    Anim.SetTrigger("HeavyKick");
                     Anim.SetTrigger("BlockOff");
                     Hits = false;
                 }
@@ -102,12 +120,24 @@ public class Player1Actions : MonoBehaviour
             }
 
 
-            //Crouching attack
+            //Crouching attacks
             if (Player1Layer0.IsTag("Crouching"))
             {
-                if (Input.GetButtonDown("Fire3"))
+                if (Input.GetButtonDown("lightPunch") || Input.GetButtonDown("lightKick"))
                 {
                     Anim.SetTrigger("LightKick");
+                    Hits = false;
+                }
+
+                if (Input.GetButtonDown("mediumPunch") || Input.GetButtonDown("mediumKick"))
+                {
+                    Anim.SetTrigger("MediumKick");
+                    Hits = false;
+                }
+
+                if (Input.GetButtonDown("heavyPunch") || Input.GetButtonDown("heavyKick"))
+                {
+                    Anim.SetTrigger("HeavyPunch");
                     Hits = false;
                 }
             }

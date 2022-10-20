@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - P2SpaceDetector
+  - Player1
+  - P2Left
+  - Player2
+  - KickLight
+  - P2Right
+  - P1SpaceDetector
+  - P1Right
+  - P1Left
+  - FxTemporaire
+  - KickHeavy
+  - FistLight
+  - FistHeavy
+  - FistMedium
   layers:
   - Default
   - TransparentFX

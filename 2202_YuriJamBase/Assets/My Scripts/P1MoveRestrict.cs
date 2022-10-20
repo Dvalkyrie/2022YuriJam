@@ -7,6 +7,7 @@ public class P1MoveRestrict : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // If Player collide with opponent, disable movement on the evaluated side
         if(other.gameObject.CompareTag("P2Left"))
         {
             Player1Move.WalkRightP1 = false;
@@ -19,6 +20,7 @@ public class P1MoveRestrict : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        // When collision end, give back the ability to move this side
         if (other.gameObject.CompareTag("P2Left"))
         {
             Player1Move.WalkRightP1 = true;

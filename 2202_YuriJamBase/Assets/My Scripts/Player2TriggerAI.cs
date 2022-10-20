@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player2TriggerAI : MonoBehaviour
 {
-    public Collider Col;
+    public Collider2D Col;
     public float DamageAmt = 0.1f;
 
     public bool EmitFX = false;
@@ -49,14 +49,13 @@ public class Player2TriggerAI : MonoBehaviour
             }
         }
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (SaveScript.P1Reacting == false)
         {
             if (Player2 == true)
             {
-                if (other.gameObject.CompareTag("Player1"))
+                if (collision.gameObject.CompareTag("Player1"))
                 {
                     if (EmitFX == true)
                     {
@@ -76,7 +75,7 @@ public class Player2TriggerAI : MonoBehaviour
         {
             if (Player2 == false)
             {
-                if (other.gameObject.CompareTag("Player2"))
+                if (collision.gameObject.CompareTag("Player2"))
                 {
                     if (EmitFX == true)
                     {

@@ -4,22 +4,23 @@ using UnityEngine;
 
 public class Player2Trigger : MonoBehaviour
 {
-    public Collider Col;
+    public Collider2D Col;
     public float DamageAmt = 0.1f;
 
     public bool EmitFX = false;
-    public ParticleSystem Particles;
+    public GameObject ParticlePrefab;
+    // public ParticleSystem Particles;
     public float PauseSpeed = 0.6f;
-    public string ParticleType = "P11";
+    //public string ParticleType = "P11";
 
     public bool Player2 = true;
 
-    private GameObject ChosenParticles;
+    //private GameObject ChosenParticles;
 
     private void Start()
     {
-        ChosenParticles = GameObject.Find(ParticleType);
-        Particles = ChosenParticles.gameObject.GetComponent<ParticleSystem>();
+        // ChosenParticles = GameObject.Find(ParticleType);
+        //Particles = ChosenParticles.gameObject.GetComponent<ParticleSystem>();
     }
 
 
@@ -50,17 +51,19 @@ public class Player2Trigger : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Collistion with trigger");
         if (SaveScript.P1Reacting == false)
         {
             if (Player2 == true)
             {
-                if (other.gameObject.CompareTag("Player1"))
+                if (collision.gameObject.CompareTag("Player1"))
                 {
                     if (EmitFX == true)
                     {
-                        Particles.Play();
+                        Instantiate(ParticlePrefab, transform.parent.transform);
+                        // Particles.Play();
                         Time.timeScale = PauseSpeed;
                     }
                     Player2Actions.HitsP2 = true;
@@ -74,24 +77,24 @@ public class Player2Trigger : MonoBehaviour
         }
         if(SaveScript.P2Reacting == false)
         { 
-        if (Player2 == false)
-        {
-            if (other.gameObject.CompareTag("Player2"))
+            if (Player2 == false)
             {
-                if (EmitFX == true)
+                if (collision.gameObject.CompareTag("Player2"))
                 {
-                    Particles.Play();
-                    Time.timeScale = PauseSpeed;
-                }
-                Player1Actions.Hits = true;
-                SaveScript.Player2Health -= DamageAmt;
-                if (SaveScript.Player2Timer < 2.0f)
-                {
-                    SaveScript.Player2Timer += 2.0f;
-                }
+                    if (EmitFX == true)
+                    {
+                        Instantiate(ParticlePrefab, transform.parent.transform);
+                        Time.timeScale = PauseSpeed;
+                    }
+                    Player1Actions.Hits = true;
+                    SaveScript.Player2Health -= DamageAmt;
+                    if (SaveScript.Player2Timer < 2.0f)
+                    {
+                        SaveScript.Player2Timer += 2.0f;
+                    }
 
+                }
             }
         }
-      }
     }
 }
