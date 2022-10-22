@@ -137,7 +137,7 @@ public class Player1Actions : MonoBehaviour
 
                 if (Input.GetButtonDown("heavyPunch") || Input.GetButtonDown("heavyKick"))
                 {
-                    Anim.SetTrigger("HeavyPunch");
+                    Anim.SetTrigger("HeavyKick");
                     Hits = false;
                 }
             }
