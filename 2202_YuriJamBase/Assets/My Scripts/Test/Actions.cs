@@ -65,6 +65,7 @@ public class Actions : MonoBehaviour
             }
         }
 
+        //TODO: need to recheck with updated inputs
         if (Player1Layer0.IsTag("Block"))
         {
             if (Input.GetButtonUp("Block"))
