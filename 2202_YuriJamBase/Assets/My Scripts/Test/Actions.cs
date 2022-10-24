@@ -65,7 +65,7 @@ public class Actions : MonoBehaviour
             }
         }
 
-        //TODO: need to recheck with updated inputs
+        //TODO: need to recheck with updated inputs maybe move this to Move since its where left and right are controlled.
         if (Player1Layer0.IsTag("Block"))
         {
             if (Input.GetButtonUp("Block"))
