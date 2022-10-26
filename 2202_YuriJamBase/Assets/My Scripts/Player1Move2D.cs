@@ -17,9 +17,15 @@ public class Player1Move2D : MonoBehaviour
     [HideInInspector]
     public GameObject Opponent;
     public AudioClip LightPunch;
+    public AudioClip MediumPunch;
     public AudioClip HeavyPunch;
     public AudioClip LightKick;
+    public AudioClip MediumKick;
     public AudioClip HeavyKick;
+    public AudioClip LightCrouch;
+    public AudioClip MediumCrouch;
+    public AudioClip HeavyCrouch;
+    private AudioSource MioSFX;
     private Vector3 OppPosition;
     public static bool FacingLeft = false;
     public static bool FacingRight = true;
@@ -53,6 +59,7 @@ public class Player1Move2D : MonoBehaviour
         CapsuleCollider = GetComponent<CircleCollider2D>();
         RB = GetComponent<Rigidbody2D>();
         StartCoroutine(FaceRight());
+        MioSFX = GetComponent<AudioSource>();
         MoveSpeed = WalkSpeed;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -250,20 +257,20 @@ public class Player1Move2D : MonoBehaviour
             if (collision.gameObject.CompareTag("FistLight"))
             {
                 Anim.SetTrigger("Hit1");
-                //MyPlayer.clip = LightPunch;
-                //MyPlayer.Play();
+                MioSFX.clip = LightPunch;
+                MioSFX.Play();
             }
             if (collision.gameObject.CompareTag("FistMedium"))
             {
                 Anim.SetTrigger("Hit2");
-                //MyPlayer.clip = HeavyPunch;
-                //MyPlayer.Play();
+                MioSFX.clip = MediumPunch;
+                MioSFX.Play();
             }
             if (collision.gameObject.CompareTag("FistHeavy"))
             {
                 Anim.SetTrigger("Hit3");
-                //MyPlayer.clip = HeavyPunch;
-                //MyPlayer.Play();
+                MioSFX.clip = HeavyPunch;
+                MioSFX.Play();
 
             }
         }
