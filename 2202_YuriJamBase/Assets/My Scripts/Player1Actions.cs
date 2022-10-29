@@ -68,36 +68,48 @@ public class Player1Actions : MonoBehaviour
                     Anim.SetTrigger("LightPunch");
                     Anim.SetTrigger("BlockOff");
                     Hits = false;
+                    //MioSFX.clip = LightPunch;
+                    //MioSFX.Play();
                 }
                 if (Input.GetButtonDown("mediumPunch"))
                 {
                     Anim.SetTrigger("MediumPunch");
                     Anim.SetTrigger("BlockOff");
                     Hits = false;
+                    //MioSFX.clip = MedPunch;
+                    //MioSFX.Play();
                 }
                 if (Input.GetButtonDown("heavyPunch"))
                 {
                     Anim.SetTrigger("HeavyPunch");
                     Anim.SetTrigger("BlockOff");
                     Hits = false;
+                    //MioSFX.clip = HevPunch;
+                    //MioSFX.Play();
                 }
                 if (Input.GetButtonDown("lightKick"))
                 {
                     Anim.SetTrigger("LightKick");
                     Anim.SetTrigger("BlockOff");
                     Hits = false;
+                    //MioSFX.clip = LightKick;
+                    //MioSFX.Play();
                 }
                 if (Input.GetButtonDown("mediumKick"))
                 {
                     Anim.SetTrigger("MediumKick");
                     Anim.SetTrigger("BlockOff");
                     Hits = false;
+                    //MioSFX.clip = MedKick;
+                    //MioSFX.Play();
                 }
                 if (Input.GetButtonDown("heavyKick"))
                 {
                     Anim.SetTrigger("HeavyKick");
                     Anim.SetTrigger("BlockOff");
                     Hits = false;
+                    //MioSFX.clip = HevKick;
+                    //MioSFX.Play();
                 }
                 if (Input.GetButtonDown("Jump"))
                 {
@@ -128,18 +140,24 @@ public class Player1Actions : MonoBehaviour
                 {
                     Anim.SetTrigger("LightKick");
                     Hits = false;
+                    //MioSFX.clip = LightCrouch;
+                    //MioSFX.Play();
                 }
 
                 if (Input.GetButtonDown("mediumPunch") || Input.GetButtonDown("mediumKick"))
                 {
                     Anim.SetTrigger("MediumKick");
                     Hits = false;
+                    //MioSFX.clip = MedCrouch;
+                    //MioSFX.Play();
                 }
 
                 if (Input.GetButtonDown("heavyPunch") || Input.GetButtonDown("heavyKick"))
                 {
                     Anim.SetTrigger("HeavyKick");
                     Hits = false;
+                    //MioSFX.clip = HevCrouch;
+                    //MioSFX.Play();
                 }
             }
 

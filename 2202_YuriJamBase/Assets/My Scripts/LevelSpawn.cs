@@ -14,6 +14,7 @@ public class LevelSpawn : MonoBehaviour
     public GameObject Background;
     public Material NewMaterial;
     private AudioSource MyPlayer;
+    public AudioSource themePlayer;
 
     public Material BG1;
     public Material BG2;
@@ -35,6 +36,7 @@ public class LevelSpawn : MonoBehaviour
 
     public int Scene = 0;
 
+    public AudioClip[] opponentThemes;
     // Start is called before the first frame update
     void Start()
     {
@@ -85,7 +87,26 @@ public class LevelSpawn : MonoBehaviour
         Player2.gameObject.GetComponent<SwitchOnP2>().enabled = true;
         Background.gameObject.GetComponent<Renderer>().material = NewMaterial;
         StartCoroutine(SpawnPlayers());
+        themePlayer.clip = opponentThemes[SaveScript.playerNum];
+        themePlayer.Play();
 
+    }
+
+    private void Update()
+    {
+        if(SaveScript.Player1Health <=0.5f)
+        {
+            MyPlayer.volume -= 0.8f * Time.deltaTime;
+            if (themePlayer.volume < 0.8f)
+            {
+                themePlayer.volume += 0.8f * Time.deltaTime;
+            }
+
+        }
+        if(SaveScript.Player1Health <= 0.0f)
+        {
+            themePlayer.volume -= 100;
+        }
     }
 
     IEnumerator SpawnPlayers()

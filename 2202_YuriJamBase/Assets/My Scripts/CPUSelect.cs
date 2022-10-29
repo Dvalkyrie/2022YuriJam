@@ -60,6 +60,7 @@ public class CPUSelect : MonoBehaviour
                 Player2Name.text = "Eve";
                 CharacterSelectionP2 = "EveP2";
                 ChangeCharacter = false;
+                SaveScript.playerNum = 0;
             }
             if (IconNumber == 2)
             {
@@ -69,6 +70,7 @@ public class CPUSelect : MonoBehaviour
                 Player2Name.text = "Morak";
                 CharacterSelectionP2 = "MorakP2";
                 ChangeCharacter = false;
+                SaveScript.playerNum = 1;
             }
             if (IconNumber == 3)
             {
@@ -78,6 +80,7 @@ public class CPUSelect : MonoBehaviour
                 Player2Name.text = "Maria";
                 CharacterSelectionP2 = "MariaP2";
                 ChangeCharacter = false;
+                SaveScript.playerNum = 2;
             }
             if (IconNumber == 4)
             {
@@ -87,6 +90,7 @@ public class CPUSelect : MonoBehaviour
                 Player2Name.text = "Ely";
                 CharacterSelectionP2 = "ElyP2";
                 ChangeCharacter = false;
+                SaveScript.playerNum = 3;
             }
             if (IconNumber == 5)
             {
@@ -96,6 +100,7 @@ public class CPUSelect : MonoBehaviour
                 Player2Name.text = "Synth";
                 CharacterSelectionP2 = "SynthP2";
                 ChangeCharacter = false;
+                SaveScript.playerNum = 4;
             }
             if (IconNumber == 6)
             {
@@ -105,6 +110,7 @@ public class CPUSelect : MonoBehaviour
                 Player2Name.text = "Vanguard";
                 CharacterSelectionP2 = "VanguardP2";
                 ChangeCharacter = false;
+                SaveScript.playerNum = 5;
             }
         }
 

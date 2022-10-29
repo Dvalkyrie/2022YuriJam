@@ -23,10 +23,11 @@ public class SaveScript : MonoBehaviour
     public static bool P1Reacting = false;
     public static bool P2Reacting = false;
     private int FrameRateTarget = 120;
-    //public AudioMixer MusicMixer;
-    //public AudioMixer SFXMixer;
+    public AudioMixer MusicMixer;
+    public AudioMixer SFXMixer;
     public static float MusicVol = 0;
     public static float SFXVol = 2;
+    public static int playerNum = 0;
 
 
     // Start is called before the first frame update
