@@ -19,7 +19,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.06666667
+        time: 0.016666668
         value: {x: -0.032, y: 0.067, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -245,7 +245,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.06666667
+        time: 0.016666668
         value: -0.032
         inSlope: 0
         outSlope: 0
@@ -291,7 +291,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.06666667
+        time: 0.016666668
         value: 0.067
         inSlope: 0
         outSlope: 0
@@ -337,7 +337,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.06666667
+        time: 0.016666668
         value: 0
         inSlope: 0
         outSlope: 0

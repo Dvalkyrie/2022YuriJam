@@ -11,8 +11,8 @@ public class LoseWin : MonoBehaviour
     public GameObject Player2WinText;
     public AudioSource MyPlayer;
     public AudioClip LoseAudio;
-    public AudioClip Player1WindAudio;
-    public AudioClip Player2WindAudio;
+    public AudioClip Player1WinsAudio;
+    public AudioClip Player2WinsAudio;
     public float PauseTime = 1.0f;
 
     private int Scene = 3;
@@ -42,7 +42,7 @@ public class LoseWin : MonoBehaviour
             else if (SaveScript.Player1Mode == false)
             {
                 Player1WinText.gameObject.SetActive(true);
-                MyPlayer.clip = Player1WindAudio;
+                MyPlayer.clip = Player1WinsAudio;
                 MyPlayer.Play();
                 SaveScript.Player1Wins++;
             }
@@ -59,7 +59,7 @@ public class LoseWin : MonoBehaviour
             else if (SaveScript.Player1Mode == false)
             {
                 Player2WinText.gameObject.SetActive(true);
-                MyPlayer.clip = Player2WindAudio;
+                MyPlayer.clip = Player2WinsAudio;
                 MyPlayer.Play();
                 SaveScript.Player2Wins++;
             }
