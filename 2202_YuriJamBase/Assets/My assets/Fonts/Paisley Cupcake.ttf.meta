@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 797655e9626f8498fa9f0c8eb00c35b8
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Paisley Cupcake
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5745b0aae71a44380bae8ef4ea57c14b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4c831d060ee8f4f239016c24f6e17d14
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - The Barethos
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9a10098d3a48046668c4a14692a33e06, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
