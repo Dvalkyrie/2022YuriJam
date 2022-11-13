@@ -236,8 +236,8 @@ public class Player2Move2D : MonoBehaviour
             FacingLeftP2 = false;
             FacingRightP2 = true;
             yield return new WaitForSeconds(0.15f);
-            spriteRenderer.flipX = false;
-            //Player1.transform.Rotate(0, -180, 0);
+            //spriteRenderer.flipX = false;
+            this.transform.Rotate(0, -180, 0);
             //Anim.SetLayerWeight(1, 0);
         }
 
@@ -249,8 +249,8 @@ public class Player2Move2D : MonoBehaviour
             FacingRightP2 = false;
             FacingLeftP2 = true;
             yield return new WaitForSeconds(0.15f);
-            spriteRenderer.flipX = true;
-            //Player1.transform.Rotate(0, 180, 0);
+            //spriteRenderer.flipX = true;
+            this.transform.Rotate(0, 180, 0);
             //Anim.SetLayerWeight(1, 1);
         }
 
