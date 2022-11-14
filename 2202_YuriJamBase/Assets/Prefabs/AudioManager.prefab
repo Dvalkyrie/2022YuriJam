@@ -193,6 +193,13 @@ MonoBehaviour:
     pitch: 0
     loop: 0
     source: {fileID: 0}
+  - name: UIaudio
+    clip: {fileID: 8300000, guid: 0c97e3b17f88344f1bc45689c65e7a28, type: 3}
+    audioMixer: {fileID: 24300002, guid: cc30d971240bf2c4baa7cb775c9be452, type: 2}
+    volume: 1
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
 --- !u!82 &4551521046772463918
 AudioSource:
   m_ObjectHideFlags: 0
