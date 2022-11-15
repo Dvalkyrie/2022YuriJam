@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using static victoryScreenManager;
 
 public class victoryScreenManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class victoryScreenManager : MonoBehaviour
     public enum Character { Mio, Beatriz};
 
     public Player winnerP;
-    public Character winnverC;
+    public Character winnerC;
 
     public bool valueChanged = false;
 
@@ -40,6 +41,7 @@ public class victoryScreenManager : MonoBehaviour
     void Start()
     {
         setUi();
+        GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -63,7 +65,7 @@ public class victoryScreenManager : MonoBehaviour
             PlayerWinUI.text = "P2";
             PlayerLooseUI.text = "P1";
         }
-        if (winnverC == Character.Mio)
+        if (winnerC == Character.Mio)
         {
             triangleWinUI.color = mioColor;
             triangleLooseUI.color = beaColor;

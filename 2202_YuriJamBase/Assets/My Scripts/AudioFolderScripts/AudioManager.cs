@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
-            //s.source.outputAudioMixerGroup = audioMixer;
+            //s.source.outputAudioMixerGroup = AudioMixer();
             s.source.clip = s.clip;
 
             s.source.volume = s.volume;
@@ -26,7 +26,10 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Play("AutoPlay1");
+        Play("DefaultTheme");
+        Play("BakerTheme");
+        Play("ChefTheme");
+
     }
 
     public void Play(string name)
