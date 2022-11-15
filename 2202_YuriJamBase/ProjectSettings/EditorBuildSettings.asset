@@ -6,21 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/3D_scenes/MainMenu.unity
-    guid: 9e754b60fbeb4864098a61194e134bea
+    path: Assets/Scenes/2D_scenes/2D_MainMenu.unity
+    guid: 03b2b23b67f645e4db754a371ab0c00a
   - enabled: 1
-    path: Assets/Scenes/3D_scenes/CharacterSelect.unity
-    guid: 5392cdc0c698e53409ac64f5a6166e18
+    path: Assets/Scenes/2D_scenes/2D_Comic.unity
+    guid: 31f41600a69e49e4f98f98943298645c
   - enabled: 1
-    path: Assets/Scenes/3D_scenes/LevelSelect.unity
-    guid: 7eb2eafd7eb515041aa1127adfa78b85
+    path: Assets/Scenes/2D_scenes/2D_CharacterSelection.unity
+    guid: 925d3fe4d79402445aeae1761e8777c2
   - enabled: 1
-    path: Assets/Scenes/3D_scenes/Level 1.unity
-    guid: 1702ec7b47e98eb499e9033e62177da1
+    path: Assets/Scenes/2D_scenes/AnimTest.unity
+    guid: 58a9e0070e173af4c9494602bd582f1d
   - enabled: 1
-    path: Assets/Scenes/3D_scenes/Controls.unity
-    guid: 3f8275f578084234cb0f70d5e6d17acf
-  - enabled: 1
-    path: Assets/Scenes/3D_scenes/Options.unity
-    guid: 121b68a762a065e459556f3d1ea405a1
+    path: Assets/Scenes/2D_scenes/2D_VictoryMenu.unity
+    guid: b23e42ffd703aeb4294bda0d000335c0
   m_configObjects: {}

@@ -18,6 +18,7 @@ TagManager:
   - FistLight
   - FistHeavy
   - FistMedium
+  - DontDestroy
   layers:
   - Default
   - TransparentFX
