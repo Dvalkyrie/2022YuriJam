@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/2D_scenes/2D_CharacterSelection.unity
     guid: 925d3fe4d79402445aeae1761e8777c2
   - enabled: 1
-    path: Assets/Scenes/2D_scenes/AnimTest.unity
-    guid: 58a9e0070e173af4c9494602bd582f1d
+    path: Assets/Scenes/2D_scenes/2D_Fight.unity
+    guid: f1ff5ee84a62bf0458610381b6d5c3d6
   - enabled: 1
     path: Assets/Scenes/2D_scenes/2D_VictoryMenu.unity
     guid: b23e42ffd703aeb4294bda0d000335c0

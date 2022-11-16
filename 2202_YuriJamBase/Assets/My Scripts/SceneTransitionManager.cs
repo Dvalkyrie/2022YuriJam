@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenuBehavior : MonoBehaviour
+public class SceneTransitionManager : MonoBehaviour
 {
     // j'ai besoin d'une class qui va me permettre de navuger entre les scenes, elle contient tous les scripts de transitions et 
     // Start is called before the first frame update
@@ -12,36 +12,6 @@ public class MainMenuBehavior : MonoBehaviour
     [SerializeField]
     private Image Curtain; // image that will fade to black or white
 
-    /*
-    List<Dictionary<string, object>> scenesInfo = new List<Dictionary<string, object>> {
-        new Dictionary<string, object>(){
-            { "name", "MainMenu" },
-            { "id", 0 },
-            { "fadeColor", Color.white },
-        },
-        new Dictionary<string, object>(){
-            { "name", "ComicScene" },
-            { "id", 1 },
-            { "fadeColor", Color.white },
-        },
-        new Dictionary<string, object>(){
-            { "name", "PlayerSelectScene" },
-            { "id", 2 },
-            { "fadeColor", Color.white },
-        },
-        new Dictionary<string, object>(){
-            { "name", "PlayerSelectScene" },
-            { "id", 2 },
-            { "fadeColor", Color.white },
-        }
-
-    };
-    int menuScene = 0;
-    int comicScene = 1;
-    int playerSelectScene = 2;
-    int fightScene = 3;
-    int victoryScene = 4;
-    */
 
     void Start()
     {
@@ -56,6 +26,15 @@ public class MainMenuBehavior : MonoBehaviour
         }
         StartCoroutine(FadeInAndLoadScene(Color.white, 0.5f, index));
     }
+
+    public void ReloadScene()
+    {
+        Debug.Log("reload scene");
+        
+        int index = SceneManager.GetActiveScene().buildIndex;
+        StartCoroutine(FadeInAndLoadScene(Color.white, 0.5f, index));
+    }
+
 
     /*
     public void ToComic()

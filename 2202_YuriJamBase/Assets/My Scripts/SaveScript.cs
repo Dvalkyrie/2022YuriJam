@@ -19,7 +19,7 @@ public class SaveScript : MonoBehaviour
     public static GameObject Player1Load;
     public static GameObject Player2Load;
     public static int LevelNumber = 1;
-    public static float DifficultyAmt = 1.0f;
+    public static float DifficultyAmt = 3.0f;
     public static bool P1Reacting = false;
     public static bool P2Reacting = false;
     private int FrameRateTarget = 120;

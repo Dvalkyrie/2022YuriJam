@@ -30,7 +30,7 @@ public class AnimationEventIntermediary : MonoBehaviour
     }
     public void ToPlayChangeScene()
     {
-        MainMenuBehavior mem = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<MainMenuBehavior>();
+        SceneTransitionManager mem = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<SceneTransitionManager>();
         mem.ToNextScene();
     }
 }

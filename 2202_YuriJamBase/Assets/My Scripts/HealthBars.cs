@@ -65,7 +65,6 @@ public class HealthBars : MonoBehaviour
 
         TimerText.text = Mathf.Round(LevelTime).ToString();
 
-
         Player1Green.fillAmount = SaveScript.Player1Health;
         Player2Green.fillAmount = SaveScript.Player2Health;
 
@@ -82,14 +81,14 @@ public class HealthBars : MonoBehaviour
         {
             if(Player2Red.fillAmount > SaveScript.Player2Health)
             {
-                Player2Red.fillAmount -= 0.003f;
+                Player2Red.fillAmount -= 0.1f;
             }
         }
         if (SaveScript.Player1Timer <= 0)
         {
             if (Player1Red.fillAmount > SaveScript.Player1Health)
             {
-                Player1Red.fillAmount -= 0.003f;
+                Player1Red.fillAmount -= 0.1f;
             }
         }
     }

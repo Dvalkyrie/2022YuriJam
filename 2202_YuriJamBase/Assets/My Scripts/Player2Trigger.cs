@@ -15,12 +15,23 @@ public class Player2Trigger : MonoBehaviour
 
     public bool Player2 = true;
 
-    //private GameObject ChosenParticles;
+    private int selfP;
+    private int otherP;
 
     private void Start()
     {
-        // ChosenParticles = GameObject.Find(ParticleType);
-        //Particles = ChosenParticles.gameObject.GetComponent<ParticleSystem>();
+        Transform characterGameobject = transform.parent.parent;
+        if (characterGameobject.gameObject.CompareTag("Player1"))
+        {
+            selfP = 1;
+            otherP = 2;
+        }
+        else
+        {
+            otherP = 1;
+            selfP = 2;
+        }
+        
     }
 
 

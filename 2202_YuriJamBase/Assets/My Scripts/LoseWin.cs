@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class LoseWin : MonoBehaviour
 {
     public GameObject WinText;
+    public GameObject GameOverText;
+    public GameObject RoundOverText;
     public GameObject LoseText;
     public GameObject Player1WinText;
     public GameObject Player2WinText;
@@ -30,9 +32,11 @@ public class LoseWin : MonoBehaviour
 
     IEnumerator WinSet()
     {
+        // the original script made a difference when the Mode of the game is single or two players, we have a separate victory scene so dont need that
         yield return new WaitForSeconds(0.4f);
         if(SaveScript.Player1Health > SaveScript.Player2Health)
         {
+            GameOverText.gameObject.SetActive(true);
             if (SaveScript.Player1Mode == true)
             {
                 WinText.gameObject.SetActive(true);
