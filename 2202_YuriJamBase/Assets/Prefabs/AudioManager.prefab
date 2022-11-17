@@ -172,27 +172,6 @@ MonoBehaviour:
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: DefaultTheme
-    clip: {fileID: 8300000, guid: 892c26238027a4c8bb9c68c12e22f07b, type: 3}
-    audioMixer: {fileID: 24300002, guid: 10677ebaa14d9b944bf640b4d7c018e1, type: 2}
-    volume: 0
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Bakertheme
-    clip: {fileID: 8300000, guid: 940ca74197f46472fb814949c48b24c4, type: 3}
-    audioMixer: {fileID: 24300002, guid: 10677ebaa14d9b944bf640b4d7c018e1, type: 2}
-    volume: 0
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Cheftheme
-    clip: {fileID: 8300000, guid: b75f4fe4e5f314f27b3f7044329f7cb4, type: 3}
-    audioMixer: {fileID: 24300002, guid: 10677ebaa14d9b944bf640b4d7c018e1, type: 2}
-    volume: 0
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
   - name: UIaudio
     clip: {fileID: 8300000, guid: 0c97e3b17f88344f1bc45689c65e7a28, type: 3}
     audioMixer: {fileID: 24300002, guid: cc30d971240bf2c4baa7cb775c9be452, type: 2}
