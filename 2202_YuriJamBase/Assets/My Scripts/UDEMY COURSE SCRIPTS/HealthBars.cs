@@ -81,14 +81,14 @@ public class HealthBars : MonoBehaviour
         {
             if(Player2Red.fillAmount > SaveScript.Player2Health)
             {
-                Player2Red.fillAmount -= 0.1f;
+                Player2Red.fillAmount -= 0.03f;
             }
         }
         if (SaveScript.Player1Timer <= 0)
         {
             if (Player1Red.fillAmount > SaveScript.Player1Health)
             {
-                Player1Red.fillAmount -= 0.1f;
+                Player1Red.fillAmount -= 0.03f;
             }
         }
     }

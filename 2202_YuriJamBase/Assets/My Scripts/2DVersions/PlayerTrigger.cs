@@ -69,32 +69,33 @@ public class PlayerTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collistion with trigger");
-        if (SaveScript.P1Reacting == false)
+        
+        if ((SaveScript.P1Reacting == false) && (selfP == 2))
         {
-            if (selfP == 2)
+            if (collision.gameObject.CompareTag("Player1") && collision.isTrigger)
             {
-                if (collision.gameObject.CompareTag("Player1"))
+                //Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
+                if (EmitFX == true)
                 {
-                    if (EmitFX == true)
-                    {
-                        Instantiate(ParticlePrefab, transform.parent.transform);
-                        // Particles.Play();
-                        Time.timeScale = PauseSpeed;
-                    }
-                    P2.GetComponent<PlayerActions>().Hits = true;
-                    SaveScript.Player1Health -= DamageAmt;
-                    if (SaveScript.Player1Timer < 2.0f)
-                    {
-                        SaveScript.Player1Timer += 2.0f;
-                    }
+                    Instantiate(ParticlePrefab, transform.parent.transform);
+                    // Particles.Play();
+                    Time.timeScale = PauseSpeed;
                 }
+                P2.GetComponent<PlayerActionsAI>().HitsAI = true;
+                SaveScript.Player1Health -= DamageAmt;
+                if (SaveScript.Player1Timer < 2.0f)
+                {
+                    SaveScript.Player1Timer += 2.0f;
+                }
+                
             }
+            
         }
         if((SaveScript.P2Reacting == false) && (selfP == 1))
          {
-            if (collision.gameObject.CompareTag("Player2"))
+            if (collision.gameObject.CompareTag("Player2") && collision.isTrigger)
             {
+               // Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
                 if (EmitFX == true)
                 {
                     Instantiate(ParticlePrefab, transform.parent.transform);

@@ -218,7 +218,7 @@ public class PlayerMoveAI : MonoBehaviour
                                     MoveAI = false;
                                     Anim.SetBool("Forward", false);
                                     Anim.SetBool("Backward", false);
-                                    Anim.SetBool("CanAttack", true);
+                                    // Anim.SetBool("CanAttack", true);
                                     StartCoroutine(ForwardFalse());
                                 }
                             }
@@ -230,6 +230,7 @@ public class PlayerMoveAI : MonoBehaviour
           
 
             //Jumping and crouching
+            /*
             if (Input.GetAxis("VerticalP2") > 0)
             {
                 if (IsJumping == false)
@@ -238,7 +239,7 @@ public class PlayerMoveAI : MonoBehaviour
                     Anim.SetTrigger("Jump");
                     StartCoroutine(JumpPause());
                 }
-            }
+            }*/
 
             if (Defend == 3)
             {
@@ -254,12 +255,13 @@ public class PlayerMoveAI : MonoBehaviour
                     StartCoroutine(EndBlock());
                 }
             }
+            /*
             if (Defend == 4)
             {
                 Anim.SetTrigger("Jump");
                 Defend = 0;
             }
-
+            */
             //Resets the restrict
             if (Restrict.gameObject.activeInHierarchy == false)
             {
@@ -302,13 +304,13 @@ public class PlayerMoveAI : MonoBehaviour
                 //MyPlayer.Play();
                 Defend = Random.Range(0, 5);
             }
-            if (collision.gameObject.CompareTag("FistHeavy"))
+            if (collision.gameObject.CompareTag("FistMedium"))
             {
                 Anim.SetTrigger("Hit2");
                 //MyPlayer.clip = HeavyPunch;
                 //MyPlayer.Play();
             }
-            if (collision.gameObject.CompareTag("KickHeavy"))
+            if (collision.gameObject.CompareTag("FistHeavy"))
             {
                 Anim.SetTrigger("Hit3");
                 //MyPlayer.clip = HeavyKick;

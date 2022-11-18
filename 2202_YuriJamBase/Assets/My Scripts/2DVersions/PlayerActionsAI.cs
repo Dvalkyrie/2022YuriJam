@@ -49,10 +49,10 @@ public class PlayerActionsAI : MonoBehaviour
     {
         if (Player1Layer0.IsTag("Motion"))
         {
-            Debug.Log("Animation is tag Motion");
+            //Debug.Log("Animation is tag Motion");
         }
-        Debug.Log("Attacking = " + Attacking); //Expect this to say true
-        Debug.Log("Attack Number = " + AttackNumber); //Expect anything above 0
+        //Debug.Log("Attacking = " + Attacking); //Expect this to say true
+        //Debug.Log("Attack Number = " + AttackNumber); //Expect anything above 0
 
         if (SaveScript.TimeOut == false)
         {

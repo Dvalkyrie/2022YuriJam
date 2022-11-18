@@ -22,7 +22,7 @@ public class SaveScript : MonoBehaviour
     public static float DifficultyAmt = 3.0f;
     public static bool P1Reacting = false;
     public static bool P2Reacting = false;
-    private int FrameRateTarget = 120;
+    private int FrameRateTarget = 60;
     public AudioMixer MusicMixer;
     public AudioMixer SFXMixer;
     public static float MusicVol = 0;
@@ -53,7 +53,8 @@ public class SaveScript : MonoBehaviour
         {
             Application.targetFrameRate = FrameRateTarget;
         }
-        Debug.Log("Music Volume = " + MusicVol);
-        Debug.Log("SFX Volume = " + SFXVol);
+
+        // Debug.Log("Music Volume = " + MusicVol);
+        // Debug.Log("SFX Volume = " + SFXVol);
     }
 }
