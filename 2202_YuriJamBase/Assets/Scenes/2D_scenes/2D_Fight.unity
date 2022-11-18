@@ -251,6 +251,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &52585760
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +927,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &244941305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,6 +1370,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &284320074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,6 +1499,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &307069085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,6 +1959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JumpSpeed: 80
+  Anim: {fileID: 0}
   PunchWhoosh: {fileID: 8300000, guid: aad9b89929e364f9ca553769ea16604f, type: 3}
   KickWhoosh: {fileID: 8300000, guid: ae6299e8b260142cfad1bc7f29c0cb5f, type: 3}
   PunchSlideAmt: 2
@@ -3023,6 +3028,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &846081338
 GameObject:
   m_ObjectHideFlags: 0
@@ -3606,6 +3612,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1001 &976237204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4192,6 +4199,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &1223528993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,6 +4328,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &1265032260
 GameObject:
   m_ObjectHideFlags: 0
@@ -4448,6 +4457,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &1330312195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4670,6 +4680,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &1344251092
 GameObject:
   m_ObjectHideFlags: 0
@@ -4798,6 +4809,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &1383101579
 GameObject:
   m_ObjectHideFlags: 0
@@ -6053,6 +6065,7 @@ MonoBehaviour:
   EmitFX: 0
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
+  hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
 --- !u!1 &1734647566
 GameObject:
   m_ObjectHideFlags: 0

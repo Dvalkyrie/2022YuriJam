@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerActions : MonoBehaviour
 {
     public float JumpSpeed = 1.0f;
-    private Animator Anim;
+    [HideInInspector]
+    public Animator Anim;
     private AnimatorStateInfo AnimStateInfo;
     private AudioSource MyPlayer;
     public AudioClip PunchWhoosh;
@@ -70,58 +71,48 @@ public class PlayerActions : MonoBehaviour
                 if (Input.GetButtonDown("lightPunch"))
                 {
                     Anim.SetTrigger("LightPunch");
-                    Anim.SetTrigger("BlockOff");
                     Hits = false;;
                 }
                 if (Input.GetButtonDown("mediumPunch"))
                 {
                     Anim.SetTrigger("MediumPunch");
-                    Anim.SetTrigger("BlockOff");
                     Hits = false;
                 }
                 if (Input.GetButtonDown("heavyPunch"))
                 {
                     Anim.SetTrigger("HeavyPunch");
-                    Anim.SetTrigger("BlockOff");
                     Hits = false;
                 }
                 if (Input.GetButtonDown("lightKick"))
                 {
                     Anim.SetTrigger("LightKick");
-                    Anim.SetTrigger("BlockOff");
                     Hits = false;
                 }
                 if (Input.GetButtonDown("mediumKick"))
                 {
                     Anim.SetTrigger("MediumKick");
-                    Anim.SetTrigger("BlockOff");
                     Hits = false;
                 }
                 if (Input.GetButtonDown("heavyKick"))
                 {
                     Anim.SetTrigger("HeavyKick");
-                    Anim.SetTrigger("BlockOff");
                     Hits = false;
                 }
-                if (Input.GetButtonDown("Jump"))
-                {
-                    Anim.SetTrigger("HeavyKick");
-                    Anim.SetTrigger("BlockOff");
-                    Hits = false;
-                }
-                if (Input.GetButtonDown("Block"))
-                {
-                    Anim.SetTrigger("BlockOn");
+                if (AnimStateInfo.IsTag("Block")) {
+                    if (Input.GetButtonDown("lightPunch") || Input.GetButtonDown("mediumPunch") || Input.GetButtonDown("heavyPunch") || Input.GetButtonDown("lightKick") || Input.GetButtonDown("mediumKick") || Input.GetButtonDown("heavyKick")){
+                        Anim.SetTrigger("BlockOff");
+                    }
                 }
             }
 
-            if (AnimStateInfo.IsTag("Block"))
-            {
-                if (Input.GetButtonUp("Block"))
-                {
-                    Anim.SetTrigger("BlockOff");
-                }
-            }
+            if (AnimStateInfo.IsTag("Block")) {
+                // if not moving, or moving in the front direction block off /!\ Facingleft and Facing right are inverted
+                if ((Input.GetAxis("Horizontal") >= 0 && thisMove.FacingLeft) || (Input.GetAxis("Horizontal") <= 0 && thisMove.FacingRight))
+                    {
+                      Anim.SetTrigger("BlockOff");
+                    }
+                
+             }
 
 
             //Crouching attacks
@@ -145,24 +136,9 @@ public class PlayerActions : MonoBehaviour
                     Hits = false;
                 }
             }
-
-            //Aerial moves
-            if (AnimStateInfo.IsTag("Jumping"))
-            {
-                if (Input.GetButtonDown("Jump"))
-                {
-                    Anim.SetTrigger("HeavyKick");
-                    Hits = false;
-
-                }
-            }
         }
     }
 
-    public void JumpUp()
-    {
-        this.transform.Translate(0, JumpSpeed * Time.deltaTime, 0);
-    }
     public void HeavyMove()
     {
         StartCoroutine(PunchSlide());

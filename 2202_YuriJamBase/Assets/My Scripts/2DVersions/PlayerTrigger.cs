@@ -11,11 +11,21 @@ public class PlayerTrigger : MonoBehaviour
     public GameObject ParticlePrefab;
     public float PauseSpeed = 0.6f;
 
+    [SerializeField]
+    private AudioClip hitSfx;
+
     private int selfP;
     private int otherP;
 
     private GameObject P1;
     private GameObject P2;
+
+    PlayerActions P1_action;
+    PlayerActionsAI P2_action;
+
+    AudioSource P1_audio_src, P2_audio_src;
+
+    PlayerMove2D P1_move;
 
 
     private void Start()
@@ -23,6 +33,15 @@ public class PlayerTrigger : MonoBehaviour
         Col = GetComponent<BoxCollider2D>();
         P1 = GameObject.FindGameObjectWithTag("Player1");
         P2 = GameObject.FindGameObjectWithTag("Player2");
+
+
+        P2_action = P2.GetComponent<PlayerActionsAI>();
+        P1_action = P1.GetComponent<PlayerActions>();
+
+        P1_move = P1.GetComponent<PlayerMove2D>();
+
+        P1_audio_src = P1.GetComponent<AudioSource>();
+        P2_audio_src = P2.GetComponent<AudioSource>();
 
         Transform characterGameobject = transform.parent.parent;
         if (characterGameobject.gameObject.CompareTag("Player1"))
@@ -45,7 +64,7 @@ public class PlayerTrigger : MonoBehaviour
         if (selfP == 2)
         {
             // TODO! Change stuff so we can recognise when we need a Ai or Not, or make them the same script
-            if (P2.GetComponent<PlayerActionsAI>().HitsAI == false)
+            if (P2_action.HitsAI == false)
             {
                 Col.enabled = true;
             }
@@ -56,7 +75,7 @@ public class PlayerTrigger : MonoBehaviour
         }
         else
         {
-            if (P1.GetComponent<PlayerActions>().Hits == false)
+            if (P1_action.Hits == false)
             {
                 Col.enabled = true;
             }
@@ -74,6 +93,7 @@ public class PlayerTrigger : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player1") && collision.isTrigger)
             {
+                playHit(P1_audio_src);
                 //Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
                 if (EmitFX == true)
                 {
@@ -82,12 +102,20 @@ public class PlayerTrigger : MonoBehaviour
                     Time.timeScale = PauseSpeed;
                 }
                 P2.GetComponent<PlayerActionsAI>().HitsAI = true;
-                SaveScript.Player1Health -= DamageAmt;
-                if (SaveScript.Player1Timer < 2.0f)
+
+                // Block, if P1 is walking away from P2 at that moment, block is on
+                if ((Input.GetAxis("Horizontal") < 0 && P1_move.FacingLeft) || (Input.GetAxis("Horizontal") > 0 && P1_move.FacingRight))
                 {
-                    SaveScript.Player1Timer += 2.0f;
+                    P1_action.Anim.SetTrigger("BlockOn");
                 }
-                
+                else
+                {
+                    SaveScript.Player1Health -= DamageAmt;
+                    if (SaveScript.Player1Timer < 2.0f)
+                    {
+                        SaveScript.Player1Timer += 2.0f;
+                    }
+                }
             }
             
         }
@@ -95,7 +123,8 @@ public class PlayerTrigger : MonoBehaviour
          {
             if (collision.gameObject.CompareTag("Player2") && collision.isTrigger)
             {
-               // Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
+                playHit(P2_audio_src);
+                // Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
                 if (EmitFX == true)
                 {
                     Instantiate(ParticlePrefab, transform.parent.transform);
@@ -111,5 +140,12 @@ public class PlayerTrigger : MonoBehaviour
             }
             
         }
+    }
+
+    void playHit(AudioSource src)
+    {
+        src.clip = hitSfx;
+        src.loop = false;
+        src.Play();
     }
 }
