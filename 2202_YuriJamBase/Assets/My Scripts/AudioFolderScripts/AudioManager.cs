@@ -26,9 +26,9 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Play("DefaultTheme");
-        Play("BakerTheme");
-        Play("ChefTheme");
+        //Play("DefaultTheme");
+        //Play("BakerTheme");
+        //Play("ChefTheme");
 
     }
 

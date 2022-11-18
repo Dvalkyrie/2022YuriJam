@@ -14,15 +14,22 @@ public class MusicMan : MonoBehaviour
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
-            //s.source.outputAudioMixerGroup = AudioMixer();
             s.source.clip = s.clip;
 
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = s.Output;
         }
     }
+    private void Start()
+    {
+        Debug.Log("hello!");
+        Play("DefaultTheme");
+        Play("BakerTheme");
+        Play("ChefTheme");
 
+    }
     private void Update()
     {
         if (SaveScript.Player1Health > SaveScript.Player2Health)
@@ -30,13 +37,7 @@ public class MusicMan : MonoBehaviour
             Debug.Log("bam");
         }
     }
-    private void Start()
-    {
-        Play("DefaultTheme");
-        Play("BakerTheme");
-        Play("ChefTheme");
-
-    }
+    
 
     public void Play(string name)
     {

@@ -2310,23 +2310,23 @@ MonoBehaviour:
   sounds:
   - name: DefaultTheme
     clip: {fileID: 8300000, guid: 34ba72595ef194c1eaee2e56854a9f82, type: 3}
-    audioMixer: {fileID: 24300002, guid: 10677ebaa14d9b944bf640b4d7c018e1, type: 2}
+    Output: {fileID: 24300002, guid: 10677ebaa14d9b944bf640b4d7c018e1, type: 2}
     volume: 1
-    pitch: 0
+    pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: BakerTheme
     clip: {fileID: 8300000, guid: 940ca74197f46472fb814949c48b24c4, type: 3}
-    audioMixer: {fileID: 24300002, guid: 10677ebaa14d9b944bf640b4d7c018e1, type: 2}
+    Output: {fileID: 0}
     volume: 0
-    pitch: 0
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: ChefTheme
     clip: {fileID: 8300000, guid: b75f4fe4e5f314f27b3f7044329f7cb4, type: 3}
-    audioMixer: {fileID: 24300002, guid: 10677ebaa14d9b944bf640b4d7c018e1, type: 2}
+    Output: {fileID: 0}
     volume: 0
-    pitch: 0
+    pitch: 1
     loop: 0
     source: {fileID: 0}
 --- !u!4 &626223861
@@ -6917,6 +6917,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 94003051}
     - target: {fileID: 4551521046772463916, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
+      propertyPath: sounds.Array.size
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551521046772463916, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
       propertyPath: sounds.Array.data[18].clip
       value: 
       objectReference: {fileID: 8300000, guid: 34ba72595ef194c1eaee2e56854a9f82, type: 3}
@@ -6925,8 +6929,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4551521046772463916, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
+      propertyPath: sounds.Array.data[19].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 34ba72595ef194c1eaee2e56854a9f82, type: 3}
+    - target: {fileID: 4551521046772463916, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
       propertyPath: sounds.Array.data[19].loop
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551521046772463916, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
+      propertyPath: sounds.Array.data[19].name
+      value: DefaultTheme
       objectReference: {fileID: 0}
     - target: {fileID: 4551521046772463916, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
       propertyPath: sounds.Array.data[20].loop
@@ -6936,6 +6948,14 @@ PrefabInstance:
       propertyPath: sounds.Array.data[18].volume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4551521046772463916, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
+      propertyPath: sounds.Array.data[19].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551521046772463916, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
+      propertyPath: sounds.Array.data[19].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: cc30d971240bf2c4baa7cb775c9be452, type: 2}
     - target: {fileID: 4551521046772463917, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -6980,16 +7000,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4551521046772463918, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: 10677ebaa14d9b944bf640b4d7c018e1, type: 2}
     - target: {fileID: 4551521046772463919, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4551521046772463918, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
 --- !u!1001 &7228702176321561863
 PrefabInstance:
