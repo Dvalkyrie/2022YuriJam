@@ -280,9 +280,11 @@ public class PlayerMove2D : MonoBehaviour
             if (collision.gameObject.CompareTag("FistMedium"))
             {
                 Anim.SetTrigger("Hit2");
+                Debug.Log("Hit2");
             }
             if (collision.gameObject.CompareTag("FistHeavy"))
             {
+                Debug.Log("Hit3");
                 Anim.SetTrigger("Hit3");
 
             }
@@ -302,8 +304,9 @@ public class PlayerMove2D : MonoBehaviour
             FacingLeft = false;
             FacingRight = true;
             yield return new WaitForSeconds(0.15f);
-            this.transform.localScale = new Vector2(1, 1);
-            //spriteRenderer.flipX = false;
+            this.transform.GetChild(0).transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
+            //this.transform.localScale = new Vector2(1, 1);
+            spriteRenderer.flipX = false;
         }
 
     }
@@ -315,8 +318,9 @@ public class PlayerMove2D : MonoBehaviour
             FacingRight = false;
             FacingLeft = true;
             yield return new WaitForSeconds(0.15f);
-            this.transform.localScale = new Vector2(-1, 1);
-            //spriteRenderer.flipX = true;
+            //this.transform.localScale = new Vector2(-1, 1);
+            this.transform.GetChild(0).transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
+            spriteRenderer.flipX = true;
         }
 
     }
