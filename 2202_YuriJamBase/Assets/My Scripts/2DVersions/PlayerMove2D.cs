@@ -210,6 +210,7 @@ public class PlayerMove2D : MonoBehaviour
 
 
             //Jumping and crouching
+            /*
             if (Input.GetAxis("Vertical") > 0)
             {
                 if (IsJumping == false)
@@ -218,7 +219,7 @@ public class PlayerMove2D : MonoBehaviour
                     Anim.SetTrigger("Jump");
                     StartCoroutine(JumpPause());
                 }
-            }
+            }*/
             if (Input.GetAxis("Vertical") < 0)
             {
                 if (CrouchTime < Timer)

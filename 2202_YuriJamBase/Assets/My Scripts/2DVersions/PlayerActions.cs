@@ -11,7 +11,7 @@ public class PlayerActions : MonoBehaviour
     private AudioSource MyPlayer;
     public AudioClip PunchWhoosh;
     public AudioClip KickWhoosh;
-    private AudioManager audioManager;
+    private AudioManager audioManager, voiceManager;
     private bool HeavyMoving = false;
     private bool HeavyReact = false;
     public float PunchSlideAmt = 2f;
@@ -29,6 +29,7 @@ public class PlayerActions : MonoBehaviour
 
         Anim = GetComponent<Animator>();
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        voiceManager = GameObject.Find("VoiceManager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -173,6 +174,11 @@ public class PlayerActions : MonoBehaviour
     {
         Debug.Log("Play " + sound);
         audioManager.Play(sound);
+    }
+    public void PlayVocal(string sound)
+    {
+        //Debug.Log("Play " + sound);
+        voiceManager.Play(sound);
     }
 
     public void PunchWooshSound()
