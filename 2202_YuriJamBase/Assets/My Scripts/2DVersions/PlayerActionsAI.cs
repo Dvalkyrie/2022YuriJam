@@ -7,6 +7,7 @@ public class PlayerActionsAI : MonoBehaviour
     public float JumpSpeed = 1.0f;
     public float FlipSpeed = 0.8f;
     private Animator Anim;
+    private AudioManager audioManager, voiceManager;
     private AnimatorStateInfo Player1Layer0;
     private bool HeavyMoving = false;
     private bool HeavyReact = false;
@@ -40,6 +41,8 @@ public class PlayerActionsAI : MonoBehaviour
         }
         Anim = GetComponent<Animator>();
         thisMove = GetComponent<PlayerMoveAI>();
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        voiceManager = GameObject.Find("VoiceManager").GetComponent<AudioManager>();
         //akSoundEngine = GetComponent<AkSoundEngine>();
         Dazed = false;
     }
@@ -176,9 +179,15 @@ public class PlayerActionsAI : MonoBehaviour
         FlyingJumpAI = false;
     }
 
-    public void KickWooshSound()
+    public void PlaySound(string sound)
     {
-
+        //Debug.Log("Play " + sound);
+        audioManager.Play(sound);
+    }
+    public void PlayVocal(string sound)
+    {
+        //Debug.Log("Play " + sound);
+        voiceManager.Play(sound);
     }
 
     public void PunchWooshSound()
