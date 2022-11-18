@@ -410,8 +410,8 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.2
-    functionName: KickWooshSound
-    data: 
+    functionName: PlaySound
+    data: BHC
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

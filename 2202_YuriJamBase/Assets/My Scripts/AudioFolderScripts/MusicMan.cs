@@ -34,7 +34,7 @@ public class MusicMan : MonoBehaviour
     {
         if (SaveScript.Player1Health > SaveScript.Player2Health)
         {
-            Debug.Log("bam");
+            //Debug.Log("bam");
         }
     }
     
