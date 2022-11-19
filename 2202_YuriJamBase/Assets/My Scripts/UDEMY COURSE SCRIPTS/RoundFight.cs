@@ -14,7 +14,7 @@ public class RoundFight : MonoBehaviour
     public AudioClip Round1Audio;
     public AudioClip Round2Audio;
     public AudioClip Round3Audio;
-    public float PauseTime = 5.5f;
+    public float PauseTime = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +37,7 @@ public class RoundFight : MonoBehaviour
             MyPlayer.Play();
             yield return new WaitForSeconds(PauseTime);
             Round1Text.gameObject.SetActive(false);
-            yield return new WaitForSeconds(3F);
+            yield return new WaitForSeconds(2F);
             FightText.gameObject.SetActive(true);
             MyPlayer.clip = FightAudio;
             MyPlayer.Play();
@@ -55,7 +55,7 @@ public class RoundFight : MonoBehaviour
             MyPlayer.Play();
             yield return new WaitForSeconds(PauseTime);
             Round2Text.gameObject.SetActive(false);
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
             FightText.gameObject.SetActive(true);
             MyPlayer.clip = FightAudio;
             MyPlayer.Play();
@@ -73,7 +73,7 @@ public class RoundFight : MonoBehaviour
             MyPlayer.Play();
             yield return new WaitForSeconds(PauseTime);
             Round3Text.gameObject.SetActive(false);
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
             FightText.gameObject.SetActive(true);
             MyPlayer.clip = FightAudio;
             MyPlayer.Play();

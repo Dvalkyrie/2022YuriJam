@@ -37,11 +37,16 @@ public class victoryScreenManager : MonoBehaviour
     public Sprite MioName;
     public Sprite BeaName;
 
+
+    // Soundbites
+    private AudioManager audioManager, voiceManager;
+
     // Start is called before the first frame update
     void Start()
     {
         setUi();
-        GetComponent<AudioSource>();
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        voiceManager = GameObject.Find("VoiceManager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -71,6 +76,8 @@ public class victoryScreenManager : MonoBehaviour
             triangleLooseUI.color = beaColor;
             MainImageUI.sprite = MainImageShadowUI.sprite = MioMain;
             NameImageUI.sprite = MioName;
+            
+            
         }
         else
         {
@@ -81,4 +88,15 @@ public class victoryScreenManager : MonoBehaviour
         }
         ResultText.text = "RESULT: " + result;
     }
+    public void PlaySound(string sound)
+    {
+        Debug.Log("Play " + sound);
+        audioManager.Play(sound);
+    }
+    public void PlayVocal(string sound)
+    {
+        //Debug.Log("Play " + sound);
+        voiceManager.Play(sound);
+    }
+
 }
