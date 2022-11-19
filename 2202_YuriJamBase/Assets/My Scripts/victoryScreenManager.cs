@@ -38,15 +38,15 @@ public class victoryScreenManager : MonoBehaviour
     public Sprite BeaName;
 
 
+
     // Soundbites
-    private AudioManager audioManager, voiceManager;
+    private AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
         setUi();
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
-        voiceManager = GameObject.Find("VoiceManager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -76,8 +76,8 @@ public class victoryScreenManager : MonoBehaviour
             triangleLooseUI.color = beaColor;
             MainImageUI.sprite = MainImageShadowUI.sprite = MioMain;
             NameImageUI.sprite = MioName;
-            
-            
+            MioWinS();
+
         }
         else
         {
@@ -85,18 +85,32 @@ public class victoryScreenManager : MonoBehaviour
             triangleLooseUI.color = mioColor;
             MainImageUI.sprite = MainImageShadowUI.sprite = BeaMain;
             NameImageUI.sprite = BeaName;
+            BetWinS();
         }
         ResultText.text = "RESULT: " + result;
     }
-    public void PlaySound(string sound)
+    public void MioWinS()
     {
-        Debug.Log("Play " + sound);
-        audioManager.Play(sound);
+        //Debug.Log("mio!");
+        FindObjectOfType<AudioManager>().Play("Bakertheme");
+        FindObjectOfType<AudioManager>().Play("BVIC");
     }
-    public void PlayVocal(string sound)
+
+    public void BetWinS()
     {
-        //Debug.Log("Play " + sound);
-        voiceManager.Play(sound);
+        //Debug.Log("bea!");
+        FindObjectOfType<AudioManager>().Play("Cheftheme");
+        FindObjectOfType<AudioManager>().Play("CVIC");
     }
+    //public void PlaySound(string sound)
+    //{
+    //    Debug.Log("Play " + sound);
+    //    audioManager.Play(sound);
+    //}
+    //public void PlayVocal(string sound)
+    //{
+    //    //Debug.Log("Play " + sound);
+    //    voiceManager.Play(sound);
+    //}
 
 }
