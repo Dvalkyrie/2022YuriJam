@@ -459,7 +459,7 @@ MonoBehaviour:
   Player1Green: {fileID: 765114866}
   Player2Green: {fileID: 864677094}
   Player1Red: {fileID: 1557071421}
-  Player2Red: {fileID: 864677094}
+  Player2Red: {fileID: 1745886884}
   P1Win1: {fileID: 2073134600}
   P1Win2: {fileID: 126067936}
   P2Win1: {fileID: 1564874961}
@@ -5221,7 +5221,7 @@ GameObject:
   - component: {fileID: 1557071422}
   - component: {fileID: 1557071421}
   m_Layer: 5
-  m_Name: fill (1)
+  m_Name: fill 1 red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6344,7 +6344,7 @@ GameObject:
   - component: {fileID: 1745886885}
   - component: {fileID: 1745886884}
   m_Layer: 5
-  m_Name: fill (1)
+  m_Name: fill 2 red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
