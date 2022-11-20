@@ -26,7 +26,9 @@ public class PlayerTrigger : MonoBehaviour
     AudioSource P1_audio_src, P2_audio_src;
 
     PlayerMove2D P1_move;
+    PlayerMoveAI P2_move;
 
+    public float knockBackPower = 1;
 
     private void Start()
     {
@@ -39,6 +41,7 @@ public class PlayerTrigger : MonoBehaviour
         P1_action = P1.GetComponent<PlayerActions>();
 
         P1_move = P1.GetComponent<PlayerMove2D>();
+        P2_move = P2.GetComponent<PlayerMoveAI>();
 
         P1_audio_src = P1.GetComponent<AudioSource>();
         P2_audio_src = P2.GetComponent<AudioSource>();
@@ -101,7 +104,7 @@ public class PlayerTrigger : MonoBehaviour
                     // Particles.Play();
                     Time.timeScale = PauseSpeed;
                 }
-                P2.GetComponent<PlayerActionsAI>().HitsAI = true;
+                P2_action.HitsAI = true;
 
                 // Block, if P1 is walking away from P2 at that moment, block is on
                 if ((Input.GetAxis("Horizontal") < 0 && P1_move.FacingLeft) || (Input.GetAxis("Horizontal") > 0 && P1_move.FacingRight))
@@ -115,6 +118,7 @@ public class PlayerTrigger : MonoBehaviour
                     {
                         SaveScript.Player1Timer += 2.0f;
                     }
+                    P1_move.KnockBack(knockBackPower);
                 }
             }
             
@@ -130,13 +134,14 @@ public class PlayerTrigger : MonoBehaviour
                     Instantiate(ParticlePrefab, transform.parent.transform);
                     Time.timeScale = PauseSpeed;
                 }
-                P1.GetComponent<PlayerActions>().Hits = true;
+                // add block!
+                P1_action.Hits = true;
                 SaveScript.Player2Health -= DamageAmt;
                 if (SaveScript.Player2Timer < 2.0f)
                 {
                     SaveScript.Player2Timer += 2.0f;
                 }
-
+                P2_move.KnockBack(knockBackPower);
             }
             
         }

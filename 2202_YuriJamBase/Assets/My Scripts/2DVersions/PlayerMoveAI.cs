@@ -319,6 +319,22 @@ public class PlayerMoveAI : MonoBehaviour
         }
     }
 
+    public void KnockBack(float power)
+    {
+        // Knock the character back at the opposite of facing direction
+        Vector2 dir = Vector2.zero;
+        if (FacingLeftAI)
+        {
+            dir = Vector2.left;
+        }
+        else
+        {
+            dir = Vector2.right;
+        }
+
+        RB.AddForce(dir * power);
+    }
+
 
     IEnumerator JumpPause()
     {

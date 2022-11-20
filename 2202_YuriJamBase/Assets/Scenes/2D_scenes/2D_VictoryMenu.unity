@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -998,7 +998,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1008842687
 PrefabInstance:
@@ -1397,7 +1397,7 @@ PrefabInstance:
       objectReference: {fileID: 24300002, guid: cc30d971240bf2c4baa7cb775c9be452, type: 2}
     - target: {fileID: 4551521046772463917, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4551521046772463917, guid: 17a81db06ac7e4149900ecfc92a2d221, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1608,7 +1608,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1144699686
 GameObject:
@@ -2313,8 +2313,8 @@ RectTransform:
   - {fileID: 334153131}
   - {fileID: 245215151}
   - {fileID: 1013195207}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1887470991}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2407,6 +2407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1887470991}
   - component: {fileID: 1887470990}
+  - component: {fileID: 1887470992}
   m_Layer: 0
   m_Name: Scene Manager
   m_TagString: Untagged
@@ -2426,8 +2427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8eab288ccdca04d98a72a2bfeccc44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winnerP: 1
-  winnerC: 1
+  winnerP: 0
+  winnerC: 0
   valueChanged: 0
   beaColor: {r: 0.32156864, g: 0.8352941, b: 0.36078432, a: 1}
   mioColor: {r: 0.8352942, g: 0.31764707, b: 0.39607847, a: 1}
@@ -2455,10 +2456,31 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1809840212}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1887470992
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887470989}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 919784e8e87d68a438c863b3fbc43ab1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1949293325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2661,5 +2683,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

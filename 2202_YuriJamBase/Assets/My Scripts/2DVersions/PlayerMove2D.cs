@@ -292,6 +292,21 @@ public class PlayerMove2D : MonoBehaviour
         }
     }
 
+    public void KnockBack(float power)
+    {
+        // Knock the character back at the opposite of facing direction
+        Vector2 dir = Vector2.zero;
+        if (FacingLeft) {
+            dir = Vector2.left;
+        }
+        else
+        {
+            dir = Vector2.right;
+        }
+
+        RB.AddForce(dir * power);
+    }
+
     IEnumerator JumpPause()
     {
         yield return new WaitForSeconds(1.0f);

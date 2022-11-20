@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -252,6 +252,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 20
 --- !u!1 &52585760
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +929,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 30
 --- !u!1 &244941305
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +988,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2b6964818dc30e64f8f959db401357e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ecbb366b246ced43aa7fbaaa3c55513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1371,6 +1373,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 30
 --- !u!1 &284320074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1503,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 50
 --- !u!1 &307069085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,6 +2936,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 20
 --- !u!1 &846081338
 GameObject:
   m_ObjectHideFlags: 0
@@ -3516,6 +3521,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 20
 --- !u!1001 &976237204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3740,7 +3746,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2b6964818dc30e64f8f959db401357e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ecbb366b246ced43aa7fbaaa3c55513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4103,6 +4109,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 50
 --- !u!1 &1223528993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4232,6 +4239,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 50
 --- !u!1 &1265032260
 GameObject:
   m_ObjectHideFlags: 0
@@ -4361,6 +4369,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 30
 --- !u!1 &1330312195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4584,6 +4593,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 20
 --- !u!1 &1344251092
 GameObject:
   m_ObjectHideFlags: 0
@@ -4713,6 +4723,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 50
 --- !u!1 &1383101579
 GameObject:
   m_ObjectHideFlags: 0
@@ -5969,6 +5980,7 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
+  knockBackPower: 30
 --- !u!1 &1734647566
 GameObject:
   m_ObjectHideFlags: 0
