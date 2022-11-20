@@ -14,7 +14,7 @@ public class RoundFight : MonoBehaviour
     public AudioClip Round1Audio;
     public AudioClip Round2Audio;
     public AudioClip Round3Audio;
-    public float PauseTime = 5.0f;
+    public float PauseTime = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,13 +31,13 @@ public class RoundFight : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         if (SaveScript.Round == 1)
         {
-            yield return new WaitForSeconds(0.8f);
+            yield return new WaitForSeconds(3f);
             Round1Text.gameObject.SetActive(true);
             MyPlayer.clip = Round1Audio;
             MyPlayer.Play();
             yield return new WaitForSeconds(PauseTime);
             Round1Text.gameObject.SetActive(false);
-            yield return new WaitForSeconds(0.6f);
+            yield return new WaitForSeconds(2F);
             FightText.gameObject.SetActive(true);
             MyPlayer.clip = FightAudio;
             MyPlayer.Play();
@@ -49,13 +49,13 @@ public class RoundFight : MonoBehaviour
         }
         if (SaveScript.Round == 2)
         {
-            yield return new WaitForSeconds(0.8f);
+            yield return new WaitForSeconds(3f);
             Round2Text.gameObject.SetActive(true);
             MyPlayer.clip = Round2Audio;
             MyPlayer.Play();
             yield return new WaitForSeconds(PauseTime);
             Round2Text.gameObject.SetActive(false);
-            yield return new WaitForSeconds(0.6f);
+            yield return new WaitForSeconds(2f);
             FightText.gameObject.SetActive(true);
             MyPlayer.clip = FightAudio;
             MyPlayer.Play();
@@ -67,13 +67,13 @@ public class RoundFight : MonoBehaviour
         }
         if (SaveScript.Round == 3)
         {
-            yield return new WaitForSeconds(0.8f);
+            yield return new WaitForSeconds(3f);
             Round3Text.gameObject.SetActive(true);
             MyPlayer.clip = Round3Audio;
             MyPlayer.Play();
             yield return new WaitForSeconds(PauseTime);
             Round3Text.gameObject.SetActive(false);
-            yield return new WaitForSeconds(0.6f);
+            yield return new WaitForSeconds(2f);
             FightText.gameObject.SetActive(true);
             MyPlayer.clip = FightAudio;
             MyPlayer.Play();
