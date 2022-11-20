@@ -59,17 +59,17 @@ public class PlayerActionsAI : MonoBehaviour
 
         if (SaveScript.TimeOut == false)
         {
-
+            // (aqua) this is probably knockback
             //Heavy Punch Slide
             if (HeavyMoving == true)
             {
                 if (thisMove.FacingRightAI == true)
                 {
-                    this.transform.Translate(PunchSlideAmt * Time.deltaTime, 0, 0);
+                    this.transform.Translate(-PunchSlideAmt * Time.deltaTime, 0, 0);
                 }
                 if (thisMove.FacingLeftAI == true)
                 {
-                    this.transform.Translate(-PunchSlideAmt * Time.deltaTime, 0, 0);
+                    this.transform.Translate(PunchSlideAmt * Time.deltaTime, 0, 0);
                 }
             }
 
@@ -78,11 +78,11 @@ public class PlayerActionsAI : MonoBehaviour
             {
                 if (thisMove.FacingRightAI == true)
                 {
-                    this.transform.Translate(-HeavyReactAmt * Time.deltaTime, 0, 0);
+                    this.transform.Translate(HeavyReactAmt * Time.deltaTime, 0, 0);
                 }
                 if (thisMove.FacingLeftAI == true)
                 {
-                    this.transform.Translate(HeavyReactAmt * Time.deltaTime, 0, 0);
+                    this.transform.Translate(-HeavyReactAmt * Time.deltaTime, 0, 0);
                 }
             }
 
@@ -103,17 +103,29 @@ public class PlayerActionsAI : MonoBehaviour
                     }
                     if (AttackNumber == 2)
                     {
-                        Anim.SetTrigger("HeavyPunch");
+                        Anim.SetTrigger("MediumPunch");
                         HitsAI = false;
                         StartCoroutine(SetAttacking());
                     }
                     if (AttackNumber == 3)
                     {
-                        Anim.SetTrigger("LightKick");
+                        Anim.SetTrigger("HeavyPunch");
                         HitsAI = false;
                         StartCoroutine(SetAttacking());
                     }
                     if (AttackNumber == 4)
+                    {
+                        Anim.SetTrigger("LightKick");
+                        HitsAI = false;
+                        StartCoroutine(SetAttacking());
+                    }
+                    if (AttackNumber == 5)
+                    {
+                        Anim.SetTrigger("MediumKick");
+                        HitsAI = false;
+                        StartCoroutine(SetAttacking());
+                    }
+                    if (AttackNumber == 6)
                     {
                         Anim.SetTrigger("HeavyKick");
                         HitsAI = false;
@@ -131,15 +143,6 @@ public class PlayerActionsAI : MonoBehaviour
                 Anim.SetBool("Crouch", false);
             }
 
-            //Aerial moves
-            if (Player1Layer0.IsTag("Jumping"))
-            {
-                if (Input.GetButtonDown("Jump"))
-                {
-                    Anim.SetTrigger("HeavyKick");
-                    HitsAI = false;
-                }
-            }
         }
     }
 
@@ -154,7 +157,7 @@ public class PlayerActionsAI : MonoBehaviour
 
     public void RandomAttack()
     {
-        AttackNumber = Random.Range(1, 5);
+        AttackNumber = Random.Range(1, 7);
         //StartCoroutine(SetAttacking());
 
     }
@@ -215,6 +218,18 @@ public class PlayerActionsAI : MonoBehaviour
     {
         yield return new WaitForSeconds(AttackRate);
         Attacking = true;
+        RandomAttack();
+    }
+
+    public IEnumerator KnockBack(float duration, bool dazed)
+    {
+        // Use "heavyReact" (a state where the player go backward) to do knock back
+        HeavyReact = true;
+        Dazed = true;
+        yield return new WaitForSeconds(duration);
+        HeavyReact = false;
+        yield return new WaitForSeconds(DazedTime);
+        Dazed = false;
     }
 
 }

@@ -252,7 +252,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 20
+  knockBackPower: 0.1
+  knockBackDaze: 0
 --- !u!1 &52585760
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,7 +930,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 30
+  knockBackPower: 0.2
+  knockBackDaze: 0
 --- !u!1 &244941305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,7 +1375,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 30
+  knockBackPower: 0.2
+  knockBackDaze: 0
 --- !u!1 &284320074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,7 +1506,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 50
+  knockBackPower: 0.2
+  knockBackDaze: 0
 --- !u!1 &307069085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,7 +2940,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 20
+  knockBackPower: 0.1
+  knockBackDaze: 0
 --- !u!1 &846081338
 GameObject:
   m_ObjectHideFlags: 0
@@ -3521,7 +3526,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 20
+  knockBackPower: 0.05
+  knockBackDaze: 0
 --- !u!1001 &976237204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4109,7 +4115,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 50
+  knockBackPower: 0.2
+  knockBackDaze: 0
 --- !u!1 &1223528993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,7 +4246,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 50
+  knockBackPower: 0.3
+  knockBackDaze: 0
 --- !u!1 &1265032260
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,7 +4377,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 30
+  knockBackPower: 0.15
+  knockBackDaze: 0
 --- !u!1 &1330312195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4593,7 +4602,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 20
+  knockBackPower: 0.05
+  knockBackDaze: 0
 --- !u!1 &1344251092
 GameObject:
   m_ObjectHideFlags: 0
@@ -4723,7 +4733,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 50
+  knockBackPower: 0.2
+  knockBackDaze: 1
 --- !u!1 &1383101579
 GameObject:
   m_ObjectHideFlags: 0
@@ -5455,7 +5466,7 @@ MonoBehaviour:
   HitsAI: 0
   FlyingJumpAI: 0
   Dazed: 0
-  AttackRate: 13.62
+  AttackRate: 6
   DazedTime: 3
 --- !u!1 &1592586737
 GameObject:
@@ -5980,7 +5991,8 @@ MonoBehaviour:
   ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: {fileID: 8300000, guid: 5d2eeb7eb37be47eb8217f3a3e237234, type: 3}
-  knockBackPower: 30
+  knockBackPower: 0.15
+  knockBackDaze: 0
 --- !u!1 &1734647566
 GameObject:
   m_ObjectHideFlags: 0

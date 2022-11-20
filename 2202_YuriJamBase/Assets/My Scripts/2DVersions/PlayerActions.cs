@@ -42,11 +42,11 @@ public class PlayerActions : MonoBehaviour
             {
                 if (thisMove.FacingRight == true)
                 {
-                    this.transform.Translate(PunchSlideAmt * Time.deltaTime, 0, 0);
+                    this.transform.Translate(-PunchSlideAmt * Time.deltaTime, 0, 0);
                 }
                 if (thisMove.FacingLeft == true)
                 {
-                    this.transform.Translate(-PunchSlideAmt * Time.deltaTime, 0, 0);
+                    this.transform.Translate(PunchSlideAmt * Time.deltaTime, 0, 0);
                 }
             }
 
@@ -55,11 +55,11 @@ public class PlayerActions : MonoBehaviour
             {
                 if (thisMove.FacingRight == true)
                 {
-                    this.transform.Translate(-HeavyReactAmt * Time.deltaTime, 0, 0);
+                    this.transform.Translate(HeavyReactAmt * Time.deltaTime, 0, 0);
                 }
                 if (thisMove.FacingLeft == true)
                 {
-                    this.transform.Translate(HeavyReactAmt * Time.deltaTime, 0, 0);
+                    this.transform.Translate(-HeavyReactAmt * Time.deltaTime, 0, 0);
                 }
             }
 
@@ -172,7 +172,7 @@ public class PlayerActions : MonoBehaviour
     
     public void PlaySound(string sound)
     {
-        Debug.Log("Play " + sound);
+        // Debug.Log("Play " + sound);
         audioManager.Play(sound);
     }
     public void PlayVocal(string sound)
@@ -203,5 +203,16 @@ public class PlayerActions : MonoBehaviour
         HeavyReact = true;
         yield return new WaitForSeconds(0.3f);
         HeavyReact = false;
+    }
+
+    public IEnumerator KnockBack(float duration, bool dazed)
+    {
+        // Use "heavyReact" (a state where the player go backward) to do knock back), in PlayerActionAI there is a daze option but not here so idk...
+        HeavyReact = true;
+        // Dazed = true;
+        yield return new WaitForSeconds(duration);
+        HeavyReact = false;
+        // yield return new WaitForSeconds(DazedTime);
+        // Dazed = false;
     }
 }

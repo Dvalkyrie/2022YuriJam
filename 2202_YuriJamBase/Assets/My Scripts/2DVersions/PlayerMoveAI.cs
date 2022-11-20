@@ -29,6 +29,8 @@ public class PlayerMoveAI : MonoBehaviour
     [HideInInspector]
     public Collider2D CapsuleCollider;
 
+    PlayerActionsAI thisAction;
+
     private float OppDistance;
     public float AttackDistance = 1.5f;
     private bool MoveAI = true;
@@ -66,11 +68,14 @@ public class PlayerMoveAI : MonoBehaviour
         MoveSpeed = WalkSpeed;
 
         Restrict = transform.Find("Restrict").gameObject;
+
+        thisAction = GetComponent<PlayerActionsAI>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        // If the time of the battle is up, disable movement
         if (SaveScript.TimeOut == true)
         {
             Anim.SetBool("Forward", false);
@@ -80,27 +85,19 @@ public class PlayerMoveAI : MonoBehaviour
         {
             OppDistance = Vector3.Distance(Opponent.transform.position, this.transform.position);
 
-            if (Player2Actions.FlyingJumpP2 == true)
-            {
-                WalkSpeed = JumpSpeed;
-            }
-            else
-            {
-                WalkSpeed = MoveSpeed;
-            }
             //Check if we are knocked out
-            if (SaveScript.Player2Health <= 0)
+            if ((SaveScript.Player2Health <= 0 && selfP ==1) || (SaveScript.Player1Health <= 0 && selfP == 2))
             {
                 Debug.Log("KnockedOutCall");
                 Anim.SetTrigger("KnockOut");
-                this.GetComponent<PlayerActionsAI>().enabled = false;
+                thisAction.enabled = false;
                 StartCoroutine(KnockedOut());
 
             }
-            if (SaveScript.Player1Health <= 0)
+            if ((SaveScript.Player1Health <= 0 && selfP == 1) || (SaveScript.Player2Health <= 0 && selfP == 2))
             {
                 Anim.SetTrigger("Victory");
-                this.GetComponent<PlayerActionsAI>().enabled = false;
+                thisAction.enabled = false;
                 this.GetComponent<PlayerMoveAI>().enabled = false;
             }
 
@@ -142,7 +139,7 @@ public class PlayerMoveAI : MonoBehaviour
             //Get the opponent's position
             OppPosition = Opponent.transform.position;
 
-            if (Player2ActionsAI.Dazed == false)
+            if (thisAction.Dazed == false)
             {
                 //Facing left or right of the Opponent
                 if (OppPosition.x > this.transform.position.x)
@@ -318,7 +315,7 @@ public class PlayerMoveAI : MonoBehaviour
             }
         }
     }
-
+    /*
     public void KnockBack(float power)
     {
         // Knock the character back at the opposite of facing direction
@@ -334,7 +331,7 @@ public class PlayerMoveAI : MonoBehaviour
 
         RB.AddForce(dir * power);
     }
-
+    */
 
     IEnumerator JumpPause()
     {

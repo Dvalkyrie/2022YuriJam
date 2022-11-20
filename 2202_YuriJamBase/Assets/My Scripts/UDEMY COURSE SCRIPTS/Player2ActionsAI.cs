@@ -99,17 +99,29 @@ public class Player2ActionsAI : MonoBehaviour
                     }
                     if (AttackNumber == 2)
                     {
-                        Anim.SetTrigger("HeavyPunch");
+                        Anim.SetTrigger("MediumPunch");
                         HitsAI = false;
                         StartCoroutine(SetAttacking());
                     }
                     if (AttackNumber == 3)
                     {
-                        Anim.SetTrigger("LightKick");
+                        Anim.SetTrigger("HeavyPunch");
                         HitsAI = false;
                         StartCoroutine(SetAttacking());
                     }
                     if (AttackNumber == 4)
+                    {
+                        Anim.SetTrigger("LightKick");
+                        HitsAI = false;
+                        StartCoroutine(SetAttacking());
+                    }
+                    if (AttackNumber == 5)
+                    {
+                        Anim.SetTrigger("MediumKick");
+                        HitsAI = false;
+                        StartCoroutine(SetAttacking());
+                    }
+                    if (AttackNumber == 6)
                     {
                         Anim.SetTrigger("HeavyKick");
                         HitsAI = false;
@@ -150,7 +162,7 @@ public class Player2ActionsAI : MonoBehaviour
 
     public void RandomAttack()
     {
-        AttackNumber = Random.Range(1, 5);
+        AttackNumber = Random.Range(1, 7);
         //StartCoroutine(SetAttacking());
 
     }
@@ -193,18 +205,30 @@ public class Player2ActionsAI : MonoBehaviour
 
     IEnumerator HeavySlide()
     {
-            HeavyReact = true;
-            Dazed = true;
-            yield return new WaitForSeconds(0.3f);
-            HeavyReact = false;
-            yield return new WaitForSeconds(DazedTime);
-            Dazed = false;
+        HeavyReact = true;
+        Dazed = true;
+        yield return new WaitForSeconds(0.3f);
+        HeavyReact = false;
+        yield return new WaitForSeconds(DazedTime);
+        Dazed = false;
     }
 
     IEnumerator SetAttacking()
     {
         yield return new WaitForSeconds(AttackRate);
         Attacking = true;
+        RandomAttack();
+    }
+
+    IEnumerator KnockBack(float duration, bool dazed)
+    {
+        // Use "heavyReact" (a state where the player go backward) to do knock back
+        HeavyReact = true;
+        Dazed = true;
+        yield return new WaitForSeconds(duration);
+        HeavyReact = false;
+        yield return new WaitForSeconds(DazedTime);
+        Dazed = false;
     }
 
 }

@@ -29,6 +29,7 @@ public class PlayerTrigger : MonoBehaviour
     PlayerMoveAI P2_move;
 
     public float knockBackPower = 1;
+    public bool knockBackDaze = false;
 
     private void Start()
     {
@@ -97,7 +98,7 @@ public class PlayerTrigger : MonoBehaviour
             if (collision.gameObject.CompareTag("Player1") && collision.isTrigger)
             {
                 playHit(P1_audio_src);
-                //Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
+                Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
                 if (EmitFX == true)
                 {
                     Instantiate(ParticlePrefab, transform.parent.transform);
@@ -110,6 +111,7 @@ public class PlayerTrigger : MonoBehaviour
                 if ((Input.GetAxis("Horizontal") < 0 && P1_move.FacingLeft) || (Input.GetAxis("Horizontal") > 0 && P1_move.FacingRight))
                 {
                     P1_action.Anim.SetTrigger("BlockOn");
+                    Debug.Log("Blocked");
                 }
                 else
                 {
@@ -118,7 +120,8 @@ public class PlayerTrigger : MonoBehaviour
                     {
                         SaveScript.Player1Timer += 2.0f;
                     }
-                    P1_move.KnockBack(knockBackPower);
+                    P1_action.StartCoroutine(P1_action.KnockBack(knockBackPower, knockBackDaze));
+                    Debug.Log("Knock mio");
                 }
             }
             
@@ -141,7 +144,7 @@ public class PlayerTrigger : MonoBehaviour
                 {
                     SaveScript.Player2Timer += 2.0f;
                 }
-                P2_move.KnockBack(knockBackPower);
+                P2_action.StartCoroutine(P2_action.KnockBack(knockBackPower, knockBackDaze));
             }
             
         }
@@ -149,8 +152,11 @@ public class PlayerTrigger : MonoBehaviour
 
     void playHit(AudioSource src)
     {
+        /*
+        // Added sound for when the attack hits the opponent
         src.clip = hitSfx;
         src.loop = false;
         src.Play();
+        */
     }
 }
