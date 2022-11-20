@@ -49,7 +49,7 @@ public class RoundFight : MonoBehaviour
         }
         if (SaveScript.Round == 2)
         {
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(3.8f);
             Round2Text.gameObject.SetActive(true);
             MyPlayer.clip = Round2Audio;
             MyPlayer.Play();
@@ -67,7 +67,7 @@ public class RoundFight : MonoBehaviour
         }
         if (SaveScript.Round == 3)
         {
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(3.8f);
             Round3Text.gameObject.SetActive(true);
             MyPlayer.clip = Round3Audio;
             MyPlayer.Play();
