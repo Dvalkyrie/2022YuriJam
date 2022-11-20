@@ -12,7 +12,8 @@ public class PlayerTrigger : MonoBehaviour
     public float PauseSpeed = 0.6f;
 
     [SerializeField]
-    private AudioClip hitSfx;
+    private string hitSfx;
+    private AudioManager SfxManager;
 
     private int selfP;
     private int otherP;
@@ -22,8 +23,6 @@ public class PlayerTrigger : MonoBehaviour
 
     PlayerActions P1_action;
     PlayerActionsAI P2_action;
-
-    AudioSource P1_audio_src, P2_audio_src;
 
     PlayerMove2D P1_move;
     PlayerMoveAI P2_move;
@@ -44,8 +43,8 @@ public class PlayerTrigger : MonoBehaviour
         P1_move = P1.GetComponent<PlayerMove2D>();
         P2_move = P2.GetComponent<PlayerMoveAI>();
 
-        P1_audio_src = P1.GetComponent<AudioSource>();
-        P2_audio_src = P2.GetComponent<AudioSource>();
+        SfxManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+
 
         Transform characterGameobject = transform.parent.parent;
         if (characterGameobject.gameObject.CompareTag("Player1"))
@@ -97,7 +96,7 @@ public class PlayerTrigger : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player1") && collision.isTrigger)
             {
-                playHit(P1_audio_src);
+                playHit();
                 Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
                 if (EmitFX == true)
                 {
@@ -130,7 +129,7 @@ public class PlayerTrigger : MonoBehaviour
          {
             if (collision.gameObject.CompareTag("Player2") && collision.isTrigger)
             {
-                playHit(P2_audio_src);
+                playHit();
                 // Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
                 if (EmitFX == true)
                 {
@@ -150,13 +149,12 @@ public class PlayerTrigger : MonoBehaviour
         }
     }
 
-    void playHit(AudioSource src)
+    void playHit()
     {
-        /*
-        // Added sound for when the attack hits the opponent
-        src.clip = hitSfx;
-        src.loop = false;
-        src.Play();
-        */
+        if (hitSfx != "")
+        {
+            // Added sound for when the attack hits the opponent
+            SfxManager.Play(hitSfx);
+        }
     }
 }
