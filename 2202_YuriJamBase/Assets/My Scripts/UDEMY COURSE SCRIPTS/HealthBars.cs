@@ -65,6 +65,7 @@ public class HealthBars : MonoBehaviour
 
         TimerText.text = Mathf.Round(LevelTime).ToString();
 
+
         Player1Green.fillAmount = SaveScript.Player1Health;
         Player2Green.fillAmount = SaveScript.Player2Health;
 

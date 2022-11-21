@@ -19,6 +19,9 @@ TagManager:
   - FistHeavy
   - FistMedium
   - DontDestroy
+  - SelectionLeft
+  - SelectionRight
+  - Canvas
   layers:
   - Default
   - TransparentFX

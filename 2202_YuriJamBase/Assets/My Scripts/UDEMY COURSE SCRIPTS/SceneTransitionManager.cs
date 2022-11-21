@@ -11,11 +11,25 @@ public class SceneTransitionManager : MonoBehaviour
 
     [SerializeField]
     private Image Curtain; // image that will fade to black or white
-
-
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    
+    // update once per frame
+    void Update() 
+    {
+        Scene scene = SceneManager.GetActiveScene();
+
+        // if currently at Comic scene check if user want to skip to the character selection.
+        if(scene.name == "2D_Comic")
+        {
+            if (Input.anyKey)
+            {
+                LoadSceneCharacterSelect();
+            }
+        }
+        
     }
     public void ToNextScene()
     {
@@ -24,7 +38,7 @@ public class SceneTransitionManager : MonoBehaviour
         {
             index = 0;
         }
-        StartCoroutine(FadeInAndLoadScene(Color.white, 0.5f, index));
+        StartCoroutine(FadeInAndLoadScene(Color.black, 1.0f, index));
     }
 
     public void ReloadScene()
@@ -32,31 +46,48 @@ public class SceneTransitionManager : MonoBehaviour
         Debug.Log("reload scene");
         
         int index = SceneManager.GetActiveScene().buildIndex;
-        StartCoroutine(FadeInAndLoadScene(Color.white, 0.5f, index));
+        StartCoroutine(FadeInAndLoadScene(Color.black, 1.0f, index));
     }
 
 
-    /*
-    public void ToComic()
+    public void LoadSceneManu()
     {
-        StartCoroutine(FadeInAndLoadScene(Color.white, 2, 1));
+        SceneManager.LoadScene(0);
     }
 
-    public void ControlsMenu()
+    public void LoadSceneComic(){
+        SceneManager.LoadScene(1);
+    }
+
+    // Change scene to character select
+    public static void LoadSceneCharacterSelect()
     {
+        SceneManager.LoadScene(2);
+    }
+
+    public static void LoadSceneFight(){
+        SceneManager.LoadScene(3);
+    }
+
+    public void LoadSceneVictory(){
         SceneManager.LoadScene(4);
     }
 
-    public void OptionsMenu()
-    {
-        SceneManager.LoadScene(5);
-    }
+    // public void ControlsMenu()
+    // {
+    //     SceneManager.LoadScene(4);
+    // }
+
+    // public void OptionsMenu()
+    // {
+    //     SceneManager.LoadScene(5);
+    // }
 
     public void ExitGame()
     {
         Application.Quit();
     }
-    */
+    
 
     private IEnumerator FadeInAndLoadScene(Color color, float duration, int toScene)
     {
@@ -97,6 +128,6 @@ public class SceneTransitionManager : MonoBehaviour
     {
         Debug.Log("OnSceneLoaded: " + scene.name);
         Debug.Log(mode);
-        StartCoroutine(FadeOut(0.5f));
+        StartCoroutine(FadeOut(1.0f));
     }
 }
