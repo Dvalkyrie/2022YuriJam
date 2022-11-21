@@ -12,6 +12,9 @@ public class CharacterSelector : MonoBehaviour
     private Image RightImage;
     private bool rightSelect = false;
     private bool leftSelect = false;
+
+    public Image MioBg, BeaBg;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,9 @@ public class CharacterSelector : MonoBehaviour
         RightCharacter = GameObject.FindWithTag("SelectionRight");
         RightImage = RightCharacter.GetComponent<Image>();
         RightImage.color = Color.grey;
+        MioBg.enabled = false;
+        BeaBg.enabled = false;
+
     }
 
     // Update is called once per frame
@@ -34,6 +40,8 @@ public class CharacterSelector : MonoBehaviour
             LeftImage.color = Color.grey;
             leftSelect = true;
             rightSelect = false;
+            MioBg.enabled = true;
+            BeaBg.enabled = false;
         }
         if (Input.GetAxis("Horizontal") < 0)
         {
@@ -41,6 +49,8 @@ public class CharacterSelector : MonoBehaviour
             LeftImage.color = Color.white;
             rightSelect = true;
             leftSelect = false;
+            BeaBg.enabled = true;
+            MioBg.enabled = false;
         }
 
         // use any of the attack key to select the character, then move on to the next scene

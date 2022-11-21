@@ -9,7 +9,7 @@ InputManager:
     m_Name: Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
+    negativeButton: q
     positiveButton: 
     altNegativeButton: a
     altPositiveButton: d

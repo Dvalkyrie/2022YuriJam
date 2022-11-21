@@ -18,6 +18,7 @@ public class HealthBars : MonoBehaviour
     public TextMeshProUGUI TimerText;
     public float LevelTime = 90;
     public GameObject WinCondition;
+    public RectTransform TimerArrow;
 
     // Start is called before the first frame update
     void Start()
@@ -27,27 +28,29 @@ public class HealthBars : MonoBehaviour
         SaveScript.TimeOut = true; 
         if(SaveScript.Player1Wins == 1)
         {
-            P1Win1.gameObject.SetActive(true);
+            P2Win1.gameObject.SetActive(false);
         }
         if (SaveScript.Player1Wins == 2)
         {
-            P1Win1.gameObject.SetActive(true);
-            P1Win2.gameObject.SetActive(true);
+            P2Win1.gameObject.SetActive(false);
+            P2Win2.gameObject.SetActive(false);
         }
         if (SaveScript.Player2Wins == 1)
         {
-            P2Win1.gameObject.SetActive(true);
+            P1Win1.gameObject.SetActive(false);
         }
         if (SaveScript.Player2Wins == 2)
         {
-            P2Win1.gameObject.SetActive(true);
-            P2Win2.gameObject.SetActive(true);
+            P1Win1.gameObject.SetActive(false);
+            P1Win2.gameObject.SetActive(false);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        TimerArrow.rotation = Quaternion.Euler(0, 0, 360 / 90 * LevelTime);
 
         if (SaveScript.TimeOut == false)
         {
