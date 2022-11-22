@@ -10,6 +10,7 @@ public class MusicMan : MonoBehaviour
     {
         foreach (Sound s in sounds)
         {
+            
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
 
@@ -21,7 +22,7 @@ public class MusicMan : MonoBehaviour
     }
     private void Start()
     {
-        Debug.Log("hello!");
+        //Debug.Log("hello!");
         Play("DefaultTheme");
         Play("BakerTheme");
         Play("ChefTheme");
@@ -36,64 +37,69 @@ public class MusicMan : MonoBehaviour
         }
         s.source.Play();
     }
-    private void Update()
-    {
-        float TE = 0; //time elapsed
-        float TTF = 1.75f; //time to fade
 
+    public void Update()
+    {
+        StopAllCoroutines();
+        StartCoroutine(Fade());
+    }
+    private IEnumerator Fade()
+    {
+        float timeEl = 0; //time elapsed
+        float TTF = 0.75f; //time to fade
+        Sound s = Array.Find(sounds, sound => sound.name == "DefaultTheme");
+        Sound s2 = Array.Find(sounds, sound => sound.name == "ChefTheme");
+        Sound s3 = Array.Find(sounds, sound => sound.name == "BakerTheme");
+        // 1, 0 means it goes from 0 to 1
+        // 0, 1 means it goes from 1 to 0
         if (SaveScript.Player1Health == SaveScript.Player2Health)
         {
-            //Debug.Log("bbam");
-            Sound s = Array.Find(sounds, sound => sound.name == "DefaultTheme");
-            s.source.volume = Mathf.Lerp(1, 0, TE / TTF);
-            TE += Time.deltaTime;
+            while (timeEl < TTF)
+            {
+                
+                s.source.volume = Mathf.Lerp(1, 0, timeEl / TTF);
+                timeEl += Time.deltaTime;
 
-            //Debug.Log("bbang");
-            Sound s2 = Array.Find(sounds, sound => sound.name == "ChefTheme");
-            s2.source.volume = Mathf.Lerp(0, 1, TE / TTF);
-            TE += Time.deltaTime;
+                s2.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
+                timeEl += Time.deltaTime;
 
-            Sound s3 = Array.Find(sounds, sound => sound.name == "BakerTheme");
-            s3.source.volume = Mathf.Lerp(0, 1, TE / TTF);
-            TE += Time.deltaTime;
+                s3.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
+                timeEl += Time.deltaTime;
+                yield return null;
+            }
         }
         else if (SaveScript.Player1Health > SaveScript.Player2Health)
         {
-            //Debug.Log("bbam");
-            Sound s = Array.Find(sounds, sound => sound.name == "DefaultTheme");
-            s.source.volume = Mathf.Lerp(0, 1, TE / TTF);
-            TE += Time.deltaTime;
+            while (timeEl < TTF)
+            {
+                s.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
+                timeEl += Time.deltaTime;
 
-            //Debug.Log("bbang");
-            Sound s2 = Array.Find(sounds, sound => sound.name == "BakerTheme");
-            s2.source.volume = Mathf.Lerp(1, 0, TE / TTF);
-            TE += Time.deltaTime;
+                s2.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
+                timeEl += Time.deltaTime;
 
-            //Debug.Log("bbang");
-            Sound s3 = Array.Find(sounds, sound => sound.name == "ChefTheme");
-            s3.source.volume = Mathf.Lerp(0, 1, TE / TTF);
-            TE += Time.deltaTime;
+                s3.source.volume = Mathf.Lerp(1, 0, timeEl / TTF);
+                timeEl += Time.deltaTime;
+                yield return null;
+            }
         }
 
         else if (SaveScript.Player1Health < SaveScript.Player2Health)
         {
-            //Debug.Log("bbam");
-            Sound s = Array.Find(sounds, sound => sound.name == "DefaultTheme");
-            s.source.volume = Mathf.Lerp(0, 1, TE / TTF);
-            TE += Time.deltaTime;
+            while (timeEl < TTF)
+            {
+                s.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
+                timeEl += Time.deltaTime;
 
-            //Debug.Log("bbang");
-            Sound s2 = Array.Find(sounds, sound => sound.name == "ChefTheme");
-            s2.source.volume = Mathf.Lerp(1, 0, TE / TTF);
-            TE += Time.deltaTime;
+                s2.source.volume = Mathf.Lerp(1, 0, timeEl / TTF);
+                timeEl += Time.deltaTime;
 
-            Sound s3 = Array.Find(sounds, sound => sound.name == "BakerTheme");
-            s3.source.volume = Mathf.Lerp(0, 1, TE / TTF);
-            TE += Time.deltaTime;
+                s3.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
+                timeEl += Time.deltaTime;
+                yield return null;
+            }
         }
 
     }
-
 }
-
 
