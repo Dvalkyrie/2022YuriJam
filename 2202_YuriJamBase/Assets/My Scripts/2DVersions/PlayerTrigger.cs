@@ -30,6 +30,8 @@ public class PlayerTrigger : MonoBehaviour
     public float knockBackPower = 1;
     public bool knockBackDaze = false;
 
+    public GameObject vfx_transform;
+
     private void Start()
     {
         Col = GetComponent<BoxCollider2D>();
@@ -44,7 +46,6 @@ public class PlayerTrigger : MonoBehaviour
         P2_move = P2.GetComponent<PlayerMoveAI>();
 
         SfxManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
-
 
         Transform characterGameobject = transform.parent.parent;
         if (characterGameobject.gameObject.CompareTag("Player1"))
@@ -97,6 +98,7 @@ public class PlayerTrigger : MonoBehaviour
             if (collision.gameObject.CompareTag("Player1") && collision.isTrigger)
             {
                 playHit();
+                vfx_transform.SetActive(true);
                 Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
                 if (EmitFX == true)
                 {
@@ -130,6 +132,7 @@ public class PlayerTrigger : MonoBehaviour
             if (collision.gameObject.CompareTag("Player2") && collision.isTrigger)
             {
                 playHit();
+                vfx_transform.SetActive(true);
                 // Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
                 if (EmitFX == true)
                 {

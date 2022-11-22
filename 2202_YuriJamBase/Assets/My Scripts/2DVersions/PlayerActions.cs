@@ -18,6 +18,8 @@ public class PlayerActions : MonoBehaviour
     public float HeavyReactAmt = 4f;
     public bool Hits = false;
     public bool FlyingJump = false;
+    public GameObject vfx_transform;
+
 
     private PlayerMove2D thisMove;
 
@@ -69,32 +71,42 @@ public class PlayerActions : MonoBehaviour
             //Standing attacks
             if (AnimStateInfo.IsTag("Motion") || AnimStateInfo.IsTag("Block"))
             {
-                if (Input.GetButtonDown("lightPunch"))
+                if (Input.anyKeyDown)
+                {
+                    // Hide vfx empty
+                    vfx_transform.SetActive(false);
+                }
+                // Custom mapping for mouse: allow to do kicks when holding shift
+                bool shift_down = false;
+                if (Input.GetKey(KeyCode.LeftShift))
+                    shift_down = true;
+
+                if (Input.GetButtonDown("lightPunch") && !shift_down)
                 {
                     Anim.SetTrigger("LightPunch");
                     Hits = false;;
                 }
-                if (Input.GetButtonDown("mediumPunch"))
+                if (Input.GetButtonDown("mediumPunch") && !shift_down)
                 {
                     Anim.SetTrigger("MediumPunch");
                     Hits = false;
                 }
-                if (Input.GetButtonDown("heavyPunch"))
+                if (Input.GetButtonDown("heavyPunch") && !shift_down)
                 {
                     Anim.SetTrigger("HeavyPunch");
                     Hits = false;
                 }
-                if (Input.GetButtonDown("lightKick"))
+                if (Input.GetButtonDown("lightKick") || (Input.GetButtonDown("lightPunch")&&shift_down))
                 {
                     Anim.SetTrigger("LightKick");
                     Hits = false;
                 }
-                if (Input.GetButtonDown("mediumKick"))
+                if (Input.GetButtonDown("mediumKick") || (Input.GetButtonDown("mediumPunch") && shift_down))
                 {
                     Anim.SetTrigger("MediumKick");
                     Hits = false;
                 }
-                if (Input.GetButtonDown("heavyKick"))
+                if (Input.GetButtonDown("heavyKick") || (Input.GetButtonDown("heavyPunch") && shift_down))
                 {
                     Anim.SetTrigger("HeavyKick");
                     Hits = false;
