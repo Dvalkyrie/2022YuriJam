@@ -51,6 +51,7 @@ public class MusicMan : MonoBehaviour
     {
         float timeEl = 0;
         float TTF = 1.0f; //time to fade
+        float changeInVolume = 0.01f;
         Sound s = Array.Find(sounds, sound => sound.name == "DefaultTheme");
         Sound s2 = Array.Find(sounds, sound => sound.name == "ChefTheme");
         Sound s3 = Array.Find(sounds, sound => sound.name == "BakerTheme");
@@ -72,13 +73,13 @@ public class MusicMan : MonoBehaviour
 
                     // changes volumes option 2
                     if(s.source.volume < 0.95f){
-                        s.source.volume += 0.01f;
+                        s.source.volume += changeInVolume;
                     }
                     if(s2.source.volume > 0.05f){
-                        s2.source.volume -= 0.01f;
+                        s2.source.volume -= changeInVolume;
                     }
                     if(s3.source.volume > 0.05f){
-                        s3.source.volume -= 0.01f;
+                        s3.source.volume -= changeInVolume;
                     }
                     timeEl += Time.deltaTime;
                     // Debug.Log("Time elapsed: " + timeEl);
@@ -105,13 +106,13 @@ public class MusicMan : MonoBehaviour
                     // changes volumes option 2
                     if(s.source.volume > 0.05f)
                     {
-                        s.source.volume -= 0.01f;}
+                        s.source.volume -= changeInVolume;}
                     if(s2.source.volume > 0.05f)
                     {
-                        s2.source.volume -= 0.01f;}
+                        s2.source.volume -= changeInVolume;}
                     if(s3.source.volume < 0.95f)
                     {
-                        s3.source.volume += 0.01f;}
+                        s3.source.volume += changeInVolume;}
                     
                     timeEl += Time.deltaTime;
                     // Debug.Log("Time elapsed: " + timeEl);
@@ -141,14 +142,14 @@ public class MusicMan : MonoBehaviour
                     // changes volumes option 2
                     if(s.source.volume > 0.05f)
                     {
-                        s.source.volume -= 0.01f;
+                        s.source.volume -= changeInVolume;
                     }
                     if(s2.source.volume < 0.95f)
                     {
-                        s2.source.volume += 0.01f;}
+                        s2.source.volume += changeInVolume;}
                     if(s3.source.volume > 0.05f)
                     {
-                        s3.source.volume -= 0.01f;}
+                        s3.source.volume -= changeInVolume;}
                     timeEl += Time.deltaTime;
                     // Debug.Log("Beatriz Win Default at " + s.source.volume + 
                     //             " Chef at " + s2.source.volume+ 
