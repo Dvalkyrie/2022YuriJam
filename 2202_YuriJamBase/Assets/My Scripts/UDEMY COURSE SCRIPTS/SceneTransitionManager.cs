@@ -49,13 +49,12 @@ public class SceneTransitionManager : MonoBehaviour
         StartCoroutine(FadeInAndLoadScene(Color.black, 1.0f, index));
     }
 
-
-    public void LoadSceneManu()
+    public static void LoadSceneManu()
     {
         SceneManager.LoadScene(0);
     }
 
-    public void LoadSceneComic(){
+    public static void LoadSceneComic(){
         SceneManager.LoadScene(1);
     }
 
@@ -69,7 +68,7 @@ public class SceneTransitionManager : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
-    public void LoadSceneVictory(){
+    public static void LoadSceneVictory(){
         SceneManager.LoadScene(4);
     }
 

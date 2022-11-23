@@ -5,6 +5,8 @@ using UnityEngine;
 public class MusicMan : MonoBehaviour
 {
     public Sound[] sounds;
+    // private float timeEl = 0; //time elapsed
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -28,6 +30,7 @@ public class MusicMan : MonoBehaviour
         Play("ChefTheme");
 
     }
+
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -43,10 +46,11 @@ public class MusicMan : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(Fade());
     }
+
     private IEnumerator Fade()
     {
-        float timeEl = 0; //time elapsed
-        float TTF = 0.75f; //time to fade
+        float timeEl = 0;
+        float TTF = 1.0f; //time to fade
         Sound s = Array.Find(sounds, sound => sound.name == "DefaultTheme");
         Sound s2 = Array.Find(sounds, sound => sound.name == "ChefTheme");
         Sound s3 = Array.Find(sounds, sound => sound.name == "BakerTheme");
@@ -54,51 +58,106 @@ public class MusicMan : MonoBehaviour
         // 0, 1 means it goes from 1 to 0
         if (SaveScript.Player1Health == SaveScript.Player2Health)
         {
-            while (timeEl < TTF)
-            {
-                
-                s.source.volume = Mathf.Lerp(1, 0, timeEl / TTF);
-                timeEl += Time.deltaTime;
+            // if volumes are good, don't bother changing it.
+            // if(s.source.volume < 0.95f || s2.source.volume > 0.05f || s3.source.volume > 0.05f)
+            // {
+                while (timeEl < TTF)
+                {
+                    // changes volumes option 1
+                    // s.source.volume = Mathf.Lerp(1, 0, timeEl / TTF);
 
-                s2.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
-                timeEl += Time.deltaTime;
+                    // s2.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
 
-                s3.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
-                timeEl += Time.deltaTime;
-                yield return null;
-            }
+                    // s3.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
+
+                    // changes volumes option 2
+                    if(s.source.volume < 0.95f){
+                        s.source.volume += 0.01f;
+                    }
+                    if(s2.source.volume > 0.05f){
+                        s2.source.volume -= 0.01f;
+                    }
+                    if(s3.source.volume > 0.05f){
+                        s3.source.volume -= 0.01f;
+                    }
+                    timeEl += Time.deltaTime;
+                    // Debug.Log("Time elapsed: " + timeEl);
+                    Debug.Log("Equals Default at " + s.source.volume + 
+                                " Chef at " + s2.source.volume+ 
+                                " Baker at " + s3.source.volume);
+                    yield return null;
+                }
+            // }
         }
         else if (SaveScript.Player1Health > SaveScript.Player2Health)
         {
-            while (timeEl < TTF)
-            {
-                s.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
-                timeEl += Time.deltaTime;
+            // if(s.source.volume > 0.05f || s2.source.volume > 0.05f || s3.source.volume < 0.95f)
+            // {
+                while (timeEl < TTF)
+                {
+                    // changes volumes option 1
+                    // s.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
 
-                s2.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
-                timeEl += Time.deltaTime;
+                    // s2.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
 
-                s3.source.volume = Mathf.Lerp(1, 0, timeEl / TTF);
-                timeEl += Time.deltaTime;
-                yield return null;
-            }
+                    // s3.source.volume = Mathf.Lerp(1, 0, timeEl / TTF);
+                    
+                    // changes volumes option 2
+                    if(s.source.volume > 0.05f)
+                    {
+                        s.source.volume -= 0.01f;}
+                    if(s2.source.volume > 0.05f)
+                    {
+                        s2.source.volume -= 0.01f;}
+                    if(s3.source.volume < 0.95f)
+                    {
+                        s3.source.volume += 0.01f;}
+                    
+                    timeEl += Time.deltaTime;
+                    // Debug.Log("Time elapsed: " + timeEl);
+                    Debug.Log("MioWin Default at " + s.source.volume + 
+                                " Chef at " + s2.source.volume+ 
+                                " Baker at " + s3.source.volume);
+                    yield return null;
+                }
+            // }
+            
         }
 
         else if (SaveScript.Player1Health < SaveScript.Player2Health)
         {
-            while (timeEl < TTF)
-            {
-                s.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
-                timeEl += Time.deltaTime;
+            // if(s.source.volume > 0.1f || s2.source.volume < 0.9f || s3.source.volume > 0.1f)
+            // {
+            
+                while (timeEl < TTF)
+                {
+                    // changes volumes option 1
+                    // s.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
 
-                s2.source.volume = Mathf.Lerp(1, 0, timeEl / TTF);
-                timeEl += Time.deltaTime;
+                    // s2.source.volume = Mathf.Lerp(1, 0, timeEl / TTF);
 
-                s3.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
-                timeEl += Time.deltaTime;
-                yield return null;
-            }
+                    // s3.source.volume = Mathf.Lerp(0, 1, timeEl / TTF);
+
+                    // changes volumes option 2
+                    if(s.source.volume > 0.05f)
+                    {
+                        s.source.volume -= 0.01f;
+                    }
+                    if(s2.source.volume < 0.95f)
+                    {
+                        s2.source.volume += 0.01f;}
+                    if(s3.source.volume > 0.05f)
+                    {
+                        s3.source.volume -= 0.01f;}
+                    timeEl += Time.deltaTime;
+                    // Debug.Log("Beatriz Win Default at " + s.source.volume + 
+                    //             " Chef at " + s2.source.volume+ 
+                    //             " Baker at " + s3.source.volume);
+                    yield return null;
+                }
+            // }
         }
+        
 
     }
 }
