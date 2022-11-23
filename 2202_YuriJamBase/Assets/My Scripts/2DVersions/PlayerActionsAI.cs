@@ -21,6 +21,7 @@ public class PlayerActionsAI : MonoBehaviour
     private bool Attacking = true;
     public float AttackRate = 1.0f;
     public float DazedTime = 3.0f;
+    public GameObject vfx_transform;
 
     PlayerMoveAI thisMove;
 
@@ -94,6 +95,8 @@ public class PlayerActionsAI : MonoBehaviour
             {
                 if (Attacking == true)
                 {
+                    // Hide vfx empty
+                    vfx_transform.SetActive(false);
                     Attacking = false;
                     if (AttackNumber == 1)
                     {
@@ -134,7 +137,7 @@ public class PlayerActionsAI : MonoBehaviour
                 }
             }
 
-
+            
             //Crouching attack
             if (Player1Layer0.IsTag("Crouching"))
             {
@@ -230,6 +233,13 @@ public class PlayerActionsAI : MonoBehaviour
         HeavyReact = false;
         yield return new WaitForSeconds(DazedTime);
         Dazed = false;
+    }
+    public IEnumerator dashAttack(float duration)
+    {
+        HeavyMoving = true;
+        yield return new WaitForSeconds(duration);
+        HeavyMoving = false;
+
     }
 
 }

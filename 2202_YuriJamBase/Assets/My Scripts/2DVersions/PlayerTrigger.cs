@@ -7,16 +7,14 @@ public class PlayerTrigger : MonoBehaviour
     private Collider2D Col;
     public float DamageAmt = 0.1f;
 
-    public bool EmitFX = false;
-    public GameObject ParticlePrefab;
     public float PauseSpeed = 0.6f;
 
     [SerializeField]
     private string hitSfx;
     private AudioManager SfxManager;
 
-    private int selfP;
-    private int otherP;
+    public int selfP;
+    public int otherP;
 
     private GameObject P1;
     private GameObject P2;
@@ -31,6 +29,8 @@ public class PlayerTrigger : MonoBehaviour
     public bool knockBackDaze = false;
 
     public GameObject vfx_transform;
+
+    public bool projectile;
 
     private void Start()
     {
@@ -47,18 +47,20 @@ public class PlayerTrigger : MonoBehaviour
 
         SfxManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
 
-        Transform characterGameobject = transform.parent.parent;
-        if (characterGameobject.gameObject.CompareTag("Player1"))
+        if (!projectile)
         {
-            selfP = 1;
-            otherP = 2;
+            Transform characterGameobject = transform.parent.parent;
+            if (characterGameobject.gameObject.CompareTag("Player1"))
+            {
+                selfP = 1;
+                otherP = 2;
+            }
+            else
+            {
+                otherP = 1;
+                selfP = 2;
+            }
         }
-        else
-        {
-            otherP = 1;
-            selfP = 2;
-        }
-        
     }
 
 
@@ -98,14 +100,9 @@ public class PlayerTrigger : MonoBehaviour
             if (collision.gameObject.CompareTag("Player1") && collision.isTrigger)
             {
                 playHit();
-                vfx_transform.SetActive(true);
+                if (vfx_transform!= null)
+                    vfx_transform.SetActive(true);
                 Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
-                if (EmitFX == true)
-                {
-                    Instantiate(ParticlePrefab, transform.parent.transform);
-                    // Particles.Play();
-                    Time.timeScale = PauseSpeed;
-                }
                 P2_action.HitsAI = true;
 
                 // Block, if P1 is walking away from P2 at that moment, block is on
@@ -133,12 +130,6 @@ public class PlayerTrigger : MonoBehaviour
             {
                 playHit();
                 vfx_transform.SetActive(true);
-                // Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
-                if (EmitFX == true)
-                {
-                    Instantiate(ParticlePrefab, transform.parent.transform);
-                    Time.timeScale = PauseSpeed;
-                }
                 // add block!
                 P1_action.Hits = true;
                 SaveScript.Player2Health -= DamageAmt;

@@ -40,6 +40,31 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     path: Player2/BMediumKick
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.74, y: 0.66, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.26666668
+        value: {x: -0.91, y: 0.66, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: vfx_transform/vfx
   m_ScaleCurves:
   - curve:
       serializedVersion: 2
@@ -126,6 +151,29 @@ AnimationClip:
     path: 
     classID: 212
     script: {fileID: 0}
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: 64a2a5928a4544144abda704c89abc15, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: b6e75ef62ab63af4f81f78e5d1bb6710, type: 3}
+    - time: 0.26666668
+      value: {fileID: 21300000, guid: 6e54cb8c8bda5cf40af4d0070662f39b, type: 3}
+    - time: 0.28333333
+      value: {fileID: 21300000, guid: d817da2411c61154caa68f41f4f877d6, type: 3}
+    - time: 0.3
+      value: {fileID: 21300000, guid: 41897fce7cec1b445b4ea35d52a36355, type: 3}
+    - time: 0.31666666
+      value: {fileID: 21300000, guid: 3106b6f0dfa250e40a60aacdbf733e1b, type: 3}
+    - time: 0.33333334
+      value: {fileID: 21300000, guid: a835a3f2707ebe145b9b495ad28588d9, type: 3}
+    - time: 0.35
+      value: {fileID: 21300000, guid: 47b96981fb216d7498b84eddc614f3f8, type: 3}
+    - time: 0.36666667
+      value: {fileID: 21300000, guid: b6e75ef62ab63af4f81f78e5d1bb6710, type: 3}
+    attribute: m_Sprite
+    path: vfx_transform/vfx
+    classID: 212
+    script: {fileID: 0}
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -135,6 +183,13 @@ AnimationClip:
     genericBindings:
     - serializedVersion: 2
       path: 3806581243
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1962252820
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -161,6 +216,13 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 1962252820
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: d5eb6097a70121046a5642d323f1e0a8, type: 3}
     - {fileID: 21300000, guid: fcf12d4623819924cb8f2df3f4b06e0d, type: 3}
@@ -170,6 +232,15 @@ AnimationClip:
     - {fileID: 21300000, guid: 92450ed38bc31d94c8f01181c8a5d88b, type: 3}
     - {fileID: 21300000, guid: dc1d248982a151a4a84281cc9b2d2653, type: 3}
     - {fileID: 21300000, guid: 550542445cf16224eb05d4565538e893, type: 3}
+    - {fileID: 21300000, guid: 64a2a5928a4544144abda704c89abc15, type: 3}
+    - {fileID: 21300000, guid: b6e75ef62ab63af4f81f78e5d1bb6710, type: 3}
+    - {fileID: 21300000, guid: 6e54cb8c8bda5cf40af4d0070662f39b, type: 3}
+    - {fileID: 21300000, guid: d817da2411c61154caa68f41f4f877d6, type: 3}
+    - {fileID: 21300000, guid: 41897fce7cec1b445b4ea35d52a36355, type: 3}
+    - {fileID: 21300000, guid: 3106b6f0dfa250e40a60aacdbf733e1b, type: 3}
+    - {fileID: 21300000, guid: a835a3f2707ebe145b9b495ad28588d9, type: 3}
+    - {fileID: 21300000, guid: 47b96981fb216d7498b84eddc614f3f8, type: 3}
+    - {fileID: 21300000, guid: b6e75ef62ab63af4f81f78e5d1bb6710, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -394,6 +465,90 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalScale.z
     path: Player2/BMediumKick
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.74
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.26666668
+        value: -0.91
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: vfx_transform/vfx
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.66
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.26666668
+        value: 0.66
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: vfx_transform/vfx
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.26666668
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: vfx_transform/vfx
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []

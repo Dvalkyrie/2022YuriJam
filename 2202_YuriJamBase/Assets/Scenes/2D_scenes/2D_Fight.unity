@@ -416,13 +416,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.1
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: CLP
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.1
   knockBackDaze: 0
-  vfx_transform: {fileID: 0}
+  vfx_transform: {fileID: 206405360}
+  projectile: 0
 --- !u!1 &42856450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,13 +1283,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.2
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: BMP_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.2
   knockBackDaze: 0
   vfx_transform: {fileID: 392666526}
+  projectile: 0
+--- !u!1 &206405360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 206405361}
+  m_Layer: 0
+  m_Name: vfx_transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &206405361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206405360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2097779176}
+  m_Father: {fileID: 1592225642}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &244941305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,13 +1762,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.2
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: CMP_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.2
   knockBackDaze: 0
-  vfx_transform: {fileID: 0}
+  vfx_transform: {fileID: 206405360}
+  projectile: 0
 --- !u!1 &284320074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,13 +1895,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.3
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: CHP_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.2
   knockBackDaze: 0
-  vfx_transform: {fileID: 0}
+  vfx_transform: {fileID: 206405360}
+  projectile: 0
 --- !u!1 &307069085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3176,6 +3212,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 994557144}
     m_Modifications:
+    - target: {fileID: 1067419884790611918, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111414527167527348, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: projectile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: knockBackPower
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4539541163782024344, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3194,7 +3250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4539541163782024344, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.433
+      value: -0.274
       objectReference: {fileID: 0}
     - target: {fileID: 4539541163782024344, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3921,13 +3977,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.1
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: BLP_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.1
   knockBackDaze: 0
   vfx_transform: {fileID: 392666526}
+  projectile: 0
 --- !u!1 &815856214
 GameObject:
   m_ObjectHideFlags: 0
@@ -3975,13 +4032,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.2
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: BMC_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.15
   knockBackDaze: 0
   vfx_transform: {fileID: 392666526}
+  projectile: 0
 --- !u!61 &815856217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4642,13 +4700,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.1
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: CLK_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.05
   knockBackDaze: 0
-  vfx_transform: {fileID: 0}
+  vfx_transform: {fileID: 206405360}
+  projectile: 0
 --- !u!1001 &976237204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5363,13 +5422,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.3
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: CHK_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.2
   knockBackDaze: 0
-  vfx_transform: {fileID: 0}
+  vfx_transform: {fileID: 206405360}
+  projectile: 0
 --- !u!1 &1223528993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5495,13 +5555,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.3
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: BHK_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.3
   knockBackDaze: 0
   vfx_transform: {fileID: 392666526}
+  projectile: 0
 --- !u!1 &1243937887
 GameObject:
   m_ObjectHideFlags: 0
@@ -5703,13 +5764,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.2
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: CMK_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.15
   knockBackDaze: 0
-  vfx_transform: {fileID: 0}
+  vfx_transform: {fileID: 206405360}
+  projectile: 0
 --- !u!1 &1330312195
 GameObject:
   m_ObjectHideFlags: 0
@@ -5929,13 +5991,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.1
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: BLK_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.05
   knockBackDaze: 0
   vfx_transform: {fileID: 392666526}
+  projectile: 0
 --- !u!1 &1344251092
 GameObject:
   m_ObjectHideFlags: 0
@@ -6061,13 +6124,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.3
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: BHP_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.2
   knockBackDaze: 1
   vfx_transform: {fileID: 392666526}
+  projectile: 0
 --- !u!1 &1383101579
 GameObject:
   m_ObjectHideFlags: 0
@@ -6169,13 +6233,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.1
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: BLC_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.05
   knockBackDaze: 0
   vfx_transform: {fileID: 392666526}
+  projectile: 0
 --- !u!61 &1401682835
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6744,6 +6809,7 @@ Transform:
   - {fileID: 774406373}
   - {fileID: 994557144}
   - {fileID: 1611090699}
+  - {fileID: 206405361}
   m_Father: {fileID: 960487942}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7093,6 +7159,7 @@ MonoBehaviour:
   Dazed: 0
   AttackRate: 6
   DazedTime: 3
+  vfx_transform: {fileID: 206405360}
 --- !u!1 &1592586737
 GameObject:
   m_ObjectHideFlags: 0
@@ -7776,13 +7843,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.2
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: BMK_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.15
   knockBackDaze: 0
   vfx_transform: {fileID: 392666526}
+  projectile: 0
 --- !u!1 &1734647566
 GameObject:
   m_ObjectHideFlags: 0
@@ -8485,13 +8553,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmt: 0.3
-  EmitFX: 0
-  ParticlePrefab: {fileID: 4086350254829996334, guid: a6cb000456f165a45af0099ab3ff594e, type: 3}
   PauseSpeed: 0.6
   hitSfx: BHC_HIT
+  selfP: 0
+  otherP: 0
   knockBackPower: 0.3
   knockBackDaze: 0
   vfx_transform: {fileID: 392666526}
+  projectile: 0
 --- !u!61 &1814423803
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8806,6 +8875,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077390947}
   m_CullTransparentMesh: 1
+--- !u!1 &2097779175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097779176}
+  - component: {fileID: 2097779177}
+  m_Layer: 0
+  m_Name: vfx
+  m_TagString: Player2
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2097779176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097779175}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.74, y: 0.66, z: 0}
+  m_LocalScale: {x: 0.19, y: 0.19, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 206405361}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2097779177
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097779175}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c1b09b1ca8ba05d4682ccf6db6b1102d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300000, guid: 64a2a5928a4544144abda704c89abc15, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.16, y: 2.16}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2117099219
 GameObject:
   m_ObjectHideFlags: 0
@@ -8941,17 +9094,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 994557144}
     m_Modifications:
+    - target: {fileID: 1067419884790611918, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111414527167527348, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: projectile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: knockBackPower
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4539541163782024344, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4539541163782024344, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.191
+      value: 0.109
       objectReference: {fileID: 0}
     - target: {fileID: 4539541163782024344, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.183
+      value: 0.257
       objectReference: {fileID: 0}
     - target: {fileID: 4539541163782024344, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8997,6 +9170,10 @@ PrefabInstance:
       propertyPath: projectileInstance
       value: 
       objectReference: {fileID: 4539541163782024345, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+    - target: {fileID: 4539541163782024347, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4539541163782024349, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: m_BodyType
       value: 2

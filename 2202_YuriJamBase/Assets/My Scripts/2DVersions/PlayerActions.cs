@@ -227,4 +227,15 @@ public class PlayerActions : MonoBehaviour
         // yield return new WaitForSeconds(DazedTime);
         // Dazed = false;
     }
+    public IEnumerator dashAttack(float duration)
+    {
+        HeavyMoving = true;
+        yield return new WaitForSeconds(duration);
+        HeavyMoving = false;
+
+    }
+    public void TriggerDashAttack(float duration)
+    {
+        StartCoroutine(dashAttack(duration));
+    }
 }
