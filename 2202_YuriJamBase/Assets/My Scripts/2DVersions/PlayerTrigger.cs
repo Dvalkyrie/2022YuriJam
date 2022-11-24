@@ -61,6 +61,15 @@ public class PlayerTrigger : MonoBehaviour
                 selfP = 2;
             }
         }
+        if (DebugObj.isDebug)
+        {
+            GetComponent<SpriteRenderer>().enabled = true;
+            DamageAmt *= 0.2f;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
 
 
@@ -102,9 +111,6 @@ public class PlayerTrigger : MonoBehaviour
                 playHit();
                 if (vfx_transform!= null)
                     vfx_transform.SetActive(true);
-                Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
-                P2_action.HitsAI = true;
-
                 // Block, if P1 is walking away from P2 at that moment, block is on
                 if ((Input.GetAxis("Horizontal") < 0 && P1_move.FacingLeft) || (Input.GetAxis("Horizontal") > 0 && P1_move.FacingRight))
                 {
@@ -113,6 +119,9 @@ public class PlayerTrigger : MonoBehaviour
                 }
                 else
                 {
+                    Debug.Log("Collistion " + this.name + " with trigger " + collision.name);
+                    P2_action.HitsAI = true;
+
                     SaveScript.Player1Health -= DamageAmt;
                     if (SaveScript.Player1Timer < 2.0f)
                     {

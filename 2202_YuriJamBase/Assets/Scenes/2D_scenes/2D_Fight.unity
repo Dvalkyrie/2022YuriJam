@@ -661,7 +661,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dessert
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 43e6dac9510d68a49b1702424cca1d22, type: 2}
   m_sharedMaterial: {fileID: 7925923705967157815, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &52585763
@@ -885,7 +885,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Main Course
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 43e6dac9510d68a49b1702424cca1d22, type: 2}
   m_sharedMaterial: {fileID: 7925923705967157815, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -949,7 +949,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &110368011
@@ -1150,6 +1150,7 @@ RectTransform:
   - {fileID: 52585761}
   - {fileID: 915369878}
   - {fileID: 94003052}
+  - {fileID: 1091260149}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2271,7 +2272,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10546573, y: 0.6605637}
+  m_Offset: {x: 0.08, y: 0.6605637}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5069589, y: 0.13581535}
@@ -2282,7 +2283,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27198845, y: 1.2051668}
+  m_Size: {x: 0.35, y: 1.2051668}
   m_EdgeRadius: 0
 --- !u!58 &359323726
 CircleCollider2D:
@@ -2714,8 +2715,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 90
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
-  m_sharedMaterial: {fileID: 7925923705967157815, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 43e6dac9510d68a49b1702424cca1d22, type: 2}
+  m_sharedMaterial: {fileID: -5912526467656118280, guid: 43e6dac9510d68a49b1702424cca1d22, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3574,7 +3575,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 43e6dac9510d68a49b1702424cca1d22, type: 2}
   m_sharedMaterial: {fileID: 7925923705967157815, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3638,7 +3639,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &737838656
@@ -4393,7 +4394,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Fight!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 43e6dac9510d68a49b1702424cca1d22, type: 2}
   m_sharedMaterial: {fileID: 7925923705967157815, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4457,7 +4458,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &915369877
@@ -4874,6 +4875,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996389467}
   m_CullTransparentMesh: 1
+--- !u!1 &1091260148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1091260149}
+  - component: {fileID: 1091260150}
+  m_Layer: 5
+  m_Name: DebugObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1091260149
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091260148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 163216270}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1091260150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091260148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa50cf68a11f5d04198af68fdced3402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1102244091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6969,7 +7019,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10546573, y: 0.6605637}
+  m_Offset: {x: -0.16, y: 0.6605637}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.62526095, y: 0.13697517}
@@ -6980,7 +7030,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27198845, y: 1.2051668}
+  m_Size: {x: 0.35, y: 1.2051668}
   m_EdgeRadius: 0
 --- !u!58 &1592225650
 CircleCollider2D:
@@ -6995,7 +7045,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011718959, y: 0.2024031}
+  m_Offset: {x: -0.08, y: 0.2024031}
   serializedVersion: 2
   m_Radius: 0.24660298
 --- !u!50 &1592225651
@@ -7123,7 +7173,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Round Over!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 43e6dac9510d68a49b1702424cca1d22, type: 2}
   m_sharedMaterial: {fileID: 7925923705967157815, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7187,7 +7237,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1592586740
@@ -7944,7 +7994,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Entree
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 43e6dac9510d68a49b1702424cca1d22, type: 2}
   m_sharedMaterial: {fileID: 7925923705967157815, guid: 92e1a9b108da94243af7ee493cf0b133, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8008,7 +8058,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1756855048
@@ -8149,7 +8199,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.05911064, y: 0.2509457}
+  m_Offset: {x: -0.03, y: 0.21}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8160,7 +8210,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5888405, y: 0.3610642}
+  m_Size: {x: 0.68, y: 0.51}
   m_EdgeRadius: 0
 --- !u!114 &1786320485
 MonoBehaviour:

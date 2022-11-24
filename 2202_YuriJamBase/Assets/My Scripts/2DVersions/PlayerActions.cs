@@ -22,6 +22,7 @@ public class PlayerActions : MonoBehaviour
 
 
     private PlayerMove2D thisMove;
+    private Animator opponentAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class PlayerActions : MonoBehaviour
         Anim = GetComponent<Animator>();
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         voiceManager = GameObject.Find("VoiceManager").GetComponent<AudioManager>();
+        opponentAnim = thisMove.Opponent.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -67,6 +69,16 @@ public class PlayerActions : MonoBehaviour
 
             //Listen to the Animator
             AnimStateInfo = Anim.GetCurrentAnimatorStateInfo(0);
+            AnimatorStateInfo OpponentStateInfo = opponentAnim.GetCurrentAnimatorStateInfo(0);
+            if (OpponentStateInfo.IsTag("Attack"))
+            {
+                if ((Input.GetAxis("Horizontal") < 0 && thisMove.FacingLeft) || (Input.GetAxis("Horizontal") > 0 && thisMove.FacingRight))
+                {
+                    Anim.SetTrigger("BlockOn");
+                    Debug.Log("Blocked");
+                }
+            }
+
 
             //Standing attacks
             if (AnimStateInfo.IsTag("Motion") || AnimStateInfo.IsTag("Block"))
