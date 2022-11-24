@@ -158,6 +158,7 @@ public class PlayerTrigger : MonoBehaviour
         {
             // Added sound for when the attack hits the opponent
             SfxManager.Play(hitSfx);
+            Debug.Log(hitSfx);
         }
     }
 }
