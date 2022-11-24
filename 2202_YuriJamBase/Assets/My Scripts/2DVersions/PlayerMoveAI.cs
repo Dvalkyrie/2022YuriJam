@@ -294,24 +294,21 @@ public class PlayerMoveAI : MonoBehaviour
     {
         if (SaveScript.P2Reacting == false && selfP==2 || SaveScript.P1Reacting == false && selfP == 1)
         {
-            if (collision.gameObject.CompareTag("FistLight"))
+            if (!AnimStateInfo.IsTag("Block"))
             {
-                Anim.SetTrigger("Hit1");
-                //MyPlayer.clip = LightPunch;
-                //MyPlayer.Play();
-                Defend = Random.Range(0, 5);
-            }
-            if (collision.gameObject.CompareTag("FistMedium"))
-            {
-                Anim.SetTrigger("Hit2");
-                //MyPlayer.clip = HeavyPunch;
-                //MyPlayer.Play();
-            }
-            if (collision.gameObject.CompareTag("FistHeavy"))
-            {
-                Anim.SetTrigger("Hit3");
-                //MyPlayer.clip = HeavyKick;
-                //MyPlayer.Play();
+                if (collision.gameObject.CompareTag("FistLight"))
+                {
+                    Anim.SetTrigger("Hit1");
+                    Defend = Random.Range(0, 5);
+                }
+                if (collision.gameObject.CompareTag("FistMedium"))
+                {
+                    Anim.SetTrigger("Hit2");
+                }
+                if (collision.gameObject.CompareTag("FistHeavy"))
+                {
+                    Anim.SetTrigger("Hit3");
+                }
             }
         }
     }

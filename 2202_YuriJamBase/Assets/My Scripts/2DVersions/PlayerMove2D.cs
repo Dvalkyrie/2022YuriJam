@@ -54,6 +54,7 @@ public class PlayerMove2D : MonoBehaviour
 
         FacingLeft = true;
         FacingRight = false;
+
         WalkLeft = true;
         WalkRight = true;
   
@@ -72,6 +73,7 @@ public class PlayerMove2D : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         Restrict = transform.Find("Restrict").gameObject;
+        BoxCollider.offset *= new Vector2(-1, 1);
     }
 
     // Update is called once per frame
@@ -274,20 +276,23 @@ public class PlayerMove2D : MonoBehaviour
     {
         if ((SaveScript.P1Reacting == false && selfP ==1) || (SaveScript.P2Reacting == false && selfP == 2))
         {
-            if (collision.gameObject.CompareTag("FistLight"))
+            if (!animInfoLayer0.IsTag("Block"))
             {
-                Anim.SetTrigger("Hit1");
-            }
-            if (collision.gameObject.CompareTag("FistMedium"))
-            {
-                Anim.SetTrigger("Hit2");
-                Debug.Log("Hit2");
-            }
-            if (collision.gameObject.CompareTag("FistHeavy"))
-            {
-                Debug.Log("Hit3");
-                Anim.SetTrigger("Hit3");
+                if (collision.gameObject.CompareTag("FistLight"))
+                {
+                    Anim.SetTrigger("Hit1");
+                }
+                if (collision.gameObject.CompareTag("FistMedium"))
+                {
+                    Anim.SetTrigger("Hit2");
+                    Debug.Log("Hit2");
+                }
+                if (collision.gameObject.CompareTag("FistHeavy"))
+                {
+                    Debug.Log("Hit3");
+                    Anim.SetTrigger("Hit3");
 
+                }
             }
         }
     }
@@ -323,6 +328,8 @@ public class PlayerMove2D : MonoBehaviour
             this.transform.GetChild(0).transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
             //this.transform.localScale = new Vector2(1, 1);
             spriteRenderer.flipX = false;
+            // flip the colliders
+            BoxCollider.offset *= new Vector2(-1, 1);
         }
 
     }
@@ -337,6 +344,9 @@ public class PlayerMove2D : MonoBehaviour
             //this.transform.localScale = new Vector2(-1, 1);
             this.transform.GetChild(0).transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
             spriteRenderer.flipX = true;
+            // flip the colliders
+            BoxCollider.offset *= new Vector2(-1, 1);
+            
         }
 
     }
