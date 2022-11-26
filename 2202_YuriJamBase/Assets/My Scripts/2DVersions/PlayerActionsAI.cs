@@ -46,6 +46,7 @@ public class PlayerActionsAI : MonoBehaviour
         voiceManager = GameObject.Find("VoiceManager").GetComponent<AudioManager>();
         //akSoundEngine = GetComponent<AkSoundEngine>();
         Dazed = false;
+        
     }
 
     // Update is called once per frame
@@ -209,12 +210,12 @@ public class PlayerActionsAI : MonoBehaviour
 
     IEnumerator HeavySlide()
     {
-            HeavyReact = true;
-            Dazed = true;
-            yield return new WaitForSeconds(0.3f);
-            HeavyReact = false;
-            yield return new WaitForSeconds(DazedTime);
-            Dazed = false;
+        HeavyReact = true;
+        Dazed = true;
+        yield return new WaitForSeconds(0.3f);
+        HeavyReact = false;
+        yield return new WaitForSeconds(DazedTime);
+        Dazed = false;
     }
 
     IEnumerator SetAttacking()

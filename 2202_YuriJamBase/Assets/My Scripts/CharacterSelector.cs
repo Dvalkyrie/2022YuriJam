@@ -34,23 +34,30 @@ public class CharacterSelector : MonoBehaviour
     {
         
         // select the character, left or right
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            RightImage.color = Color.white;
-            LeftImage.color = Color.grey;
-            leftSelect = true;
-            rightSelect = false;
-            MioBg.enabled = true;
-            BeaBg.enabled = false;
-        }
         if (Input.GetAxis("Horizontal") < 0)
         {
             RightImage.color = Color.grey;
             LeftImage.color = Color.white;
+            leftSelect = true;
+            rightSelect = false;
+            MioBg.enabled = false;
+            BeaBg.enabled = true;
+            
+            // Debug.Log("left Select!");
+            // Debug.Log(rightSelect);
+            // Debug.Log(leftSelect);
+        }
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            RightImage.color = Color.white;
+            LeftImage.color = Color.grey;
             rightSelect = true;
             leftSelect = false;
-            BeaBg.enabled = true;
-            MioBg.enabled = false;
+            BeaBg.enabled = false;
+            MioBg.enabled = true;
+            // Debug.Log("right Select!");
+            // Debug.Log(rightSelect);
+            // Debug.Log(leftSelect);
         }
 
         // use any of the attack key to select the character, then move on to the next scene
@@ -60,12 +67,14 @@ public class CharacterSelector : MonoBehaviour
         {
             if(leftSelect == true)
             {
-                SaveScript.P1Select = LeftCharacter.name;
+                SaveScript.P1Select = LeftCharacter.name; 
+                SaveScript.P2Select = "MioP2";
                 SceneTransitionManager.LoadSceneFight();
             }
-            else if (rightSelect == true)
+            if (rightSelect == true)
             {
-                SaveScript.P1Select = RightCharacter.name;
+                SaveScript.P1Select = RightCharacter.name; 
+                SaveScript.P2Select = "BeatrizP2";
                 SceneTransitionManager.LoadSceneFight();
             }
         }

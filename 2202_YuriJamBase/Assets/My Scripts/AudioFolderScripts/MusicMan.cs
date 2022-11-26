@@ -83,9 +83,9 @@ public class MusicMan : MonoBehaviour
                     }
                     timeEl += Time.deltaTime;
                     // Debug.Log("Time elapsed: " + timeEl);
-                    Debug.Log("Equals Default at " + s.source.volume + 
-                                " Chef at " + s2.source.volume+ 
-                                " Baker at " + s3.source.volume);
+                    // Debug.Log("Equals Default at " + s.source.volume + 
+                    //             " Chef at " + s2.source.volume+ 
+                    //             " Baker at " + s3.source.volume);
                     yield return null;
                 }
             // }
@@ -116,9 +116,9 @@ public class MusicMan : MonoBehaviour
                     
                     timeEl += Time.deltaTime;
                     // Debug.Log("Time elapsed: " + timeEl);
-                    Debug.Log("MioWin Default at " + s.source.volume + 
-                                " Chef at " + s2.source.volume+ 
-                                " Baker at " + s3.source.volume);
+                    // Debug.Log("MioWin Default at " + s.source.volume + 
+                    //             " Chef at " + s2.source.volume+ 
+                    //             " Baker at " + s3.source.volume);
                     yield return null;
                 }
             // }
