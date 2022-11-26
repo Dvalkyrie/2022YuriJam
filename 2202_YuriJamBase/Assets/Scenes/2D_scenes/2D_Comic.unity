@@ -610,8 +610,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144699686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1, y: 12, z: -7.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.9, y: 4.26, z: -8}
+  m_LocalScale: {x: 1.3093171, y: 1.2775072, z: 1.2775072}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1276,8 +1276,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002830860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 7.8, y: -13.5, z: -0.2}
+  m_LocalScale: {x: 1.3942646, y: 1.3942646, z: 1.3942646}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1303,7 +1303,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 2.9671023
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -1396,7 +1396,7 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 8468301869640932484, guid: e69a9ba2884374e3aa0f6bdd01357863, type: 2}
     value: {fileID: 2002830863}
-  - key: {fileID: -2902832224983622370, guid: e69a9ba2884374e3aa0f6bdd01357863, type: 2}
+  - key: {fileID: 3802103035817641428, guid: e69a9ba2884374e3aa0f6bdd01357863, type: 2}
     value: {fileID: 1144699691}
   m_ExposedReferences:
     m_References: []
