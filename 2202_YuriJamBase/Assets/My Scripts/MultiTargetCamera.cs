@@ -13,9 +13,21 @@ public class MultiTargetCamera : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (targets[0] == null)
+        {
+
+            GameObject P1 = GameObject.FindGameObjectWithTag("Player1");
+            GameObject P2 = GameObject.FindGameObjectWithTag("Player2");
+            if (P1 != null && P2 != null)
+            {
+                targets.Clear();
+                targets.Add(P1.transform);
+                targets.Add(P2.transform);
+            }
+        }
         // VERY MESSY SCRIPT
 
-        if (targets.Count == 0)
+        if (targets.Count == 0 || targets[0] == null)
             return;
         Vector2 centerPoint = GetCenterPoint();
 
@@ -43,6 +55,10 @@ public class MultiTargetCamera : MonoBehaviour
 
     Vector2 GetCenterPoint()
     {
+        if (targets.Count ==0 || targets[0]==null)
+        {
+            return Vector2.zero;
+        }
         if (targets.Count == 1)
         {
             return targets[0].position;

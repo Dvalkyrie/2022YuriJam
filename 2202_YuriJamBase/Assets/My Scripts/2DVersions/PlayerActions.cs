@@ -32,6 +32,10 @@ public class PlayerActions : MonoBehaviour
 
         Anim = GetComponent<Animator>();
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        if (audioManager == null)
+        {
+            Debug.Log("Object " + gameObject.name + " cannot fin audio manager");
+        }
         voiceManager = GameObject.Find("VoiceManager").GetComponent<AudioManager>();
         opponentAnim = thisMove.Opponent.GetComponent<Animator>();
     }
@@ -197,12 +201,18 @@ public class PlayerActions : MonoBehaviour
     public void PlaySound(string sound)
     {
         // Debug.Log("Play " + sound);
-        audioManager.Play(sound);
+        if (audioManager)
+        {
+            audioManager.Play(sound);
+        }
     }
     public void PlayVocal(string sound)
     {
-        //Debug.Log("Play " + sound);
-        voiceManager.Play(sound);
+        if (voiceManager)
+        {
+            //Debug.Log("Play " + sound);
+            voiceManager.Play(sound);
+        }
     }
 
     public void PunchWooshSound()

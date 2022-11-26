@@ -42,16 +42,24 @@ public class PlayerActionsAI : MonoBehaviour
         }
         Anim = GetComponent<Animator>();
         thisMove = GetComponent<PlayerMoveAI>();
-        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
-        voiceManager = GameObject.Find("VoiceManager").GetComponent<AudioManager>();
+        FindObjectsInScene();
         //akSoundEngine = GetComponent<AkSoundEngine>();
         Dazed = false;
         
+    }
+    void FindObjectsInScene()
+    {
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        voiceManager = GameObject.Find("VoiceManager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (audioManager == null && voiceManager == null)
+        {
+            FindObjectsInScene();
+        }
         if (Player1Layer0.IsTag("Motion"))
         {
             //Debug.Log("Animation is tag Motion");

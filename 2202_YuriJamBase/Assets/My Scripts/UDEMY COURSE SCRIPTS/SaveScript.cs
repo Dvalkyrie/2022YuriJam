@@ -54,7 +54,6 @@ public class SaveScript : MonoBehaviour
             Application.targetFrameRate = FrameRateTarget;
         }
 
-        // Debug.Log("Music Volume = " + MusicVol);
-        // Debug.Log("SFX Volume = " + SFXVol);
+
     }
 }

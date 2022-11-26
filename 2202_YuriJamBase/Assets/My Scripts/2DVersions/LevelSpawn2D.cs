@@ -16,6 +16,16 @@ public class LevelSpawn2D : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (SaveScript.P1Select == null || SaveScript.P1Select == "")
+        {
+            SaveScript.P1Select = "BeatrizP1";
+            Debug.Log("No P1 Selected default to : P1 = " + SaveScript.P1Select);
+        }
+        if (SaveScript.P2Select == null || SaveScript.P2Select == "")
+        {
+            SaveScript.P2Select = "MioP2";
+            Debug.Log("No P2 Selected default to : P2 = " + SaveScript.P2Select);
+        }
         Player1 = GameObject.Find(SaveScript.P1Select);
         Player1.gameObject.GetComponent<SwitchOnP12D>().enabled = true;
         Player2 = GameObject.Find(SaveScript.P2Select);
@@ -26,14 +36,6 @@ public class LevelSpawn2D : MonoBehaviour
 
     private void Update()
     {
-        if(SaveScript.Player1Health <=0.5f)
-        {
-            Debug.Log("Player 1 " + SaveScript.P1Select + " health less than half.");
-        }
-        if(SaveScript.Player1Health <= 0.0f)
-        {
-            Debug.Log("Player 1 " + SaveScript.P1Select + " no more health.");
-        }
     }
 
     IEnumerator SpawnPlayers()
