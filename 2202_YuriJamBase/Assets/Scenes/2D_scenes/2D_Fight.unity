@@ -14167,6 +14167,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1831973892}
     m_Modifications:
     - target: {fileID: 3949762914430164051, guid: 25154ff0c9ca3b14694e0dca4b761518, type: 3}
+      propertyPath: FacingLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949762914430164051, guid: 25154ff0c9ca3b14694e0dca4b761518, type: 3}
+      propertyPath: FacingRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949762914430164051, guid: 25154ff0c9ca3b14694e0dca4b761518, type: 3}
       propertyPath: WinCondition
       value: 
       objectReference: {fileID: 1724987265}
@@ -14233,6 +14241,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4139030149494061174, guid: 03eda655d0663ed43b0b2a7a7b4855fb, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163326899569393853, guid: 03eda655d0663ed43b0b2a7a7b4855fb, type: 3}
+      propertyPath: FacingLeftAI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163326899569393853, guid: 03eda655d0663ed43b0b2a7a7b4855fb, type: 3}
+      propertyPath: FacingRightAI
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6660366521577399013, guid: 03eda655d0663ed43b0b2a7a7b4855fb, type: 3}
