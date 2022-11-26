@@ -349,8 +349,8 @@ MonoBehaviour:
   WalkSpeed: 1
   JumpSpeed: 0.05
   Opponent: {fileID: 0}
-  FacingLeft: 1
-  FacingRight: 0
+  FacingLeft: 0
+  FacingRight: 1
   WalkLeft: 1
   WalkRight: 1
   BoxCollider: {fileID: 0}
