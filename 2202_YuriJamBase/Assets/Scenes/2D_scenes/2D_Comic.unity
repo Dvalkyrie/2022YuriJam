@@ -1209,6 +1209,7 @@ GameObject:
   - component: {fileID: 2002830861}
   - component: {fileID: 2002830864}
   - component: {fileID: 2002830863}
+  - component: {fileID: 2002830865}
   m_Layer: 0
   m_Name: Comic
   m_TagString: Untagged
@@ -1398,8 +1399,30 @@ PlayableDirector:
     value: {fileID: 2002830863}
   - key: {fileID: 3802103035817641428, guid: e69a9ba2884374e3aa0f6bdd01357863, type: 2}
     value: {fileID: 1144699691}
+  - key: {fileID: -6264047471938583120, guid: e69a9ba2884374e3aa0f6bdd01357863, type: 2}
+    value: {fileID: 2002830865}
   m_ExposedReferences:
     m_References: []
+--- !u!95 &2002830865
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002830860}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2113291680
 GameObject:
   m_ObjectHideFlags: 0
