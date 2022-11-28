@@ -122,7 +122,7 @@ public class PlayerMove2D : MonoBehaviour
                 this.GetComponent<PlayerActions>().enabled = false;
                 StartCoroutine(KnockedOut());
                 WinCondition.gameObject.SetActive(true);
-                WinCondition.gameObject.GetComponent<LoseWin>().enabled = true;
+                WinCondition.gameObject.GetComponent<LoseWin2D>().enabled = true;
 
             }
             if ((SaveScript.Player2Health <= 0 && selfP == 1) || (SaveScript.Player1Health <= 0 && selfP == 2))
