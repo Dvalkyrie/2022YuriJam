@@ -33,6 +33,7 @@ public class SaveScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        TimeOut = true;
         Player1Health = 1.0f;
         Player2Health = 1.0f;
         P1Reacting = false;

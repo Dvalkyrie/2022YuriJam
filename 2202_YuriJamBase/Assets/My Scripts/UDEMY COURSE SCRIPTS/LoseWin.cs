@@ -22,7 +22,7 @@ public class LoseWin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SaveScript.TimeOut = false;
+        SaveScript.TimeOut = true;
         WinText.gameObject.SetActive(false);
         LoseText.gameObject.SetActive(false);
         Player1WinText.gameObject.SetActive(false);

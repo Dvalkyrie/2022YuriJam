@@ -86,7 +86,7 @@ public class PlayerMoveAI : MonoBehaviour
         if (SaveScript.TimeOut == false)
         {
             OppDistance = Vector3.Distance(Opponent.transform.position, this.transform.position);
-            Debug.Log(gameObject.name + " opponent distance is " + OppDistance);
+            // Debug.Log(gameObject.name + " opponent distance is " + OppDistance);
 
             //Check if we are knocked out
             if ((SaveScript.Player2Health <= 0 && selfP ==1) || (SaveScript.Player1Health <= 0 && selfP == 2))

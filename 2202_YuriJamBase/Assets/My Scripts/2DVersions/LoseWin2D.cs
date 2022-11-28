@@ -18,7 +18,7 @@ public class LoseWin2D : MonoBehaviour
     void Start()
     {
         stm = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<SceneTransitionManager>();
-        SaveScript.TimeOut = false;
+        SaveScript.TimeOut = true;
         MyPlayer = gameObject.GetComponent<AudioSource>();
         GameOverText.gameObject.SetActive(false);
         RoundOverText.gameObject.SetActive(false);
