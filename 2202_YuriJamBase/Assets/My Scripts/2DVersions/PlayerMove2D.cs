@@ -37,6 +37,8 @@ public class PlayerMove2D : MonoBehaviour
     private float CrouchTime = 0.0f;
     public GameObject WinCondition;
 
+    public Transform vfx_transform;
+
 
     // Start is called before the first frame update
     void Start()
@@ -330,8 +332,8 @@ public class PlayerMove2D : MonoBehaviour
             FacingRight = true;
             yield return new WaitForSeconds(0.15f);
             this.transform.GetChild(0).transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
-            if (transform.childCount > 1)
-                this.transform.GetChild(2).transform.rotation = Quaternion.AngleAxis(0, Vector3.up); // vfx transform only for bea
+            if (gameObject.name.Contains("Bea"))
+                vfx_transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
             //this.transform.localScale = new Vector2(1, 1);
             spriteRenderer.flipX = false;
             // flip the colliders position
@@ -349,6 +351,8 @@ public class PlayerMove2D : MonoBehaviour
             yield return new WaitForSeconds(0.15f);
             //this.transform.localScale = new Vector2(-1, 1);
             this.transform.GetChild(0).transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
+            if (gameObject.name.Contains("Bea"))
+                vfx_transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
             spriteRenderer.flipX = true;
             // flip the colliders
             BoxCollider.offset *= new Vector2(-1, 1);

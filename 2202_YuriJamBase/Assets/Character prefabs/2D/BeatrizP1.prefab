@@ -356,6 +356,7 @@ MonoBehaviour:
   BoxCollider: {fileID: 0}
   CapsuleCollider: {fileID: 0}
   WinCondition: {fileID: 0}
+  vfx_transform: {fileID: 3949762915727064156}
 --- !u!114 &3949762914430164050
 MonoBehaviour:
   m_ObjectHideFlags: 0

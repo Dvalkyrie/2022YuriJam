@@ -20,6 +20,10 @@ public class HealthBars : MonoBehaviour
     public GameObject WinCondition;
     public RectTransform TimerArrow;
 
+    private bool setHealth, applyNative;
+    public Image mioIcon, mioHeart1, mioHeart2, mioNameTag;
+    public Image beaIcon, beaHeart1, beaHeart2, beaNameTag;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,11 +48,53 @@ public class HealthBars : MonoBehaviour
             P1Win1.gameObject.SetActive(false);
             P1Win2.gameObject.SetActive(false);
         }
+
+        // Switch nametags and icons based on P1 select
+        Debug.Log(SaveScript.P1Select);
+        setSpritesHealth();
+    }
+    void SwitchSprites(Image i1, Image i2, bool flip)
+    {
+        Sprite savei1 = i1.sprite;
+        i1.sprite = i2.sprite;
+        i2.sprite = savei1;
+        if (flip)
+        {
+            i1.rectTransform.localScale *= new Vector2(-1, 1);
+            i2.rectTransform.localScale *= new Vector2(-1, 1);
+            i1.SetNativeSize();
+            i2.SetNativeSize();
+        }
+    }
+    void ApplyNative()
+    {
+        mioNameTag.SetNativeSize();
+        beaNameTag.SetNativeSize();
+    }
+    void setSpritesHealth()
+    {
+        if (SaveScript.P1Select != null)
+        {
+            setHealth = true;
+            if (SaveScript.P1Select.Contains("Bea"))
+            {
+                // switch icons
+                SwitchSprites(mioIcon, beaIcon, true);
+                SwitchSprites(mioHeart1, beaHeart1, false);
+                SwitchSprites(mioHeart2, beaHeart2, false);
+                SwitchSprites(mioNameTag, beaNameTag, false);
+                applyNative = true;
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!setHealth)
+        {
+            setSpritesHealth();
+        }
 
         TimerArrow.rotation = Quaternion.Euler(0, 0, 360 / 90 * LevelTime);
 
@@ -94,6 +140,14 @@ public class HealthBars : MonoBehaviour
             {
                 Player1Red.fillAmount -= 0.03f;
             }
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (applyNative)
+        {
+            ApplyNative();
         }
     }
 }

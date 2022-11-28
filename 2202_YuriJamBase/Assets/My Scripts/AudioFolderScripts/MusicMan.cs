@@ -52,9 +52,18 @@ public class MusicMan : MonoBehaviour
         float timeEl = 0;
         float TTF = 1.0f; //time to fade
         float changeInVolume = 0.01f;
+        string p1Sound = "ChefTheme";
+        string p2Sound = "BakerTheme";
+
+        if ((SaveScript.P1Select != null) && (SaveScript.P1Select.Contains("Bea")))
+        {
+            p1Sound = "BakerTheme";
+            p2Sound = "ChefTheme";
+        }
+
         Sound s = Array.Find(sounds, sound => sound.name == "DefaultTheme");
-        Sound s2 = Array.Find(sounds, sound => sound.name == "ChefTheme");
-        Sound s3 = Array.Find(sounds, sound => sound.name == "BakerTheme");
+        Sound s2 = Array.Find(sounds, sound => sound.name == p1Sound);
+        Sound s3 = Array.Find(sounds, sound => sound.name == p2Sound);
         // 1, 0 means it goes from 0 to 1
         // 0, 1 means it goes from 1 to 0
         if (SaveScript.Player1Health == SaveScript.Player2Health)

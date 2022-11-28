@@ -31,7 +31,6 @@ public class LevelSpawn2D : MonoBehaviour
         Player2 = GameObject.Find(SaveScript.P2Select);
         Player2.gameObject.GetComponent<SwitchOnP22D>().enabled = true;
         StartCoroutine(SpawnPlayers());
-
     }
 
     private void Update()

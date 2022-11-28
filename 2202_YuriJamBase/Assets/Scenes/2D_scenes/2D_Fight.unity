@@ -407,6 +407,14 @@ MonoBehaviour:
   LevelTime: 90
   WinCondition: {fileID: 1724987265}
   TimerArrow: {fileID: 733298292}
+  mioIcon: {fileID: 580084413}
+  mioHeart1: {fileID: 126067936}
+  mioHeart2: {fileID: 2073134600}
+  mioNameTag: {fileID: 1581935816}
+  beaIcon: {fileID: 996389469}
+  beaHeart1: {fileID: 1564874961}
+  beaHeart2: {fileID: 846081340}
+  beaNameTag: {fileID: 1102244093}
 --- !u!1 &110368008
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,7 +585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: -71.99989}
+  m_AnchoredPosition: {x: 32, y: -71.99989}
   m_SizeDelta: {x: 66, y: 49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126067936
@@ -1347,7 +1355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: -71.99989}
+  m_AnchoredPosition: {x: 32, y: -71.99989}
   m_SizeDelta: {x: 30, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &376967078
@@ -3778,7 +3786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -715, y: 394}
+  m_AnchoredPosition: {x: -689, y: 394}
   m_SizeDelta: {x: 146, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1581935816
@@ -4704,7 +4712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85, y: -72}
+  m_AnchoredPosition: {x: -37, y: -72}
   m_SizeDelta: {x: 66, y: 49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073134600
@@ -4780,7 +4788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85, y: -72}
+  m_AnchoredPosition: {x: -37, y: -72}
   m_SizeDelta: {x: 30, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2077390949
