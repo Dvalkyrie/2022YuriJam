@@ -1828,6 +1828,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4926526555332650745, guid: f3e29eb49b9e3674ebcdf5ac2f78dcc0, type: 3}
+      propertyPath: AttackDistance
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5641060623835730288, guid: f3e29eb49b9e3674ebcdf5ac2f78dcc0, type: 3}
       propertyPath: m_Name
       value: MioAI

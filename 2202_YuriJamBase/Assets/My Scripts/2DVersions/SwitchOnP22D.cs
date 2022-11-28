@@ -26,6 +26,6 @@ public class SwitchOnP22D : MonoBehaviour
     void Update()
     {
         
-        Debug.Log("Player 2 is: " + SaveScript.P2Select);
+        // Debug.Log("Player 2 is: " + SaveScript.P2Select);
     }
 }

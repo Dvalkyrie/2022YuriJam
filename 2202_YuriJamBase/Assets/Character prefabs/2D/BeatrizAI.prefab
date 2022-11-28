@@ -499,8 +499,8 @@ GameObject:
   - component: {fileID: 4530316864189157565}
   - component: {fileID: 6474929374429635559}
   - component: {fileID: 1572016616952473591}
-  - component: {fileID: 5163326899569393853}
   - component: {fileID: 9090963729337015925}
+  - component: {fileID: 5163326899569393853}
   m_Layer: 0
   m_Name: BeatrizAI
   m_TagString: Player2
@@ -734,28 +734,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5163326899569393853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4139030149494061174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12ba889ca7b34e4479aa615f4c687c56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WalkSpeed: 1
-  JumpSpeed: 0.05
-  Opponent: {fileID: 0}
-  FacingLeftAI: 1
-  FacingRightAI: 0
-  WalkLeftAI: 1
-  WalkRightAI: 1
-  BoxCollider: {fileID: 0}
-  CapsuleCollider: {fileID: 0}
-  AttackDistance: 0.6
 --- !u!114 &9090963729337015925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,6 +756,28 @@ MonoBehaviour:
   AttackRate: 6
   DazedTime: 3
   vfx_transform: {fileID: 8671520525966473721}
+--- !u!114 &5163326899569393853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139030149494061174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ba889ca7b34e4479aa615f4c687c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WalkSpeed: 1
+  JumpSpeed: 0.05
+  Opponent: {fileID: 0}
+  FacingLeftAI: 1
+  FacingRightAI: 0
+  WalkLeftAI: 1
+  WalkRightAI: 1
+  BoxCollider: {fileID: 0}
+  CapsuleCollider: {fileID: 0}
+  AttackDistance: 0.6
 --- !u!1 &4452341655913155928
 GameObject:
   m_ObjectHideFlags: 0

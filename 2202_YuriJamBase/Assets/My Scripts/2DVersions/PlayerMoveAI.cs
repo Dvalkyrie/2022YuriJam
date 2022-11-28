@@ -13,7 +13,9 @@ public class PlayerMoveAI : MonoBehaviour
     private float MoveSpeed;
     private bool IsJumping = false;
     private AnimatorStateInfo AnimStateInfo;
+    [SerializeField]
     private bool CanWalkLeft = true;
+    [SerializeField]
     private bool CanWalkRight = true;
     public GameObject Opponent;
     private Vector3 OppPosition;
@@ -56,7 +58,7 @@ public class PlayerMoveAI : MonoBehaviour
         FacingRightAI = true;
         WalkLeftAI = true;
         WalkRightAI = true;
-        Opponent = GameObject.Find("Player"+otherP);
+        Opponent = GameObject.FindGameObjectWithTag("Player"+otherP);
         RB = GetComponent<Rigidbody2D>();
         Anim = GetComponentInChildren<Animator>();
         BoxCollider = GetComponent<BoxCollider2D>();
@@ -84,6 +86,7 @@ public class PlayerMoveAI : MonoBehaviour
         if (SaveScript.TimeOut == false)
         {
             OppDistance = Vector3.Distance(Opponent.transform.position, this.transform.position);
+            Debug.Log(gameObject.name + " opponent distance is " + OppDistance);
 
             //Check if we are knocked out
             if ((SaveScript.Player2Health <= 0 && selfP ==1) || (SaveScript.Player1Health <= 0 && selfP == 2))

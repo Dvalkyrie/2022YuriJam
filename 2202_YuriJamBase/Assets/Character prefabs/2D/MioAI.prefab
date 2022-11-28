@@ -2612,7 +2612,7 @@ MonoBehaviour:
   WalkRightAI: 1
   BoxCollider: {fileID: 0}
   CapsuleCollider: {fileID: 0}
-  AttackDistance: 1.5
+  AttackDistance: 0.6
 --- !u!1 &5641060623853578613
 GameObject:
   m_ObjectHideFlags: 0
