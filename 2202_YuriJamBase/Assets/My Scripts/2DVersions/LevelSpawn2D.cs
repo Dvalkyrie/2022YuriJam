@@ -18,12 +18,12 @@ public class LevelSpawn2D : MonoBehaviour
     {
         if (SaveScript.P1Select == null || SaveScript.P1Select == "")
         {
-            SaveScript.P1Select = "BeatrizP1";
+            SaveScript.P1Select = "MioP1";
             Debug.Log("No P1 Selected default to : P1 = " + SaveScript.P1Select);
         }
         if (SaveScript.P2Select == null || SaveScript.P2Select == "")
         {
-            SaveScript.P2Select = "MioP2";
+            SaveScript.P2Select = "BeatrizP2";
             Debug.Log("No P2 Selected default to : P2 = " + SaveScript.P2Select);
         }
         Player1 = GameObject.Find(SaveScript.P1Select);

@@ -193,7 +193,10 @@ public class PlayerMove2D : MonoBehaviour
                     {
                         if (WalkRight == true)
                         {
-                            Anim.SetBool("Forward", true);
+                            if (!FacingLeft)
+                                Anim.SetBool("Forward", true);
+                            else
+                                Anim.SetBool("Backward", true);
                             transform.Translate(WalkSpeed * Time.deltaTime, 0, 0);
                         }
                     }
@@ -204,7 +207,10 @@ public class PlayerMove2D : MonoBehaviour
                     {
                         if (WalkLeft == true)
                         {
-                            Anim.SetBool("Backward", true);
+                            if (!FacingLeft)
+                                Anim.SetBool("Backward", true);
+                            else
+                                Anim.SetBool("Forward", true);
                             transform.Translate(-WalkSpeed * Time.deltaTime, 0, 0);
                         }
                     }
