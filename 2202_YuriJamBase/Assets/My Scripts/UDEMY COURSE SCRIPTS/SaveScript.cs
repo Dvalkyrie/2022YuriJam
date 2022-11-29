@@ -28,6 +28,8 @@ public class SaveScript : MonoBehaviour
     public static float MusicVol = 0;
     public static float SFXVol = 2;
     public static int playerNum = 0;
+    public static bool AIwalking = true;
+    public static bool attackOff = false;
 
 
     // Start is called before the first frame update

@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 3949762914513198391}
   m_Layer: 0
   m_Name: P2Right
-  m_TagString: P2Right
+  m_TagString: P1Right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 3949762914635168265}
   m_Layer: 0
   m_Name: P2Left
-  m_TagString: P2Left
+  m_TagString: P1Left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1402,7 +1402,7 @@ GameObject:
   - component: {fileID: 3949762915342643914}
   m_Layer: 0
   m_Name: P2Space
-  m_TagString: P2SpaceDetector
+  m_TagString: P1SpaceDetector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

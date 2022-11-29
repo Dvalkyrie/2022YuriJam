@@ -30,7 +30,6 @@ public class PlayerMoveAI : MonoBehaviour
     public Collider2D BoxCollider;
     [HideInInspector]
     public Collider2D CapsuleCollider;
-
     PlayerActionsAI thisAction;
 
     private float OppDistance;
@@ -77,13 +76,16 @@ public class PlayerMoveAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         // If the time of the battle is up, disable movement
         if (SaveScript.TimeOut == true)
         {
             Anim.SetBool("Forward", false);
             Anim.SetBool("Backward", false);
         }
-        if (SaveScript.TimeOut == false)
+        
+        if (SaveScript.TimeOut == false && SaveScript.AIwalking == true)
         {
             OppDistance = Vector3.Distance(Opponent.transform.position, this.transform.position);
             // Debug.Log(gameObject.name + " opponent distance is " + OppDistance);

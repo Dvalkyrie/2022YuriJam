@@ -16,6 +16,7 @@ public class LevelSpawn2D : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SaveScript.TimeOut = true;
         if (SaveScript.P1Select == null || SaveScript.P1Select == "")
         {
             SaveScript.P1Select = "BeatrizP1";

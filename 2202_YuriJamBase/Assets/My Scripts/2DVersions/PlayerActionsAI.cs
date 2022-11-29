@@ -229,8 +229,10 @@ public class PlayerActionsAI : MonoBehaviour
     IEnumerator SetAttacking()
     {
         yield return new WaitForSeconds(AttackRate);
-        Attacking = true;
-        RandomAttack();
+        if(SaveScript.attackOff == false) {
+            Attacking = true;
+            RandomAttack();
+        }
     }
 
     public IEnumerator KnockBack(float duration, bool dazed)
