@@ -132,27 +132,27 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 48bbc770dd593ec49a8304b0cd490ec3, type: 3}
+      value: {fileID: 21300000, guid: 300c3063636eb15468925e8a13b41cb7, type: 3}
     - time: 0.033333335
-      value: {fileID: 21300000, guid: 27f0a4b754bf0de45bcb067905d93f67, type: 3}
+      value: {fileID: 21300000, guid: 522d4de4ad39a054e85859859f3a3bed, type: 3}
     - time: 0.06666667
-      value: {fileID: 21300000, guid: d4eea4474f84cf54a9716df524481dc2, type: 3}
+      value: {fileID: 21300000, guid: 92bf21567390c9d45b63b4f9fc4b7b09, type: 3}
     - time: 0.11666667
-      value: {fileID: 21300000, guid: 05c6a22e576036a46bf27030809ff0c0, type: 3}
+      value: {fileID: 21300000, guid: 39695b665ab63274aa24a460685f89bf, type: 3}
     - time: 0.15
-      value: {fileID: 21300000, guid: a05ade493547fda4390102270bd5d1f3, type: 3}
+      value: {fileID: 21300000, guid: 39d2ae55b4689474d8b1b360d73ed9a4, type: 3}
     - time: 0.2
-      value: {fileID: 21300000, guid: 6a74f9f68d668ad4bb097e29255979bc, type: 3}
+      value: {fileID: 21300000, guid: 383cbbcfb29d4d54ea2715468facc38c, type: 3}
     - time: 0.25
-      value: {fileID: 21300000, guid: 4c80bed8416549e4ab0509a6b71ce846, type: 3}
+      value: {fileID: 21300000, guid: 5beb7e4bfc8b96440b0ab37c3727c649, type: 3}
     - time: 0.3
-      value: {fileID: 21300000, guid: 98197726053c03944b8693fe739e0a29, type: 3}
+      value: {fileID: 21300000, guid: 715bd070af6a4694e83f8c9749b9b1ba, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300000, guid: 532e4917fe5d45543a85c33603f1094d, type: 3}
+      value: {fileID: 21300000, guid: e5b5d9d1df4f6a242a6ff4e618b72185, type: 3}
     - time: 0.36666667
-      value: {fileID: 21300000, guid: ca010d4e80535784db6b7be4d051b715, type: 3}
+      value: {fileID: 21300000, guid: f1c5cdc3ebed4b54fb46b4e023fd8917, type: 3}
     - time: 0.38333333
-      value: {fileID: 21300000, guid: 51f58030d07185b49a401ebee8168016, type: 3}
+      value: {fileID: 21300000, guid: 7ed17d49fcb760c4aa161cb4a88bf924, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -226,17 +226,17 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 48bbc770dd593ec49a8304b0cd490ec3, type: 3}
-    - {fileID: 21300000, guid: 27f0a4b754bf0de45bcb067905d93f67, type: 3}
-    - {fileID: 21300000, guid: d4eea4474f84cf54a9716df524481dc2, type: 3}
-    - {fileID: 21300000, guid: 05c6a22e576036a46bf27030809ff0c0, type: 3}
-    - {fileID: 21300000, guid: a05ade493547fda4390102270bd5d1f3, type: 3}
-    - {fileID: 21300000, guid: 6a74f9f68d668ad4bb097e29255979bc, type: 3}
-    - {fileID: 21300000, guid: 4c80bed8416549e4ab0509a6b71ce846, type: 3}
-    - {fileID: 21300000, guid: 98197726053c03944b8693fe739e0a29, type: 3}
-    - {fileID: 21300000, guid: 532e4917fe5d45543a85c33603f1094d, type: 3}
-    - {fileID: 21300000, guid: ca010d4e80535784db6b7be4d051b715, type: 3}
-    - {fileID: 21300000, guid: 51f58030d07185b49a401ebee8168016, type: 3}
+    - {fileID: 21300000, guid: 300c3063636eb15468925e8a13b41cb7, type: 3}
+    - {fileID: 21300000, guid: 522d4de4ad39a054e85859859f3a3bed, type: 3}
+    - {fileID: 21300000, guid: 92bf21567390c9d45b63b4f9fc4b7b09, type: 3}
+    - {fileID: 21300000, guid: 39695b665ab63274aa24a460685f89bf, type: 3}
+    - {fileID: 21300000, guid: 39d2ae55b4689474d8b1b360d73ed9a4, type: 3}
+    - {fileID: 21300000, guid: 383cbbcfb29d4d54ea2715468facc38c, type: 3}
+    - {fileID: 21300000, guid: 5beb7e4bfc8b96440b0ab37c3727c649, type: 3}
+    - {fileID: 21300000, guid: 715bd070af6a4694e83f8c9749b9b1ba, type: 3}
+    - {fileID: 21300000, guid: e5b5d9d1df4f6a242a6ff4e618b72185, type: 3}
+    - {fileID: 21300000, guid: f1c5cdc3ebed4b54fb46b4e023fd8917, type: 3}
+    - {fileID: 21300000, guid: 7ed17d49fcb760c4aa161cb4a88bf924, type: 3}
     - {fileID: 21300000, guid: 64a2a5928a4544144abda704c89abc15, type: 3}
     - {fileID: 21300000, guid: 36b1fc92c345d3d429067809d50c592e, type: 3}
     - {fileID: 21300000, guid: 34da9760738f7034fbd0111a656f90b1, type: 3}
