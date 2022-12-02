@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class LoseWin2D : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class LoseWin2D : MonoBehaviour
     public AudioClip RoundOverAudio;
     public AudioClip GameOverAudio;
     public float PauseTime = 1.0f;
+    public AudioMixerGroup Output;
 
     private SceneTransitionManager stm;
 
@@ -46,6 +48,7 @@ public class LoseWin2D : MonoBehaviour
                 GameOverText.gameObject.SetActive(true);
                 MyPlayer.clip = GameOverAudio;
                 MyPlayer.Play();
+                MyPlayer.outputAudioMixerGroup = Output;
                 yield return new WaitForSeconds(PauseTime);
                 stm.ToNextScene();
             }
@@ -55,6 +58,7 @@ public class LoseWin2D : MonoBehaviour
                 RoundOverText.gameObject.SetActive(true);
                 MyPlayer.clip = RoundOverAudio;
                 MyPlayer.Play();
+                MyPlayer.outputAudioMixerGroup = Output;
                 yield return new WaitForSeconds(PauseTime);
                 stm.ReloadScene();
             }

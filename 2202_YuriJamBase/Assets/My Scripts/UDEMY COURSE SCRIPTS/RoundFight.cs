@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class RoundFight : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class RoundFight : MonoBehaviour
     public AudioClip Round1Audio;
     public AudioClip Round2Audio;
     public AudioClip Round3Audio;
+    public AudioMixerGroup Output;
     public float PauseTime = 5f;
 
     // Start is called before the first frame update
@@ -35,15 +37,18 @@ public class RoundFight : MonoBehaviour
             Round1Text.gameObject.SetActive(true);
             MyPlayer.clip = Round1Audio;
             MyPlayer.Play();
+            MyPlayer.outputAudioMixerGroup = Output;
             yield return new WaitForSeconds(PauseTime);
             Round1Text.gameObject.SetActive(false);
             yield return new WaitForSeconds(2F);
             FightText.gameObject.SetActive(true);
             MyPlayer.clip = FightAudio;
             MyPlayer.Play();
+            MyPlayer.outputAudioMixerGroup = Output;
             yield return new WaitForSeconds(PauseTime);
             FightText.gameObject.SetActive(false);
             MusicPlayer.Play();
+            MusicPlayer.outputAudioMixerGroup = Output;
             SaveScript.TimeOut = false;
             this.gameObject.SetActive(false);
         }
@@ -53,15 +58,18 @@ public class RoundFight : MonoBehaviour
             Round2Text.gameObject.SetActive(true);
             MyPlayer.clip = Round2Audio;
             MyPlayer.Play();
+            MyPlayer.outputAudioMixerGroup = Output;
             yield return new WaitForSeconds(PauseTime);
             Round2Text.gameObject.SetActive(false);
             yield return new WaitForSeconds(4f);
             FightText.gameObject.SetActive(true);
             MyPlayer.clip = FightAudio;
             MyPlayer.Play();
+            MyPlayer.outputAudioMixerGroup = Output;
             yield return new WaitForSeconds(PauseTime);
             FightText.gameObject.SetActive(false);
             MusicPlayer.Play();
+            MusicPlayer.outputAudioMixerGroup = Output;
             SaveScript.TimeOut = false;
             this.gameObject.SetActive(false);
         }
@@ -71,15 +79,18 @@ public class RoundFight : MonoBehaviour
             Round3Text.gameObject.SetActive(true);
             MyPlayer.clip = Round3Audio;
             MyPlayer.Play();
+            MyPlayer.outputAudioMixerGroup = Output;
             yield return new WaitForSeconds(PauseTime);
             Round3Text.gameObject.SetActive(false);
             yield return new WaitForSeconds(4f);
             FightText.gameObject.SetActive(true);
             MyPlayer.clip = FightAudio;
             MyPlayer.Play();
+            MyPlayer.outputAudioMixerGroup = Output;
             yield return new WaitForSeconds(PauseTime);
             FightText.gameObject.SetActive(false);
             MusicPlayer.Play();
+            MusicPlayer.outputAudioMixerGroup = Output;
             SaveScript.TimeOut = false;
             this.gameObject.SetActive(false);
         }
