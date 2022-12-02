@@ -15,7 +15,9 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: e583e5bede01d1448abeaf2815a9e232
+    name: VoiVol
   m_AudioMixerGroupViews:
   - guids:
     - 9dede2ab9a55e7942b8a0d9b0d4764b7

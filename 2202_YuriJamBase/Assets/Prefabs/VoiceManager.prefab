@@ -46,86 +46,86 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
+  - name: BVHH
+    clip: {fileID: 8300000, guid: 85ed5cf6c71e94e919f8b40f97a1db0c, type: 3}
+    Output: {fileID: 24300002, guid: cc30d971240bf2c4baa7cb775c9be452, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
-    audioMixer: {fileID: 0}
-    volume: 0
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    audioMixer: {fileID: 0}
+    Output: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
