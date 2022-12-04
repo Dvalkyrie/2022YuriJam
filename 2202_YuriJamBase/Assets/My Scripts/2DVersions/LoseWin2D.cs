@@ -39,7 +39,7 @@ public class LoseWin2D : MonoBehaviour
             }
             else if (SaveScript.Player2Health > SaveScript.Player1Health)
             {
-                SaveScript.Player1Wins++;     
+                SaveScript.Player2Wins++;     
             }
 
             if (SaveScript.Player1Wins ==2 || SaveScript.Player2Wins == 2)

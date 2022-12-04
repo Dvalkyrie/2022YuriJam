@@ -85,7 +85,7 @@ public class victoryScreenManager : MonoBehaviour
             triangleLooseUI.color = mioColor;
             MainImageUI.sprite = MainImageShadowUI.sprite = BeaMain;
             NameImageUI.sprite = BeaName;
-            BetWinS();
+            BeaWinS();
         }
         ResultText.text = "RESULT: " + result;
     }
@@ -96,7 +96,7 @@ public class victoryScreenManager : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("BVIC");
     }
 
-    public void BetWinS()
+    public void BeaWinS()
     {
         //Debug.Log("bea!");
         FindObjectOfType<AudioManager>().Play("Cheftheme");

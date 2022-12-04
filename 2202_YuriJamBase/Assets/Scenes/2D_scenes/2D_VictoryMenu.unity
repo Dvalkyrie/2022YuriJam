@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -359,8 +359,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'RESULT: 3-2'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d9c42a1cb59e5d54db55739303dd84d8, type: 2}
-  m_sharedMaterial: {fileID: 4947751528408000770, guid: d9c42a1cb59e5d54db55739303dd84d8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -722,8 +722,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: P1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20f3426cd80a76648a827d0b8df162f4, type: 2}
-  m_sharedMaterial: {fileID: 4947751528408000770, guid: 20f3426cd80a76648a827d0b8df162f4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -857,8 +857,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: has to cook!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d9c42a1cb59e5d54db55739303dd84d8, type: 2}
-  m_sharedMaterial: {fileID: 4947751528408000770, guid: d9c42a1cb59e5d54db55739303dd84d8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2076,8 +2076,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: P2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20f3426cd80a76648a827d0b8df162f4, type: 2}
-  m_sharedMaterial: {fileID: 4947751528408000770, guid: 20f3426cd80a76648a827d0b8df162f4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2428,7 +2428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winnerP: 0
-  winnerC: 0
+  winnerC: 1
   valueChanged: 0
   beaColor: {r: 0.32156864, g: 0.8352941, b: 0.36078432, a: 1}
   mioColor: {r: 0.8352942, g: 0.31764707, b: 0.39607847, a: 1}
