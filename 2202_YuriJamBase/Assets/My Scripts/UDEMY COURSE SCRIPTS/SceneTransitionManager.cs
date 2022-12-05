@@ -11,9 +11,18 @@ public class SceneTransitionManager : MonoBehaviour
 
     [SerializeField]
     private Image Curtain; // image that will fade to black or white
+    private bool alive = true;
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+        if(Curtain.color.a == 1){
+            Debug.Log("reset curtain color.");
+            Color tempColor = Color.white;
+            tempColor.a = 0;
+            Curtain.color = tempColor;
+        }
+        Debug.Log("Curtain " + Curtain.color.ToString());
+        Debug.Log("alpha: curtain " + Curtain.color.a);
     }
     
     // update once per frame
@@ -28,6 +37,9 @@ public class SceneTransitionManager : MonoBehaviour
             {
                 LoadSceneCharacterSelect();
             }
+        }
+        if(!alive){
+            Debug.Log("somehow can't find self.");
         }
         
     }
@@ -54,21 +66,23 @@ public class SceneTransitionManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public static void LoadSceneComic(){
+    public void LoadSceneComic(){
         SceneManager.LoadScene(1);
     }
 
     // Change scene to character select
-    public static void LoadSceneCharacterSelect()
+    public void LoadSceneCharacterSelect()
     {
         SceneManager.LoadScene(2);
     }
 
-    public static void LoadSceneFight(){
+    public void LoadSceneFight()
+    {
         SceneManager.LoadScene(3);
     }
 
-    public static void LoadSceneVictory(){
+    public void LoadSceneVictory()
+    {
         SceneManager.LoadScene(4);
     }
 
@@ -93,8 +107,9 @@ public class SceneTransitionManager : MonoBehaviour
         
         Color initialColor = color;
         initialColor.a = 0;
-        Curtain.color = initialColor;
-
+        // Curtain.color = initialColor;
+        Debug.Log("initial color: " + initialColor.ToString() + " to curtain" + Curtain.color.ToString());
+        Debug.Log("alpha: init " + initialColor.a.ToString() + " curtain " + Curtain.color.a);
         float elapsedTime = 0f;
 
         while (elapsedTime < duration)
@@ -103,17 +118,20 @@ public class SceneTransitionManager : MonoBehaviour
             Curtain.color = Color.Lerp(initialColor, color, elapsedTime / duration);
             yield return null;
         }
+
+        Debug.Log("initial color: " + initialColor.ToString() + " to curtain" + Curtain.color.ToString());
+        Debug.Log("alpha: init " + initialColor.a.ToString() + " curtain " + Curtain.color.a.ToString());
         Debug.Log("Load scene " + toScene);
         SceneManager.LoadScene(toScene);
+        Debug.Log("Goodbye");
     }
     private IEnumerator FadeOut(float duration)
     {
-
+        Debug.Log("Fading out...");
         Color initialColor = Curtain.color;
-        Color targetColor = initialColor;
+        Color targetColor = Color.black;
         targetColor.a = 0;
-
-        float elapsedTime = 0f;
+        float elapsedTime = 0;
 
         while (elapsedTime < duration)
         {
@@ -121,12 +139,13 @@ public class SceneTransitionManager : MonoBehaviour
             Curtain.color = Color.Lerp(initialColor, targetColor, elapsedTime / duration);
             yield return null;
         }
+        Debug.Log("finished fading");
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("OnSceneLoaded: " + scene.name);
         Debug.Log(mode);
-        StartCoroutine(FadeOut(1.0f));
+        StartCoroutine(FadeOut(duration: 1.0f));
     }
 }

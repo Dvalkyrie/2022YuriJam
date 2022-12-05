@@ -20,6 +20,7 @@ public class victoryScreenManager : MonoBehaviour
     public Color mioColor;
 
     public string result; // something like "2-3" or "3-0"
+    private string winnerName;
 
     // UI
     public Image triangleWinUI;
@@ -45,6 +46,27 @@ public class victoryScreenManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (SaveScript.Player1Wins >= 2 ){
+            winnerP = Player.P1;
+
+            if(SaveScript.P1Select.Contains("Mio")){
+                winnerC = Character.Mio;
+            }
+            else {
+                winnerC = Character.Beatriz;
+            }
+            
+        }
+        else {
+            winnerP = Player.P2;
+            if(SaveScript.P1Select.Contains("Bea")){
+                winnerC = Character.Beatriz;
+            }
+            else {
+                winnerC = Character.Mio;
+            }
+        }
+        result = SaveScript.Player1Wins.ToString() + ":" + SaveScript.Player2Wins.ToString();
         setUi();
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
@@ -87,18 +109,19 @@ public class victoryScreenManager : MonoBehaviour
             NameImageUI.sprite = BeaName;
             BeaWinS();
         }
+        Debug.Log(result);
         ResultText.text = "RESULT: " + result;
     }
     public void MioWinS()
     {
-        //Debug.Log("mio!");
+        Debug.Log("mio won!");
         FindObjectOfType<AudioManager>().Play("Bakertheme");
         FindObjectOfType<AudioManager>().Play("BVIC");
     }
 
     public void BeaWinS()
     {
-        //Debug.Log("bea!");
+        Debug.Log("bea won!");
         FindObjectOfType<AudioManager>().Play("Cheftheme");
         FindObjectOfType<AudioManager>().Play("CVIC");
     }

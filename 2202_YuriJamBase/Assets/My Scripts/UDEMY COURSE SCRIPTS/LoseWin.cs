@@ -69,7 +69,7 @@ public class LoseWin : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(PauseTime);
-        SceneManager.LoadScene(Scene);
+        SceneManager.LoadScene(3);
 
 
     }

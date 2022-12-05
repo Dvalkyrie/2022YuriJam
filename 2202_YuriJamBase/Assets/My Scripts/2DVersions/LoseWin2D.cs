@@ -55,6 +55,7 @@ public class LoseWin2D : MonoBehaviour
             else
             {
                 // Round over, repeat scene
+                Debug.Log("P1 Wins: " + SaveScript.Player1Wins + " P2 wins: " + SaveScript.Player2Wins);
                 RoundOverText.gameObject.SetActive(true);
                 MyPlayer.clip = RoundOverAudio;
                 MyPlayer.Play();

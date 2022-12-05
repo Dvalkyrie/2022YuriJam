@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2112,6 +2112,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4435547765410401413, guid: 612e8378038652e4da296a1544601e93, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435547765410401413, guid: 612e8378038652e4da296a1544601e93, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435547765410401413, guid: 612e8378038652e4da296a1544601e93, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435547765410401413, guid: 612e8378038652e4da296a1544601e93, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4435547766063736679, guid: 612e8378038652e4da296a1544601e93, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2119,6 +2135,10 @@ PrefabInstance:
     - target: {fileID: 4435547766678103857, guid: 612e8378038652e4da296a1544601e93, type: 3}
       propertyPath: m_Name
       value: StayAcrossScenes
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435547766678103857, guid: 612e8378038652e4da296a1544601e93, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4435547766678103858, guid: 612e8378038652e4da296a1544601e93, type: 3}
       propertyPath: m_RootOrder
@@ -4970,6 +4990,7 @@ GameObject:
   - component: {fileID: 1724987268}
   - component: {fileID: 1724987267}
   - component: {fileID: 1724987269}
+  - component: {fileID: 1724987270}
   m_Layer: 0
   m_Name: WinCondition
   m_TagString: Untagged
@@ -5106,6 +5127,19 @@ MonoBehaviour:
   GameOverAudio: {fileID: 8300000, guid: a1a5ec3f1cdbf43e7a57287bcbb4e0cf, type: 3}
   PauseTime: 1
   Output: {fileID: 24300002, guid: cc30d971240bf2c4baa7cb775c9be452, type: 2}
+--- !u!114 &1724987270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724987265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61aaf107b7c036e4281f8d6a12d88997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Curtain: {fileID: 0}
 --- !u!1 &1745886882
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,9 +15,13 @@ public class CharacterSelector : MonoBehaviour
 
     public Image MioBg, BeaBg;
 
+    private SceneTransitionManager stm;
+
     // Start is called before the first frame update
     void Start()
     {
+
+        stm = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<SceneTransitionManager>();
         LeftCharacter = GameObject.FindWithTag("SelectionLeft");
         LeftImage = LeftCharacter.GetComponent<Image>();
         LeftImage.color = Color.grey;
@@ -69,13 +73,13 @@ public class CharacterSelector : MonoBehaviour
             {
                 SaveScript.P1Select = LeftCharacter.name; 
                 SaveScript.P2Select = "MioP2";
-                SceneTransitionManager.LoadSceneFight();
+                stm.LoadSceneFight();
             }
             if (rightSelect == true)
             {
                 SaveScript.P1Select = RightCharacter.name; 
                 SaveScript.P2Select = "BeatrizP2";
-                SceneTransitionManager.LoadSceneFight();
+                stm.LoadSceneFight();
             }
         }
         
