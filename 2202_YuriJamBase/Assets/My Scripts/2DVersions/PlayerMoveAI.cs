@@ -91,7 +91,7 @@ public class PlayerMoveAI : MonoBehaviour
             // Debug.Log(gameObject.name + " opponent distance is " + OppDistance);
 
             //Check if we are knocked out
-            if ((SaveScript.Player2Health <= 0 && selfP ==1) || (SaveScript.Player1Health <= 0 && selfP == 2))
+            if ((SaveScript.Player2Health <= 0 && selfP == 1) || (SaveScript.Player1Health <= 0 && selfP == 2))
             {
                 Debug.Log("KnockedOutCall");
                 Anim.SetTrigger("KnockOut");

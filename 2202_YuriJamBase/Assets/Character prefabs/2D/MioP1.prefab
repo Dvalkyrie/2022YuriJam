@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 1100223145207996156}
   m_Layer: 0
   m_Name: vfx_lightKick
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 1100223145277939472}
   m_Layer: 0
   m_Name: P1Right
-  m_TagString: P2Right
+  m_TagString: P1Right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 1100223145449279540}
   m_Layer: 0
   m_Name: vfx_mediumKick
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -739,7 +739,7 @@ GameObject:
   - component: {fileID: 1100223145572264051}
   m_Layer: 0
   m_Name: P1Space
-  m_TagString: P2SpaceDetector
+  m_TagString: P1SpaceDetector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2258,7 +2258,7 @@ GameObject:
   - component: {fileID: 1100223146854659655}
   m_Layer: 0
   m_Name: P1Left
-  m_TagString: P2Left
+  m_TagString: P1Left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

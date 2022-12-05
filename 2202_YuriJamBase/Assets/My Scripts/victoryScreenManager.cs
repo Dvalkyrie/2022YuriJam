@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using static victoryScreenManager;
+using UnityEngine.SceneManagement;
 
 public class victoryScreenManager : MonoBehaviour
 {
@@ -19,15 +20,17 @@ public class victoryScreenManager : MonoBehaviour
     public Color beaColor;
     public Color mioColor;
 
-    public string result; // something like "2-3" or "3-0"
+    private string result; // something like "2-3" or "3-0"
     private string winnerName;
 
     // UI
     public Image triangleWinUI;
     public Image triangleLooseUI;
-    public TMP_Text PlayerWinUI;
-    public TMP_Text PlayerLooseUI;
-    public TMP_Text ResultText;
+    [SerializeField] TextMeshProUGUI PlayerWinUI;
+    [SerializeField] TextMeshProUGUI PlayerLooseUI;
+    [SerializeField] TextMeshProUGUI ResultText;
+    [SerializeField] TextMeshProUGUI DisplayEsc;
+    public float escDelay = 3.5f;
     public Image MainImageUI;
     public Image MainImageShadowUI;
     public Image NameImageUI;
@@ -37,7 +40,7 @@ public class victoryScreenManager : MonoBehaviour
     public Sprite BeaMain;
     public Sprite MioName;
     public Sprite BeaName;
-
+    private bool canReturn = false;
 
 
     // Soundbites
@@ -59,15 +62,18 @@ public class victoryScreenManager : MonoBehaviour
         }
         else {
             winnerP = Player.P2;
-            if(SaveScript.P1Select.Contains("Bea")){
-                winnerC = Character.Beatriz;
-            }
-            else {
+            if(SaveScript.P2Select.Contains("Mio")){
                 winnerC = Character.Mio;
             }
+            else {
+                winnerC = Character.Beatriz;
+            }
         }
+        DisplayEsc.enabled = false;
         result = SaveScript.Player1Wins.ToString() + ":" + SaveScript.Player2Wins.ToString();
         setUi();
+
+        StartCoroutine(DisplayReturnText());
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
@@ -78,10 +84,25 @@ public class victoryScreenManager : MonoBehaviour
         {
             setUi();
         }
+        if(canReturn){
+            if(Input.GetKey(KeyCode.Escape)){
+                SceneManager.LoadScene(0);
+            }
+        }
+    }
+
+    void resetSaved() {
+        SaveScript.Player1Wins = 0;
+        SaveScript.Player2Wins = 0;
+        SaveScript.P1Select = null;
+        SaveScript.P2Select = null;
+        SaveScript.Round = 0;
+        
     }
 
     void setUi()
     {
+        Debug.Log("RESULT: " + result);
         if (winnerP == Player.P1)
         {
             PlayerWinUI.text = "P1";
@@ -94,6 +115,8 @@ public class victoryScreenManager : MonoBehaviour
         }
         if (winnerC == Character.Mio)
         {
+
+            Debug.Log("mio won!");
             triangleWinUI.color = mioColor;
             triangleLooseUI.color = beaColor;
             MainImageUI.sprite = MainImageShadowUI.sprite = MioMain;
@@ -103,25 +126,23 @@ public class victoryScreenManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("bea won!");
             triangleWinUI.color = beaColor;
             triangleLooseUI.color = mioColor;
             MainImageUI.sprite = MainImageShadowUI.sprite = BeaMain;
             NameImageUI.sprite = BeaName;
             BeaWinS();
         }
-        Debug.Log(result);
         ResultText.text = "RESULT: " + result;
     }
     public void MioWinS()
     {
-        Debug.Log("mio won!");
         FindObjectOfType<AudioManager>().Play("Bakertheme");
         FindObjectOfType<AudioManager>().Play("BVIC");
     }
 
     public void BeaWinS()
     {
-        Debug.Log("bea won!");
         FindObjectOfType<AudioManager>().Play("Cheftheme");
         FindObjectOfType<AudioManager>().Play("CVIC");
     }
@@ -136,4 +157,10 @@ public class victoryScreenManager : MonoBehaviour
     //    voiceManager.Play(sound);
     //}
 
+    IEnumerator DisplayReturnText()
+    {
+        yield return new WaitForSeconds(escDelay);
+        DisplayEsc.enabled = true;
+        canReturn = true;
+    }
 }

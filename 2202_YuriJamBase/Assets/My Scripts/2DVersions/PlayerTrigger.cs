@@ -22,8 +22,14 @@ public class PlayerTrigger : MonoBehaviour
     PlayerActions P1_action;
     PlayerActionsAI P2_action;
 
+    
+    private Animator P1_Anim;
+    private Animator P2_Anim;
+
     PlayerMove2D P1_move;
     PlayerMoveAI P2_move;
+
+    private AnimatorStateInfo opponentState;
 
     public float knockBackPower = 1;
     public bool knockBackDaze = false;
@@ -38,12 +44,14 @@ public class PlayerTrigger : MonoBehaviour
         P1 = GameObject.FindGameObjectWithTag("Player1");
         P2 = GameObject.FindGameObjectWithTag("Player2");
 
-
-        P2_action = P2.GetComponent<PlayerActionsAI>();
         P1_action = P1.GetComponent<PlayerActions>();
+        P2_action = P2.GetComponent<PlayerActionsAI>();
 
         P1_move = P1.GetComponent<PlayerMove2D>();
         P2_move = P2.GetComponent<PlayerMoveAI>();
+
+        P1_Anim = P1.GetComponentInChildren<Animator>();
+        P2_Anim = P2.GetComponentInChildren<Animator>();
 
         SfxManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
 
@@ -76,6 +84,7 @@ public class PlayerTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (selfP == 2)
         {
             // TODO! Change stuff so we can recognise when we need a Ai or Not, or make them the same script
@@ -101,6 +110,17 @@ public class PlayerTrigger : MonoBehaviour
         }
     }
 
+    bool IsAttaking(Animator opponent) {
+        
+        opponentState = opponent.GetCurrentAnimatorStateInfo(0);
+
+        if(opponentState.IsTag("Attack") || opponentState.IsTag("Sweep")){
+            return true;
+        }
+        return false;
+        
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
@@ -111,8 +131,8 @@ public class PlayerTrigger : MonoBehaviour
                 playHit();
                 if (vfx_transform!= null)
                     vfx_transform.SetActive(true);
-                // Block, if P1 is walking away from P2 at that moment, block is on
-                if ((Input.GetAxis("Horizontal") < 0 && P1_move.FacingLeft) || (Input.GetAxis("Horizontal") > 0 && P1_move.FacingRight))
+                // Block, if P1 is walking away from P2 and P2 is attacking, block is on
+                if ((Input.GetAxis("Horizontal") < 0 && P1_move.FacingLeft && IsAttaking(P2_Anim)) || (Input.GetAxis("Horizontal") > 0 && P1_move.FacingRight && IsAttaking(P2_Anim)))
                 {
                     P1_action.Anim.SetTrigger("BlockOn");
                     Debug.Log("Blocked");
