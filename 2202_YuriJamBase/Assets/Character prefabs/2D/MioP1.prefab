@@ -314,7 +314,7 @@ MonoBehaviour:
   hitSfx: BMK_HIT
   selfP: 0
   otherP: 0
-  knockBackPower: 0.15
+  knockBackPower: 0.3
   knockBackDaze: 0
   vfx_transform: {fileID: 1100223147056176587}
   projectile: 0
@@ -1185,14 +1185,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100223145852795939}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.33155268, w: 0.94343674}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1100223146577963508}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -38.726}
 --- !u!212 &1100223145852795967
 SpriteRenderer:
   m_ObjectHideFlags: 0

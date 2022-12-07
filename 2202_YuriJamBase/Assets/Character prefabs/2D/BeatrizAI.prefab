@@ -129,7 +129,7 @@ MonoBehaviour:
   hitSfx: CMP_HIT
   selfP: 0
   otherP: 0
-  knockBackPower: 0.2
+  knockBackPower: 0.4
   knockBackDaze: 0
   vfx_transform: {fileID: 8671520525966473721}
   projectile: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fabe5e0b4f2e68d4091a70b17bc137cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageAmt: 0.3
+  DamageAmt: 0.35
   PauseSpeed: 0.6
   hitSfx: CHP_HIT
   selfP: 0
