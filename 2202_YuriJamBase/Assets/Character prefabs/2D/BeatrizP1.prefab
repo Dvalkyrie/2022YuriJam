@@ -1812,7 +1812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded0e3731dcd6aa47b7c2689f85e31bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player2: {fileID: 0}
+  Player2: {fileID: 3949762914430164056}
 --- !u!1001 &3949762914612500656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1836,6 +1836,10 @@ PrefabInstance:
       propertyPath: projectile
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: vfx_transform
+      value: 
+      objectReference: {fileID: 3949762914224486137}
     - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: knockBackPower
       value: 0.1
@@ -1953,6 +1957,10 @@ PrefabInstance:
       propertyPath: projectile
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: vfx_transform
+      value: 
+      objectReference: {fileID: 3949762914224486137}
     - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: knockBackPower
       value: 0.1

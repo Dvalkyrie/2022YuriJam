@@ -42,6 +42,7 @@ public class victoryScreenManager : MonoBehaviour
     public Sprite BeaName;
     private bool canReturn = false;
 
+    private SceneTransitionManager stm;
 
     // Soundbites
     private AudioManager audioManager;
@@ -71,6 +72,7 @@ public class victoryScreenManager : MonoBehaviour
         }
         DisplayEsc.enabled = false;
         result = SaveScript.Player1Wins.ToString() + ":" + SaveScript.Player2Wins.ToString();
+        stm = GameObject.Find("StayAcrossScenes").GetComponent<SceneTransitionManager>();
         setUi();
 
         StartCoroutine(DisplayReturnText());
@@ -86,7 +88,7 @@ public class victoryScreenManager : MonoBehaviour
         }
         if(canReturn){
             if(Input.GetKey(KeyCode.Escape)){
-                SceneManager.LoadScene(0);
+                stm.LoadSceneManu();
             }
         }
     }

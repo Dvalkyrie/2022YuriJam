@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6444,7 +6444,6 @@ GameObject:
   - component: {fileID: 1724987268}
   - component: {fileID: 1724987267}
   - component: {fileID: 1724987269}
-  - component: {fileID: 1724987270}
   m_Layer: 0
   m_Name: WinCondition
   m_TagString: Untagged
@@ -6581,19 +6580,6 @@ MonoBehaviour:
   GameOverAudio: {fileID: 8300000, guid: a1a5ec3f1cdbf43e7a57287bcbb4e0cf, type: 3}
   PauseTime: 1
   Output: {fileID: 24300002, guid: cc30d971240bf2c4baa7cb775c9be452, type: 2}
---- !u!114 &1724987270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724987265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61aaf107b7c036e4281f8d6a12d88997, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Curtain: {fileID: 0}
 --- !u!1 &1745886882
 GameObject:
   m_ObjectHideFlags: 0

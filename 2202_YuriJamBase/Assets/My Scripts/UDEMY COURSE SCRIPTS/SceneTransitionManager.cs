@@ -16,13 +16,13 @@ public class SceneTransitionManager : MonoBehaviour
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
         if(Curtain.color.a == 1){
-            Debug.Log("reset curtain color.");
+            // Debug.Log("reset curtain color.");
             Color tempColor = Color.white;
             tempColor.a = 0;
             Curtain.color = tempColor;
         }
-        Debug.Log("Curtain " + Curtain.color.ToString());
-        Debug.Log("alpha: curtain " + Curtain.color.a);
+        // Debug.Log("Curtain " + Curtain.color.ToString());
+        // Debug.Log("alpha: curtain " + Curtain.color.a);
     }
     
     // update once per frame
@@ -61,7 +61,7 @@ public class SceneTransitionManager : MonoBehaviour
         StartCoroutine(FadeInAndLoadScene(Color.black, 1.0f, index));
     }
 
-    public static void LoadSceneManu()
+    public void LoadSceneManu()
     {
         SceneManager.LoadScene(0);
     }
@@ -127,7 +127,7 @@ public class SceneTransitionManager : MonoBehaviour
     }
     private IEnumerator FadeOut(float duration)
     {
-        Debug.Log("Fading out...");
+        // Debug.Log("Fading out...");
         Color initialColor = Curtain.color;
         Color targetColor = Color.black;
         targetColor.a = 0;
@@ -139,7 +139,7 @@ public class SceneTransitionManager : MonoBehaviour
             Curtain.color = Color.Lerp(initialColor, targetColor, elapsedTime / duration);
             yield return null;
         }
-        Debug.Log("finished fading");
+        // Debug.Log("finished fading");
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)

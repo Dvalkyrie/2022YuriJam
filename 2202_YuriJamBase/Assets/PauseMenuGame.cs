@@ -10,10 +10,11 @@ public class PauseMenuGame : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject controlUI;
+    private SceneTransitionManager stm;
     // Start is called before the first frame update
     void Start()
     {
-        
+        stm = GameObject.Find("StayAcrossScenes").GetComponent<SceneTransitionManager>();
     }
 
     // Update is called once per frame
@@ -51,7 +52,8 @@ public class PauseMenuGame : MonoBehaviour
     {
         //Debug.Log("menu");
         Time.timeScale = 1f;
-        SceneManager.LoadScene("2D_MainMenu");
+        // SceneManager.LoadScene("2D_MainMenu");
+        stm.LoadSceneManu();
     }
 
     public void QuitGame()

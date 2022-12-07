@@ -2070,7 +2070,6 @@ GameObject:
   - component: {fileID: 1809840211}
   - component: {fileID: 1809840210}
   - component: {fileID: 1809840209}
-  - component: {fileID: 1809840208}
   - component: {fileID: 1809840207}
   m_Layer: 5
   m_Name: CanvasSelect
@@ -2131,19 +2130,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1809840208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809840206}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61aaf107b7c036e4281f8d6a12d88997, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Curtain: {fileID: 0}
 --- !u!114 &1809840209
 MonoBehaviour:
   m_ObjectHideFlags: 0
