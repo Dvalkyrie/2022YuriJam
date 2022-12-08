@@ -31,7 +31,7 @@ public class RoundFight : MonoBehaviour
     IEnumerator roundUI(GameObject roundText, AudioClip roundAudio)
     {
         // yield return new WaitForSeconds(0.4f);
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(4.2f);
         roundText.gameObject.SetActive(true);
         MyPlayer.clip = roundAudio;
         MyPlayer.Play();
