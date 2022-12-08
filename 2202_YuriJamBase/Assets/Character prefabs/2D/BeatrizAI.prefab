@@ -1839,6 +1839,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: vfx_transform
+      value: 
+      objectReference: {fileID: 8671520525966473721}
+    - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: knockBackPower
       value: 0.1
       objectReference: {fileID: 0}
@@ -1995,6 +1999,10 @@ PrefabInstance:
       propertyPath: projectile
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
+      propertyPath: vfx_transform
+      value: 
+      objectReference: {fileID: 8671520525966473721}
     - target: {fileID: 4254819332533832068, guid: 61f29eb03703e9345a3091de3ed2b0e8, type: 3}
       propertyPath: knockBackPower
       value: 0.1

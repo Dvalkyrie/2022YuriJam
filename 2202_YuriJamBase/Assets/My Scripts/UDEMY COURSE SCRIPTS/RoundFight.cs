@@ -55,68 +55,14 @@ public class RoundFight : MonoBehaviour
         if (SaveScript.Round == 1)
         {
             StartCoroutine(roundUI(roundText: Round1Text, roundAudio: Round1Audio));
-            // yield return new WaitForSeconds(3f);
-            // Round1Text.gameObject.SetActive(true);
-            // MyPlayer.clip = Round1Audio;
-            // MyPlayer.Play();
-            // MyPlayer.outputAudioMixerGroup = Output;
-            // yield return new WaitForSeconds(PauseTime);
-            // Round1Text.gameObject.SetActive(false);
-            // yield return new WaitForSeconds(1.5f);
-            // FightText.gameObject.SetActive(true);
-            // MyPlayer.clip = FightAudio;
-            // MyPlayer.Play();
-            // MyPlayer.outputAudioMixerGroup = Output;
-            // yield return new WaitForSeconds(PauseTime);
-            // FightText.gameObject.SetActive(false);
-            // MusicPlayer.Play();
-            // MusicPlayer.outputAudioMixerGroup = Output;
-            // SaveScript.TimeOut = false;
-            // this.gameObject.SetActive(false);
         }
         if (SaveScript.Round == 2)
         {
             StartCoroutine(roundUI(roundText: Round2Text, roundAudio: Round2Audio));
-            // yield return new WaitForSeconds(3f);
-            // Round2Text.gameObject.SetActive(true);
-            // MyPlayer.clip = Round2Audio;
-            // MyPlayer.Play();
-            // MyPlayer.outputAudioMixerGroup = Output;
-            // yield return new WaitForSeconds(PauseTime);
-            // Round2Text.gameObject.SetActive(false);
-            // yield return new WaitForSeconds(2.7f);
-            // FightText.gameObject.SetActive(true);
-            // MyPlayer.clip = FightAudio;
-            // MyPlayer.Play();
-            // MyPlayer.outputAudioMixerGroup = Output;
-            // yield return new WaitForSeconds(PauseTime);
-            // FightText.gameObject.SetActive(false);
-            // MusicPlayer.Play();
-            // MusicPlayer.outputAudioMixerGroup = Output;
-            // SaveScript.TimeOut = false;
-            // this.gameObject.SetActive(false);
         }
         if (SaveScript.Round == 3)
         {
             StartCoroutine(roundUI(roundText: Round3Text, roundAudio: Round3Audio));
-            // yield return new WaitForSeconds(2f);
-            // Round3Text.gameObject.SetActive(true);
-            // MyPlayer.clip = Round3Audio;
-            // MyPlayer.Play();
-            // MyPlayer.outputAudioMixerGroup = Output;
-            // yield return new WaitForSeconds(PauseTime);
-            // Round3Text.gameObject.SetActive(false);
-            // yield return new WaitForSeconds(2.7f);
-            // FightText.gameObject.SetActive(true);
-            // MyPlayer.clip = FightAudio;
-            // MyPlayer.Play();
-            // MyPlayer.outputAudioMixerGroup = Output;
-            // yield return new WaitForSeconds(PauseTime);
-            // FightText.gameObject.SetActive(false);
-            // MusicPlayer.Play();
-            // MusicPlayer.outputAudioMixerGroup = Output;
-            // SaveScript.TimeOut = false;
-            // this.gameObject.SetActive(false);
         }
 
     }

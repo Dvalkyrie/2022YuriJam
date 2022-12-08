@@ -16,8 +16,7 @@ public class LoseWin : MonoBehaviour
     public AudioClip Player1WinsAudio;
     public AudioClip Player2WinsAudio;
     public float PauseTime = 1.0f;
-
-    private int Scene = 3;
+    private SceneTransitionManager stm;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +26,7 @@ public class LoseWin : MonoBehaviour
         LoseText.gameObject.SetActive(false);
         Player1WinText.gameObject.SetActive(false);
         Player2WinText.gameObject.SetActive(false);
+        stm = GameObject.Find("StayAcrossScenes").GetComponent<SceneTransitionManager>();
         StartCoroutine(WinSet());
     }
 
@@ -69,7 +69,7 @@ public class LoseWin : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(PauseTime);
-        SceneManager.LoadScene(3);
+        stm.LoadSceneFight();
 
 
     }
